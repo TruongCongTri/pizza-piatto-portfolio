@@ -1,0 +1,14 @@
+# Copies .data/ into the deployed site's Upstash Redis (docker/seed/).
+#
+#   cp .env.seed.example .env.seed      # then fill in the Vercel values
+#   docker compose -f docker-compose.seed.yml run --rm --build seed
+#   docker compose -f docker-compose.seed.yml run --rm seed --no-samples   # extra options for the copy
+services:
+  seed:
+    build:
+      context: .
+      dockerfile: docker/seed/Dockerfile
+    env_file: .env.seed
+    volumes:
+      # read-only: the copy never changes the local data
+      - ./.data:/app/.data:ro

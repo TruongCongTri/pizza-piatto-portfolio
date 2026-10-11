@@ -30,6 +30,35 @@ node scripts/import-past-classes.mjs https://your-domain   # default: http://loc
 
 It signs in to the Class Desk with `ADMIN_PASSWORD` (from the environment or `.env.local`) and skips classes that are already there, so it is safe to run again.
 
+## Copying local data to a deployed site
+
+Locally, classes, bookings and class bookings live in `.data/` (JSON files). That folder is left out of git on purpose, since it holds guests' names and phone numbers, so a deployed site starts empty. On Vercel the data lives in Upstash Redis instead:
+
+1. In the Vercel project, add **Upstash Redis** (Storage → Marketplace). It sets `KV_REST_API_URL` and `KV_REST_API_TOKEN`; a region near the shop (Singapore) is best.
+2. Fetch those values locally: `vercel env pull .env.production.local` (or put `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` in that file by hand).
+3. Copy the data:
+
+```bash
+node scripts/seed-redis.mjs --dry-run   # what it would copy
+node scripts/seed-redis.mjs             # copy everything in .data/
+node scripts/seed-redis.mjs --no-samples --only=workshops   # e.g. real classes only
+```
+
+4. Redeploy, so the deployment picks up the new environment variables.
+
+The script writes records by id, so running it again is safe, and it deletes nothing. Class photos are files in `public/classes/` and deploy with the site.
+
+### With Docker
+
+Steps 2 and 3 can run in a container instead, with nothing to install but Docker. The image holds only the copy script and the Vercel CLI: `.data/` is mounted read-only, and the pulled variables never leave the container.
+
+```bash
+cp .env.seed.example .env.seed   # fill in VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID
+docker compose -f docker-compose.seed.yml run --rm --build seed
+```
+
+It pulls the project's variables, shows the dry run, then copies. Set `DRY_RUN_ONLY=1` in `.env.seed` to stop after the dry run, and `SEED_ARGS` (or arguments after `seed`) for options such as `--no-samples`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

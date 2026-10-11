@@ -18,6 +18,7 @@ npm-debug.log*
 # env files (secrets); the example stays in the repo
 .env*
 !.env.example
+!.env.seed.example
 
 # local reservation data (guests' names, phones, emails) and email previews
 /.data/

@@ -1,0 +1,5 @@
+# the seed image only needs these two files; everything else (node_modules,
+# .data/ with guests' details, .env files with secrets) stays out
+*
+!scripts/seed-redis.mjs
+!docker/seed/entrypoint.sh
