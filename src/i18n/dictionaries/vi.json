@@ -1,0 +1,1255 @@
+{
+  "seo": {
+    "siteName": "Pizza Piatto",
+    "title": "Pizza Piatto — Tiệm Pizza Kiểu Ý tại TP.HCM",
+    "description": "Tiệm pizza kiểu Ý nho nhỏ với bốn chiếc bàn và một căn bếp mở ở P. Diên Hồng, TP.HCM. Pizza 30 cm kéo tay, mỳ Ý và salad — ăn tại tiệm, mang về hay giao tận nơi đều tiện.",
+    "keywords": [
+      "Pizza Piatto",
+      "pizza TP.HCM",
+      "pizza Sài Gòn",
+      "pizza Ý",
+      "pizza thủ công",
+      "pizza Napoli",
+      "pizza Diên Hồng",
+      "giao pizza TP.HCM"
+    ],
+    "imageAlt": "Logo Pizza Piatto",
+    "pages": {
+      "about": {
+        "title": "Câu Chuyện Của Tiệm",
+        "description": "Chuyện về một tiệm pizza bốn bàn ở TP.HCM, nơi từng chiếc bánh đều làm bằng tay: từ cục bột, căn bếp mở, nguyên liệu đến những lớp học làm pizza."
+      },
+      "menu": {
+        "title": "Thực Đơn",
+        "description": "Mười hai vị pizza 30 cm kéo tay, mỳ Ý, salad burrata và nước mát, kèm đủ giá và thành phần."
+      },
+      "reservation": {
+        "title": "Đặt Bàn",
+        "description": "Giữ trước một trong bốn chiếc bàn của Pizza Piatto ở P. Diên Hồng, TP.HCM. Xem giờ mở cửa, cách liên hệ và đặt bàn online."
+      },
+      "track": {
+        "title": "Lượt Đặt Của Bạn",
+        "description": "Tra cứu bàn đã đặt và lớp học làm pizza của bạn ở Pizza Piatto bằng số điện thoại."
+      },
+      "admin": {
+        "title": "Sổ Đặt Bàn",
+        "description": "Trang nhân viên Pizza Piatto xem mọi lượt đặt bàn."
+      },
+      "workshops": {
+        "title": "Lớp Học Làm Pizza",
+        "description": "Lớp học làm pizza ở Pizza Piatto, TP.HCM: bột, ủ bột, kéo đế và nướng bánh. Xem lịch học, học phí, số chỗ còn trống và đăng ký online."
+      },
+      "workshopTicket": {
+        "title": "Vé Lớp Học",
+        "description": "Lượt đăng ký lớp học và tình trạng thanh toán của bạn ở Pizza Piatto."
+      },
+      "classDesk": {
+        "title": "Sổ Lớp Học",
+        "description": "Trang nhân viên Pizza Piatto quản lý lớp học, học viên và thanh toán."
+      },
+      "mockPay": {
+        "title": "Trang Thanh Toán Thử",
+        "description": "Trang thanh toán thử nghiệm. Không có tiền thật nào được chuyển."
+      },
+      "guestDesk": {
+        "title": "Khách Hàng",
+        "description": "Trang nhân viên Pizza Piatto xem các lượt đặt bàn và lớp học của một khách."
+      }
+    }
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "essence": "Câu chuyện",
+    "carte": "Thực đơn",
+    "book": "Đặt bàn",
+    "menu": "Phụ lục",
+    "close": "Đóng",
+    "since": "Từ năm 2022",
+    "location": "P. Diên Hồng, TP.HCM, Việt Nam",
+    "classes": "Lớp học"
+  },
+  "footer": {
+    "heading": "Hẹn Gặp Bạn Ở Tiệm",
+    "cta": "Lên Lịch Ghé Tiệm",
+    "rights": "©2026 Bảo lưu mọi quyền",
+    "credit": "Thiết kế bởi Công Trí"
+  },
+  "errors": {
+    "notFound": {
+      "code": "404",
+      "title": "Ôi, Lạc Đường Rồi",
+      "message": "Trang bạn tìm không có ở đây. Có thể trang đã được dời đi, đổi tên hoặc chưa từng tồn tại.",
+      "home": "Về Trang Chủ"
+    },
+    "error": {
+      "code": "500",
+      "title": "Bếp Đang Trục Trặc",
+      "message": "Có chút trục trặc trong lúc chuẩn bị trang này. Bạn thử lại sau ít phút nhé.",
+      "retry": "Thử Lại",
+      "home": "Về Trang Chủ"
+    }
+  },
+  "reserve": {
+    "eyebrow": "( Đặt bàn )",
+    "title": "Đặt Bàn",
+    "intro": "Tiệm chỉ có bốn bàn thôi, nên bạn cho tiệm biết khi nào ghé để tiệm giữ chỗ nhé. Để lại email nếu bạn muốn nhận vé đặt bàn qua email.",
+    "close": "Đóng",
+    "closed": "Nghỉ",
+    "fields": {
+      "name": "Họ và tên",
+      "namePlaceholder": "Tên của bạn",
+      "email": "Email",
+      "emailPlaceholder": "ban@example.com",
+      "optional": "( Không bắt buộc )",
+      "phone": "Số điện thoại",
+      "phonePlaceholder": "+84 90 000 0000",
+      "date": "Ngày",
+      "time": "Giờ",
+      "timeHint": "Chọn ngày trước để xem giờ còn trống",
+      "guests": "Số khách",
+      "notes": "Ghi chú",
+      "notesPlaceholder": "Dị ứng, dịp đặc biệt hay chỗ ngồi bạn thích (không bắt buộc)",
+      "guestsHint": "( Tối đa {max} )"
+    },
+    "errors": {
+      "required": "( Bắt buộc )",
+      "invalidEmail": "( Email chưa đúng )",
+      "invalidPhone": "( Số chưa đúng )",
+      "unavailable": "( Không còn trống )",
+      "tooLong": "( Dài quá )",
+      "full": "( Hết bàn )",
+      "overlap": "( Bạn đã có bàn giờ này )",
+      "tooMany": "( Đã có {max} bàn sắp tới )",
+      "partySize": "( Tối đa {max} khách )"
+    },
+    "submit": "Xác Nhận Đặt Bàn",
+    "submitting": "Đang gửi...",
+    "info": [
+      "Pizza Piatto",
+      "91K Cư Xá Lý Thường Kiệt, Nguyễn Kim, P. Diên Hồng, TP.HCM",
+      "034 662 7237"
+    ],
+    "failed": {
+      "eyebrow": "( Chưa đặt được )",
+      "title": "Có chút trục trặc",
+      "message": "Bàn của bạn chưa được giữ. Bạn thử lại nhé, hoặc gọi tiệm qua số {phone}.",
+      "rateLimited": "Bạn thử hơi nhiều lần rồi. Đợi vài phút nhé, hoặc gọi tiệm qua số {phone}."
+    },
+    "success": {
+      "eyebrow": "( Đã giữ bàn )",
+      "title": "Cảm Ơn Bạn",
+      "message": "{name} ơi, tiệm đã giữ bàn cho {guests} vào {date}, lúc {time}.",
+      "emailSent": "Vé đặt bàn đang được gửi tới {email}.",
+      "emailFailed": "Tiệm chưa gửi được vé tới {email}, nhưng bàn của bạn vẫn được giữ nhé.",
+      "noEmail": "Bạn tra cứu bàn đã đặt bất cứ lúc nào bằng số điện thoại nhé.",
+      "another": "Đặt Thêm Bàn Khác",
+      "track": "Xem các bàn đã đặt",
+      "hold": "Tiệm giữ bàn cho bạn {minutes} phút. Không đến được thì bạn huỷ bất cứ lúc nào trong mục bàn đã đặt nhé."
+    },
+    "guestOne": "khách",
+    "guestOther": "khách",
+    "missingOne": "Còn 1 mục bạn chưa điền",
+    "missingOther": "Còn {count} mục bạn chưa điền",
+    "largeGroup": "Đi nhóm từ {next} người trở lên? Gọi tiệm qua số {phone} để tiệm sắp xếp chỗ cho cả nhóm nhé.",
+    "full": "Hết bàn"
+  },
+  "toast": {
+    "close": "Đóng"
+  },
+  "ticket": {
+    "label": "Vé đặt bàn",
+    "number": "Số {code}",
+    "time": "Giờ",
+    "guests": "Khách",
+    "notes": "Ghi chú",
+    "today": "Hôm nay",
+    "past": "Đã qua",
+    "arrived": "Đã tới",
+    "cancelled": "Đã huỷ",
+    "missed": "Lỡ hẹn",
+    "cancel": "Huỷ bàn"
+  },
+  "reservations": {
+    "search": "Tìm kiếm",
+    "searchPlaceholder": "Tên, số điện thoại, mã hoặc ghi chú",
+    "show": "Hiển thị",
+    "status": "Trạng thái",
+    "sort": "Sắp xếp",
+    "filters": {
+      "today": "Hôm nay",
+      "upcoming": "Sắp tới",
+      "past": "Đã qua",
+      "all": "Tất cả"
+    },
+    "statuses": {
+      "all": "Tất cả",
+      "booked": "Đã đặt",
+      "arrived": "Đã tới",
+      "noShow": "Không tới",
+      "cancelled": "Đã huỷ"
+    },
+    "sorts": {
+      "asc": "Sớm nhất trước",
+      "desc": "Muộn nhất trước"
+    },
+    "countOne": "1 lượt đặt bàn",
+    "countOther": "{count} lượt đặt bàn",
+    "empty": "Không có lượt đặt bàn nào khớp.",
+    "showMore": "Xem thêm",
+    "kind": "Loại",
+    "kinds": {
+      "all": "Tất cả",
+      "tables": "Đặt bàn",
+      "classes": "Lớp học"
+    },
+    "bookingOne": "1 lượt đặt",
+    "bookingOther": "{count} lượt đặt",
+    "noBookings": "Không có lượt đặt nào khớp.",
+    "filterTitle": "Bộ lọc",
+    "filterOpen": "Mở bộ lọc",
+    "reset": "Đặt lại",
+    "done": "Xong"
+  },
+  "track": {
+    "eyebrow": "( Lượt Đặt Của Bạn )",
+    "title": "Tìm Lại Lượt Đặt",
+    "listTitle": "Lượt Đặt Của Bạn",
+    "intro": "Nhập số điện thoại bạn dùng khi đặt bàn hoặc đăng ký lớp học. Tiệm sẽ gửi một mã để chắc chắn đó là bạn.",
+    "phone": "Số điện thoại",
+    "phonePlaceholder": "+84 90 000 0000",
+    "send": "Gửi Mã",
+    "sending": "Đang gửi...",
+    "code": "Mã xác nhận",
+    "codePlaceholder": "6 chữ số",
+    "verify": "Xem Bàn Đã Đặt",
+    "verifying": "Đang kiểm tra...",
+    "sentSms": "Tiệm đã nhắn mã 6 số tới {destination}.",
+    "sentEmail": "Tiệm đã gửi mã 6 số tới {destination}, email bạn dùng khi đặt bàn.",
+    "sentDemo": "Chế độ demo, tiệm chưa cài SMS: mã của bạn là {code}.",
+    "resend": "Gửi mã mới",
+    "resendIn": "Gửi lại sau {seconds}s",
+    "changeNumber": "Dùng số khác",
+    "signOut": "Đăng xuất",
+    "signedInAs": "Lượt đặt của {phone}",
+    "loading": "Đang tải...",
+    "empty": "Chưa có lượt đặt nào.",
+    "book": "Đặt Bàn",
+    "errors": {
+      "required": "( Bắt buộc )",
+      "invalidPhone": "( Số chưa đúng )",
+      "invalid": "( Mã chưa đúng )",
+      "expired": "( Mã đã hết hạn )",
+      "expiredHint": "Mã này đã hết hạn. Bạn xin mã mới ở bên dưới nhé.",
+      "noReservations": "Tiệm không tìm thấy lượt đặt nào bằng số này. Bạn có đặt bằng số khác không?",
+      "cooldown": "Mã đang trên đường tới. Một phút nữa bạn mới xin được mã mới nhé.",
+      "unavailable": "Hiện tiệm chưa gửi mã tới số này được. Bạn gọi tiệm qua số {phone} để tiệm giúp nhé.",
+      "rateLimited": "Bạn thử nhiều lần quá. Đợi vài phút rồi thử lại nhé.",
+      "server": "Có chút trục trặc phía tiệm. Bạn thử lại nhé."
+    },
+    "cancel": {
+      "eyebrow": "( Huỷ bàn )",
+      "title": "Huỷ bàn này nhé?",
+      "confirm": "Huỷ Bàn",
+      "keep": "Giữ Lại",
+      "doneEyebrow": "( Đã huỷ bàn )",
+      "doneTitle": "{date}, {time}",
+      "doneMessage": "Tiệm đã mở lại bàn này. Hẹn gặp bạn dịp khác nhé.",
+      "failedEyebrow": "( Chưa huỷ được )",
+      "failedTitle": "Đã quá giờ huỷ online",
+      "failedMessage": "Bạn gọi tiệm qua số {phone} nhé."
+    },
+    "openTicket": "Mở vé",
+    "classes": "Xem Lớp Học Làm Pizza"
+  },
+  "admin": {
+    "eyebrow": "( Sổ Đặt Bàn )",
+    "title": "Lượt Đặt Bàn",
+    "loading": "Đang tải...",
+    "signOut": "Đăng xuất",
+    "live": "Trực tiếp",
+    "updated": "Cập nhật {time}",
+    "offline": "Mất kết nối, đang thử lại...",
+    "newBooking": "Thêm đặt bàn",
+    "demo": {
+      "eyebrow": "( Dữ liệu mẫu )",
+      "load": "Tạo lượt đặt mẫu",
+      "clear": "Xoá lượt đặt mẫu",
+      "guestHint": "Trang khách: thử số {phone}",
+      "loaded": "Đã thêm {count} lượt đặt mẫu",
+      "cleared": "Đã xoá lượt đặt mẫu"
+    },
+    "login": {
+      "eyebrow": "( Dành Cho Nhân Viên )",
+      "title": "Sổ Đặt Bàn",
+      "intro": "Đăng nhập để xem mọi lượt đặt bàn và đánh dấu khách khi khách tới.",
+      "password": "Mật khẩu",
+      "submit": "Đăng Nhập",
+      "submitting": "Đang đăng nhập...",
+      "errors": {
+        "required": "( Bắt buộc )",
+        "invalid": "( Sai mật khẩu )",
+        "notConfigured": "Chưa bật đăng nhập: hãy đặt ADMIN_PASSWORD trên máy chủ trước.",
+        "rateLimited": "Thử sai nhiều lần quá. Đợi vài phút nhé.",
+        "server": "Có chút trục trặc. Thử lại nhé."
+      }
+    },
+    "stats": {
+      "today": "Lượt đặt hôm nay",
+      "guests": "Khách hôm nay",
+      "arrived": "Đã tới hôm nay",
+      "freeNow": "Ghế trống lúc này"
+    },
+    "day": "{bookings} · {guests}",
+    "booked": "Đặt lúc {date}",
+    "new": "Mới",
+    "walkIn": "Khách vãng lai",
+    "table": "Bàn {name}",
+    "noTable": "Chưa có bàn",
+    "planned": "Bàn dự kiến",
+    "seated": "Đang ngồi",
+    "states": {
+      "booked": "Đã đặt",
+      "late": "Trễ {minutes} phút",
+      "arrived": "Đã tới {time}",
+      "noShow": "Không tới",
+      "cancelled": "Đã huỷ"
+    },
+    "actions": {
+      "checkIn": "Khách tới",
+      "undo": "Hoàn tác",
+      "noShow": "Không tới",
+      "cancel": "Huỷ"
+    },
+    "hints": {
+      "opensAt": "Nhận khách từ {time}",
+      "opensOn": "Nhận khách ngày {date}",
+      "closed": "Hết giờ nhận khách"
+    },
+    "dialogs": {
+      "checkIn": {
+        "eyebrow": "( Khách tới )",
+        "title": "Đánh dấu khách đã tới?",
+        "table": "Xếp ngồi",
+        "confirm": "Khách Đã Tới"
+      },
+      "undo": {
+        "eyebrow": "( Hoàn tác )",
+        "title": "Hoàn tác thao tác này?",
+        "confirm": "Hoàn Tác"
+      },
+      "noShow": {
+        "eyebrow": "( Không tới )",
+        "title": "Đánh dấu khách không tới?",
+        "note": "Bàn của khách sẽ được mở lại cho khách khác.",
+        "confirm": "Khách Không Tới"
+      },
+      "cancel": {
+        "eyebrow": "( Huỷ bàn )",
+        "title": "Huỷ lượt đặt này?",
+        "note": "Khách sẽ nhận email nếu có để lại email.",
+        "confirm": "Huỷ Bàn"
+      },
+      "details": "{name} · {guests} · {date}, {time}",
+      "back": "Quay lại"
+    },
+    "create": {
+      "eyebrow": "( Thêm đặt bàn )",
+      "title": "Thêm Lượt Đặt",
+      "kinds": {
+        "booking": "Đặt qua điện thoại",
+        "walkIn": "Khách vãng lai"
+      },
+      "walkInName": "Tên (không bắt buộc)",
+      "walkInTable": "Đang trống: Bàn {table}",
+      "walkInNone": "Hiện không còn bàn trống cho {guests}.",
+      "save": "Lưu Đặt Bàn",
+      "seat": "Xếp Bàn Ngay",
+      "saving": "Đang lưu...",
+      "cancel": "Đóng",
+      "errors": {
+        "noTable": "( Hết bàn trống )"
+      }
+    },
+    "toasts": {
+      "newEyebrow": "( Lượt đặt bàn mới )",
+      "newMessage": "{date}, {time} · {guests}",
+      "arrivedEyebrow": "( Khách đã tới )",
+      "arrivedTitle": "{name} đã tới",
+      "arrivedMessage": "Bàn {table}",
+      "undoEyebrow": "( Đã hoàn tác )",
+      "undoTitle": "{name} trở lại trạng thái đã đặt",
+      "noShowEyebrow": "( Không tới )",
+      "noShowTitle": "{name} được đánh dấu không tới",
+      "cancelledEyebrow": "( Đã huỷ )",
+      "cancelledTitle": "Đã huỷ bàn của {name}",
+      "createdEyebrow": "( Đã thêm đặt bàn )",
+      "walkInEyebrow": "( Đã xếp bàn )",
+      "errorEyebrow": "( Chưa lưu được )",
+      "errorTitle": "Chưa cập nhật được",
+      "errorMessage": "Thử lại sau giây lát nhé."
+    }
+  },
+  "emails": {
+    "ticket": {
+      "subject": "Vé đặt bàn Pizza Piatto · {date}, {time}",
+      "preheader": "Bàn cho {guests} vào {date} lúc {time}. Mã đặt bàn {code}.",
+      "eyebrow": "( Vé đặt bàn )",
+      "greeting": "Cảm ơn {name}! Tiệm đã giữ bàn cho bạn, vé của bạn đây nhé.",
+      "tableFor": "Bàn cho {guests}",
+      "number": "Số {code}",
+      "date": "Ngày",
+      "time": "Giờ",
+      "guests": "Số khách",
+      "notes": "Ghi chú của bạn",
+      "where": "Địa chỉ",
+      "call": "Gọi tiệm",
+      "showAtDoor": "Khi tới tiệm, bạn đưa vé này cho tiệm xem nhé. Nếu có thay đổi, bạn gọi hoặc nhắn cho tiệm nha.",
+      "track": "Xem Lượt Đặt Của Tôi",
+      "footer": "Bạn nhận được email này vì địa chỉ email này đã được dùng để đặt bàn tại Pizza Piatto.",
+      "hold": "Tiệm giữ bàn {minutes} phút sau giờ hẹn; nếu không đến được, bạn huỷ trong mục Xem Các Bàn Đã Đặt hoặc gọi cho tiệm nhé."
+    },
+    "receipt": {
+      "subject": "Đơn đặt bàn mới {code} · {date} {time} · {guests}",
+      "preheader": "{name} vừa đặt bàn cho {guests} vào {date} lúc {time}.",
+      "title": "Đơn đặt bàn mới",
+      "number": "Số {code}",
+      "issued": "Lúc tạo",
+      "language": "Ngôn ngữ",
+      "guest": "Khách",
+      "phone": "Điện thoại",
+      "email": "Email",
+      "date": "Ngày",
+      "time": "Giờ",
+      "party": "Số khách",
+      "notes": "Ghi chú",
+      "none": "—",
+      "total": "Tổng số khách",
+      "thanks": "*** Cảm ơn ***",
+      "dashboard": "Mở Sổ Đặt Bàn",
+      "languages": {
+        "en": "English",
+        "vi": "Tiếng Việt"
+      },
+      "cancelledSubject": "Đã huỷ {code} · {date} {time} · {guests}",
+      "cancelledPreheader": "{name} đã huỷ bàn cho {guests} vào {date} lúc {time}.",
+      "cancelledTitle": "Lượt đặt đã huỷ",
+      "cancelledAt": "Lúc huỷ",
+      "void": "Đã huỷ"
+    },
+    "code": {
+      "subject": "{code} là mã xác nhận Pizza Piatto của bạn",
+      "preheader": "Dùng mã này để xem các bàn bạn đã đặt. Mã hết hạn sau 10 phút.",
+      "eyebrow": "( Mã xác nhận )",
+      "message": "Nhập mã này để xem các bàn bạn đã đặt ở Pizza Piatto. Mã hết hạn sau 10 phút.",
+      "ignore": "Nếu bạn không yêu cầu mã này, cứ bỏ qua email này nhé."
+    },
+    "cancelled": {
+      "subject": "Bàn của bạn ở Pizza Piatto đã được huỷ · {date}, {time}",
+      "eyebrow": "( Đã huỷ bàn )",
+      "byGuest": "Bàn cho {guests} vào {dateLong} lúc {time} đã được huỷ theo yêu cầu của bạn. Hẹn gặp bạn dịp khác nhé.",
+      "byStaff": "Tiệm đã huỷ bàn cho {guests} vào {dateLong} lúc {time}. Nếu bạn không yêu cầu huỷ, gọi tiệm qua số {phone} nhé.",
+      "stamp": "Đã huỷ",
+      "rebook": "Đặt Bàn Khác"
+    },
+    "class": {
+      "seatOne": "chỗ",
+      "seatOther": "chỗ",
+      "ticketSubject": "Vé lớp học của bạn · {title}",
+      "ticketPreheader": "{seats} · {date}. Đã thanh toán, hẹn gặp bạn ở lớp.",
+      "ticketEyebrow": "( Vé lớp học )",
+      "ticketGreeting": "Cảm ơn {name}! Tiệm đã nhận được thanh toán và giữ chỗ cho bạn. Vé của bạn đây nhé.",
+      "paid": "Đã trả",
+      "seatsLabel": "Số chỗ",
+      "whenLabel": "Thời gian",
+      "amountLabel": "Đã trả",
+      "codeLabel": "Số {code}",
+      "where": "Địa chỉ",
+      "call": "Gọi tiệm",
+      "bring": "Khi tới lớp, bạn đưa vé này cho tiệm xem nhé. Nếu có thay đổi, bạn mở vé hoặc gọi cho tiệm nha.",
+      "viewTicket": "Xem Vé Của Tôi",
+      "receiptSubject": "Đã thu học phí {code} · {title} · {seats}",
+      "receiptTitle": "Đã thu học phí",
+      "receiptRows": {
+        "class": "Lớp",
+        "session": "Buổi",
+        "student": "Học viên",
+        "phone": "Điện thoại",
+        "email": "Email",
+        "seats": "Số chỗ",
+        "price": "Mỗi chỗ",
+        "total": "Đã thu",
+        "provider": "Qua",
+        "reference": "Mã tham chiếu",
+        "reason": "Lý do",
+        "refund": "Cần hoàn"
+      },
+      "alertSubject": "Cần hoàn tiền {code} · {amount}",
+      "alertTitle": "Cần hoàn tiền",
+      "alertIntro": "Chuyển trả khoản này cho học viên, rồi đánh dấu đã hoàn trong Sổ Lớp Học.",
+      "openDesk": "Mở Sổ Lớp Học",
+      "refundSubject": "Hoàn tiền · {title}",
+      "refundEyebrow": "( Hoàn tiền )",
+      "refundPending": "Tiệm đang hoàn {amount} cho bạn cho lớp {title}. {reason} Tiệm sẽ báo bạn khi đã chuyển xong.",
+      "refundDone": "Tiệm đã hoàn {amount} cho bạn cho lớp {title}. {reason}",
+      "refunded": "Đã hoàn",
+      "refunding": "Đang hoàn",
+      "reasons": {
+        "studentCancelled": "Bạn đã huỷ chỗ.",
+        "staffCancelled": "Tiệm đã huỷ lượt đăng ký của bạn.",
+        "classCancelled": "Lớp học đã bị huỷ.",
+        "noSeatLeft": "Khoản thanh toán tới sau khi hết hạn giữ chỗ, và lớp đã kín chỗ trong lúc đó.",
+        "duplicatePayment": "Lượt đăng ký được thanh toán hai lần; đây là khoản thừa. Chỗ của bạn vẫn giữ nguyên.",
+        "paidAfterCancel": "Khoản thanh toán tới sau khi lượt đăng ký đã bị huỷ."
+      }
+    }
+  },
+  "preloader": {
+    "label": "Màn hình chờ",
+    "loading": "Đang tải... {progress}%",
+    "enter": "Vào Tiệm"
+  },
+  "home": {
+    "since": "Từ năm 2022",
+    "location": "TP.HCM, VN",
+    "about": "Bốn chiếc bàn, một căn bếp mở, từng đế bánh kéo bằng tay — chiếc pizza nào cũng được làm ngay trước mắt bạn.",
+    "aboutLeft": "Pizza Thủ Công",
+    "aboutRight": "Bếp Mở"
+  },
+  "about": {
+    "heroLines": [
+      "Câu Chuyện",
+      "Pizza",
+      "Piatto"
+    ],
+    "heroAlt": "Hai nhà sáng lập Pizza Piatto trước cửa tiệm",
+    "eyebrow": "Tiệm Nhỏ, Pizza Thủ Công",
+    "paragraphs": [
+      "Pizza Piatto mở cửa từ năm 2022, là một tiệm pizza kiểu Ý nhỏ xíu, vỏn vẹn bốn chiếc bàn, nằm trong Cư Xá Lý Thường Kiệt, ngay đối diện Trung tâm TDTT Thống Nhất.",
+      "Bếp để mở, bạn có thể ngắm từng chiếc pizza được kéo đế, rải nhân rồi vào lò. Tiệm phối hai loại bột, cho bột nghỉ đủ lâu và giữ thực đơn gọn gàng, để chiếc pizza nào ra lò cũng được chăm chút trọn vẹn."
+    ]
+  },
+  "menuPage": {
+    "title": "Kéo Tay Từng Đế, Có Đơn Mới Nướng",
+    "left": "Thực Đơn",
+    "right": "Pizza 30 cm"
+  },
+  "reservationPage": {
+    "title": "Bốn Chiếc Bàn, Một Chỗ Cho Bạn",
+    "intro": "Tiệm nhỏ lắm, nên đặt trước là chắc ăn nhất: có bàn chờ sẵn, có pizza nóng hổi từ bếp mở.",
+    "button": "Đặt Bàn Ngay",
+    "cards": {
+      "menu": {
+        "title": "Thực Đơn",
+        "description": "Mười hai vị pizza 30 cm, bốn món mỳ Ý, salad burrata và nhiều món chay cho bạn tha hồ chọn.",
+        "items": [
+          "Pizza 30 cm",
+          "Mỳ Ý",
+          "Salad Burrata",
+          "Món Chay"
+        ]
+      },
+      "hours": {
+        "title": "Giờ Mở Cửa",
+        "description": "Ngày thường tiệm mở buổi chiều tối, thứ Bảy mở từ 11 giờ trưa. Chủ Nhật thì lò nghỉ một bữa.",
+        "items": [
+          "T2 – T6: 17:30 – 19:45",
+          "Thứ Bảy: 11:00 – 19:45",
+          "Chủ Nhật: Nghỉ",
+          "Tại Tiệm · Mang Về · Giao Tận Nơi"
+        ]
+      },
+      "contact": {
+        "title": "Liên Hệ",
+        "description": "Gọi hay nhắn tin cho tiệm để đặt bàn, đặt bánh hoặc hỏi về lớp học làm pizza. Tiệm ở ngay đối diện Trung tâm TDTT Thống Nhất.",
+        "items": [
+          "034 662 7237",
+          "pizzapiattovn@gmail.com",
+          "@pizzapiattosg",
+          "91K Cư Xá Lý Thường Kiệt"
+        ]
+      }
+    },
+    "track": "Xem lượt đặt của bạn"
+  },
+  "cta": {
+    "eyebrow": "Ghé tiệm chơi nhé",
+    "heading": "Ngồi lại một trong bốn chiếc bàn, ngắm pizza ra lò ngay tại bếp mở, hoặc mang về khi bánh còn nóng hổi.",
+    "address": [
+      "91K Cư Xá Lý Thường Kiệt",
+      "P. Diên Hồng, TP.HCM"
+    ],
+    "hours": [
+      "T2–T6 17:30–19:45",
+      "T7 11:00–19:45",
+      "CN nghỉ"
+    ],
+    "button": "Đặt Bàn",
+    "imageAlt": "Bàn ăn bày sẵn trong tiệm"
+  },
+  "imageBanner": {
+    "heading": [
+      "Làm",
+      "Bằng",
+      "Tay"
+    ],
+    "description": "Ở Pizza Piatto, chiếc pizza nào cũng bắt đầu từ một viên bột ủ kỹ, rồi được kéo đế, rải nhân và nướng bằng tay, chỉ cách bàn bạn vài bước chân."
+  },
+  "marquee": {
+    "year": "Từ Năm 2022",
+    "subtitle": "Tiệm Nhỏ, Tâm Huyết Lớn",
+    "pill": "Nóng Hổi Vừa Ra Lò"
+  },
+  "stickyCards": {
+    "dough": {
+      "title": "Bột Bánh",
+      "description": "Tiệm phối hai loại bột cùng độ đạm nhưng khác độ khỏe, rồi cho bột nghỉ đủ lâu để đế nướng lên nhẹ, xốp và thơm lừng."
+    },
+    "beginning": {
+      "title": "Khởi Đầu",
+      "description": "Pizza Piatto mở cửa năm 2022 với bốn chiếc bàn. Tiệm tuy nhỏ nhưng có nhiều ý nghĩa đối với tụi mình."
+    },
+    "kitchen": {
+      "title": "Bếp Mở",
+      "description": "Giữa bàn ăn và quầy bếp chẳng có gì ngăn cách. Bạn ngắm đế bánh được kéo, rải nhân, rồi hít hà mùi vỏ bánh thơm lừng vừa ra lò."
+    },
+    "toppings": {
+      "title": "Nguyên Liệu",
+      "description": "Mozzarella tươi, burrata, Grana Padano gặp gỡ những vị quen như heo quay kiểu Ý, cùng nhiều lựa chọn cho người ăn chay."
+    },
+    "classes": {
+      "title": "Lớp Học",
+      "description": "Tiệm còn mở lớp dạy làm pizza, chia sẻ những gì tụi mình học được về bột, cách kéo đế và nướng bánh, từ Napoli cổ điển đến đương đại."
+    },
+    "takeaway": {
+      "title": "Tại Tiệm Hay Mang Về",
+      "description": "Ăn tại tiệm, mang về hay giao tận nơi khi bánh còn nóng hổi, kiểu nào cũng được. Chiếc pizza nào cũng làm theo cùng một cách."
+    }
+  },
+  "chefs": {
+    "title": "Đầu Bếp",
+    "left": "Phuong Huynh",
+    "right": "Đầu Bếp Kiêm Chủ Tiệm",
+    "moments": {
+      "portrait": {
+        "label": "Phuong",
+        "alt": "Phuong Huynh, đầu bếp kiêm chủ tiệm Pizza Piatto"
+      },
+      "owner": {
+        "label": "Chủ Tiệm",
+        "alt": "Phuong Huynh hoàn thiện một chiếc pizza pepperoni"
+      },
+      "class": {
+        "label": "Lớp Pizza",
+        "alt": "Phuong Huynh đứng lớp dạy làm pizza của Pizza Piatto"
+      },
+      "teacher": {
+        "label": "Cô Giáo",
+        "alt": "Phuong Huynh giảng bài bên lò nướng pizza"
+      },
+      "sigep2025": {
+        "label": "Sigep 2025",
+        "alt": "Phuong Huynh cắt pizza. Top 10 Pizza Napoletana Contemporanea tại Pizza Senza Frontiere, Sigep 2025"
+      },
+      "sigep2026": {
+        "label": "Sigep 2026",
+        "alt": "Phuong Huynh bên chiếc pizza vừa ra lò. Top 5 Pizza Classica tại Pizza Senza Frontiere, Sigep 2026"
+      },
+      "dough": {
+        "label": "Bột Bánh",
+        "alt": "Phuong Huynh giới thiệu loại bột dùng làm đế bánh"
+      },
+      "since": {
+        "label": "Từ 2022",
+        "alt": "Phuong Huynh trong một buổi học làm pizza"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Khách Nói Gì Về Tiệm",
+    "previous": "Đánh giá trước",
+    "next": "Đánh giá kế tiếp",
+    "googleSummary": "{rating} ★ trên Google · {count} đánh giá",
+    "facebookSummary": "100% khách đề xuất trên Facebook",
+    "recommends": "Đề xuất",
+    "translated": "Đã dịch",
+    "reviews": {
+      "tranVanTrang": "Pizza ngon chuẩn vị Ý, đa dạng, recommend pizza Fungus béo thơm lạ miệng. Vỏ bánh mỏng, dòn.",
+      "tranQuynhDac": "Quá trời quá đất ngon rồi!!! Vỏ mỏng, viền giòn xốp và topping toàn hàng chất lượng luôn ớ. Nhiều vegetarian option thích hợp mấy bạn team no meat nhen.",
+      "violetParisi": "Pizza Ý ngon, mỏng và giòn. Hương vị tuyệt vời. Chủ tiệm rất tử tế.",
+      "minhThu": "Chị chủ dễ thương, pizza ngon xỉu, dễ tìm thấy quán.",
+      "linhChi": "Pizza và salad ở đây rất hợp khẩu vị với mình, không gian khá nhỏ nên mình hay mua mang về.",
+      "senChanDoi": "Đi ăn với mẹ mà mẹ nói món Tây ăn dễ ngán, chỉ thích salad bên đây. Còn mình thì thấy bánh seafood cực ngon.",
+      "nguyenNghia": "Pizza fungus ngon bá cháy. Cơ mà quán nhỏ quá chỉ mua mang về là chính."
+    }
+  },
+  "diningMenu": {
+    "title": "Thực Đơn",
+    "previous": "Thực đơn trước",
+    "next": "Thực đơn tiếp theo",
+    "tags": {
+      "veg": "Món chay",
+      "spicy": "Cay"
+    },
+    "categories": {
+      "pizza": {
+        "name": "Pizza",
+        "tagline": "Pizza 30 cm kéo tay: vị kinh điển, món chay và chút hương vị biển",
+        "items": {
+          "margherita": {
+            "name": "Margherita",
+            "description": "Xốt cà, phô mai mozzarella tươi, phô mai Grana Padano và lá quế tây"
+          },
+          "veggieLover": {
+            "name": "Veggie Lover",
+            "description": "Xốt cà, phô mai mozzarella, oliu đen, bông atisô, hành tây tím, nấm xào"
+          },
+          "fungus": {
+            "name": "Fungus",
+            "description": "Xốt kem, nấm xào, phô mai mozzarella, emmental, trứng chần, dầu truffle"
+          },
+          "fourCheese": {
+            "name": "Four Cheese",
+            "description": "Phô mai mozzarella, Grana Padano, provolone, phô mai tươi brie, mật ong"
+          },
+          "burrata": {
+            "name": "Burrata",
+            "description": "Xốt cà, phô mai mozzarella, phô mai tươi burrata, xốt giấm balsamic, lá quế tươi, cà chua"
+          },
+          "seafoodLover": {
+            "name": "Seafood Lover",
+            "description": "Xốt cà, phô mai mozzarella, tôm, sò điệp, ớt khô, quế tây"
+          }
+        }
+      },
+      "meatPizza": {
+        "name": "Pizza Thịt",
+        "tagline": "Xúc xích cay, heo quay kiểu Ý và thịt viên nhà làm",
+        "items": {
+          "spicySalami": {
+            "name": "Spicy Salami",
+            "description": "Xốt cà, phô mai mozzarella, xúc xích cay, hành tây tím, lá oregano"
+          },
+          "capricciosa": {
+            "name": "Capricciosa",
+            "description": "Xốt cà, phô mai mozzarella, oliu đen, thịt nguội, bông atisô, nấm xào"
+          },
+          "meatLover": {
+            "name": "Meat Lover",
+            "description": "Xốt cà, phô mai mozzarella, thịt nguội, xúc xích cay, thịt heo viên, hành tây tím"
+          },
+          "surfTurf": {
+            "name": "Surf & Turf",
+            "description": "Xốt cà, phô mai mozzarella, thịt heo viên, sò điệp, hành tây tím"
+          },
+          "heoQuay": {
+            "name": "Heo Quay",
+            "description": "Xốt BBQ, heo quay kiểu Ý, hành tây tím, nấm xào, ớt chuông, phô mai mozzarella"
+          },
+          "bolognese": {
+            "name": "Bolognese",
+            "description": "Xốt bò truyền thống, phô mai Grana Padano, phô mai mozzarella"
+          }
+        }
+      },
+      "salad": {
+        "name": "Salad",
+        "tagline": "Chút tươi mát để chia nhau giữa những lát pizza",
+        "items": {
+          "burrataSalad": {
+            "name": "Salad Burrata",
+            "description": "Phô mai tươi burrata, cà chua non, húng quế và xốt giấm balsamic"
+          }
+        }
+      },
+      "pasta": {
+        "name": "Mỳ Ý",
+        "tagline": "Spaghetti nấu theo từng phần, xốt tự nấu trong bếp",
+        "items": {
+          "creamyMushroom": {
+            "name": "Mỳ Ý Sốt Kem Nấm",
+            "description": "Mỳ spaghetti, xốt kem tỏi, nấm xào, phô mai Grana Padano, dầu truffle"
+          },
+          "veggie": {
+            "name": "Mỳ Ý Rau Củ Xốt Cà",
+            "description": "Mỳ spaghetti, xốt cà, nấm, oliu, atisô, ớt chuông, hành tây"
+          },
+          "bolognese": {
+            "name": "Mỳ Ý Xốt Bò Truyền Thống",
+            "description": "Mỳ spaghetti, xốt bò truyền thống, phô mai Grana Padano"
+          },
+          "seafood": {
+            "name": "Mỳ Ý Hải Sản",
+            "description": "Mỳ spaghetti, tôm, sò điệp, xốt gạch tôm, cà chua bi, thì là, ớt khô"
+          }
+        }
+      },
+      "drinks": {
+        "name": "Đồ Uống",
+        "tagline": "Nước mát lạnh, uống kèm pizza",
+        "items": {
+          "dasani": {
+            "name": "Dasani",
+            "description": "Nước suối"
+          },
+          "sprite": {
+            "name": "Sprite",
+            "description": "Nước ngọt vị chanh"
+          },
+          "pepsiLight": {
+            "name": "Pepsi Light",
+            "description": "Cola không đường"
+          },
+          "gingerAle": {
+            "name": "Ginger Ale",
+            "description": "Soda gừng có ga"
+          }
+        }
+      }
+    }
+  },
+  "workshops": {
+    "eyebrow": "( Lớp Học Làm Pizza )",
+    "title": "Học Làm Bột",
+    "intro": "Lớp dạy chủ yếu về dough: bột, men, muối, nước, và sự khác biệt giữa ủ ngắn với ủ dài. Làm dough đạt trước đã, chuyện topping không phải là vấn đề lớn.",
+    "upcoming": "Sắp Khai Giảng",
+    "past": "Các Lớp Đã Học",
+    "none": "Hiện chưa có lớp nào mở đăng ký. Theo dõi Facebook của tiệm để biết lớp tiếp theo nhé.",
+    "facebook": "Facebook Pizza Piatto",
+    "noPast": "Hình ảnh và ghi chép từ các lớp đã học sẽ được đăng ở đây.",
+    "perSeat": "{price} / chỗ",
+    "seatsLeftOne": "Còn 1 chỗ",
+    "seatsLeftOther": "Còn {count} chỗ",
+    "seatsOf": "Còn {left} / {capacity} chỗ",
+    "full": "Đã đủ học viên",
+    "closed": "Đã đóng đăng ký",
+    "cancelled": "Đã huỷ",
+    "held": "Đã kết thúc",
+    "ongoing": "Đang diễn ra",
+    "book": "Đăng Ký Học",
+    "details": "Xem Lớp",
+    "recap": "Xem Lại Lớp Học",
+    "sessionsOne": "1 buổi",
+    "sessionsOther": "{count} buổi",
+    "back": "Tất Cả Lớp Học",
+    "schedule": "Lịch học",
+    "fee": "Học phí",
+    "seats": "Số chỗ",
+    "teacher": "Giảng dạy",
+    "where": "Địa điểm",
+    "learn": "Bạn Sẽ Học Được",
+    "about": "Về Lớp Học",
+    "recapTitle": "Ở Lớp Học",
+    "photo": "Ảnh {index} / {count}",
+    "close": "Đóng",
+    "previous": "Ảnh trước",
+    "next": "Ảnh sau",
+    "cancelledNote": "Lớp này đã bị huỷ. Ai đã đóng học phí đều được hoàn tiền.",
+    "notFound": "Không tìm thấy lớp học này.",
+    "form": {
+      "eyebrow": "( Đăng ký học )",
+      "title": "Giữ Chỗ Của Bạn",
+      "seats": "Số chỗ",
+      "seatOne": "chỗ",
+      "seatOther": "chỗ",
+      "seatsHint": "( Tối đa {max} )",
+      "total": "Tổng cộng",
+      "pay": "Tiếp Tục Thanh Toán",
+      "paying": "Đang giữ chỗ...",
+      "hold": "Tiệm giữ chỗ cho bạn {minutes} phút để thanh toán; quá hạn mà chưa thanh toán thì chỗ được mở lại cho người khác.",
+      "refund": "Chỗ đã thanh toán có thể huỷ để được hoàn tiền tới {hours} giờ trước khi lớp bắt đầu.",
+      "closes": "Đăng ký online đóng {hours} giờ trước khi lớp bắt đầu.",
+      "testMode": "Chế độ thử: thanh toán trên trang thử nghiệm, không có tiền thật nào được chuyển.",
+      "paymentsOff": "Tiệm chưa mở thanh toán online. Bạn gọi tiệm qua số {phone} để đăng ký nhé.",
+      "alreadyBooked": "Số điện thoại này đã có một lượt đăng ký đã thanh toán cho lớp này.",
+      "bookMore": "Vẫn Đăng Ký Thêm Chỗ",
+      "full": "Tiếc quá, những chỗ cuối cùng vừa có người đăng ký mất rồi.",
+      "notEnoughSeats": "Giờ chỉ còn {count} chỗ. Bạn chọn ít chỗ hơn nhé.",
+      "closedError": "Lớp này đã đóng đăng ký.",
+      "failed": "Chưa mở được trang thanh toán. Bạn thử lại, hoặc gọi tiệm qua số {phone} nhé.",
+      "rateLimited": "Bạn thử nhiều lần quá. Đợi vài phút rồi thử lại nhé.",
+      "invalidSeats": "( Chọn từ 1 tới {max} )"
+    },
+    "finished": "Lớp học này đã kết thúc.",
+    "questions": "Cần hỏi thêm? Gọi tiệm qua số {phone} nhé."
+  },
+  "classTicket": {
+    "eyebrow": "( Vé Lớp Học )",
+    "label": "Lớp học pizza",
+    "number": "Số {code}",
+    "seats": "Số chỗ",
+    "total": "Tổng cộng",
+    "when": "Thời gian",
+    "statuses": {
+      "awaitingPayment": "Chờ thanh toán",
+      "processing": "Đang xử lý thanh toán",
+      "paymentFailed": "Chưa thanh toán xong",
+      "expired": "Hết hạn giữ chỗ",
+      "paid": "Đã thanh toán",
+      "attended": "Đã tham gia",
+      "cancelled": "Đã huỷ",
+      "refundPending": "Đang hoàn tiền",
+      "refunded": "Đã hoàn tiền"
+    },
+    "stamps": {
+      "awaitingPayment": "Chưa trả",
+      "processing": "Đang xử lý",
+      "paymentFailed": "Chưa trả",
+      "expired": "Hết hạn",
+      "paid": "Đã trả",
+      "attended": "Đã dùng",
+      "cancelled": "Đã huỷ",
+      "refundPending": "Đang hoàn",
+      "refunded": "Đã hoàn"
+    },
+    "messages": {
+      "awaitingPayment": "Tiệm giữ chỗ cho bạn tới {time}. Bạn thanh toán trước giờ đó để chốt chỗ nhé.",
+      "processing": "Ngân hàng đang xác nhận khoản thanh toán. Chỗ của bạn vẫn được giữ, trang này sẽ tự cập nhật.",
+      "paymentFailed": "Thanh toán chưa thành công. Chỗ của bạn vẫn được giữ tới {time}, bạn thử lại nhé.",
+      "expired": "Hết thời gian giữ chỗ mà tiệm chưa nhận được thanh toán, nên chỗ đã được mở lại. Nếu bạn đã chuyển tiền, tiệm sẽ xác nhận chỗ nếu lớp còn chỗ, hoặc hoàn tiền cho bạn.",
+      "paid": "Bạn đã có chỗ trong lớp. Khi tới, bạn đưa vé này cho tiệm xem nhé.",
+      "attended": "Cảm ơn bạn đã tới lớp. Về nhà nhớ luyện tập thêm nhé!",
+      "cancelled": "Lượt đăng ký này đã huỷ và chỗ đã được mở lại cho lớp.",
+      "refundPending": "Tiệm đang hoàn {amount} cho bạn.",
+      "refunded": "Tiệm đã hoàn {amount} cho bạn."
+    },
+    "reasons": {
+      "studentCancelled": "Bạn đã huỷ chỗ.",
+      "staffCancelled": "Tiệm đã huỷ lượt đăng ký của bạn.",
+      "classCancelled": "Lớp học đã bị huỷ.",
+      "noSeatLeft": "Khoản thanh toán tới sau khi hết hạn giữ chỗ, và lớp đã kín chỗ trong lúc đó.",
+      "duplicatePayment": "Lượt đăng ký này được thanh toán hai lần.",
+      "paidAfterCancel": "Khoản thanh toán tới sau khi lượt đăng ký đã bị huỷ."
+    },
+    "holdLeft": "Còn giữ chỗ {time}",
+    "pay": "Thanh Toán {amount}",
+    "payAgain": "Thanh Toán Lại",
+    "cancel": "Huỷ Đăng Ký",
+    "refundUntil": "Huỷ để được hoàn đủ tiền tới {date}.",
+    "noRefund": "Lớp này đã hết hạn huỷ online. Có thay đổi gì, bạn gọi tiệm qua số {phone} nhé.",
+    "checkoutCancelled": "Thanh toán chưa hoàn tất. Chỗ của bạn vẫn được giữ tới {time}.",
+    "extraPending": "Tiệm nhận thêm một khoản {amount} cho lượt đăng ký này và đang hoàn lại cho bạn; chỗ của bạn vẫn giữ nguyên.",
+    "extraDone": "Khoản thanh toán thừa {amount} cho lượt đăng ký này đã được hoàn lại.",
+    "keep": "Bạn giữ lại trang này nhé: đây là vé của bạn.",
+    "emailNote": "Khi thanh toán xong, tiệm cũng gửi vé tới {email}.",
+    "checking": "Đang kiểm tra với ngân hàng...",
+    "back": "Tất Cả Lớp Học",
+    "details": "Xem Lớp Học",
+    "notFoundTitle": "Không Tìm Thấy Vé",
+    "notFoundMessage": "Đường dẫn vé này không đúng. Bạn mở lại đường dẫn trong email, hoặc gọi tiệm qua số {phone} nhé.",
+    "dialog": {
+      "eyebrow": "( Huỷ đăng ký )",
+      "unpaidTitle": "Bỏ giữ những chỗ này?",
+      "unpaidNote": "Chỗ bạn đang giữ sẽ được mở lại cho lớp.",
+      "paidTitle": "Huỷ và nhận lại tiền?",
+      "paidNote": "Chỗ của bạn được mở lại cho lớp và tiệm hoàn {amount} cho bạn.",
+      "confirm": "Huỷ Đăng Ký",
+      "back": "Giữ Chỗ"
+    },
+    "toasts": {
+      "paidEyebrow": "( Đã nhận thanh toán )",
+      "paidTitle": "Bạn đã có chỗ!",
+      "cancelledEyebrow": "( Đã huỷ đăng ký )",
+      "cancelledTitle": "Chỗ đã được mở lại",
+      "refundTitle": "Tiệm đang hoàn tiền cho bạn",
+      "errorEyebrow": "( Chưa xong )",
+      "errorTitle": "Có lỗi xảy ra",
+      "errorMessage": "Thử lại sau giây lát nhé.",
+      "tooLate": "Đã quá hạn huỷ online. Bạn gọi tiệm qua số {phone} nhé.",
+      "notPayable": "Lượt đăng ký này không thể thanh toán nữa. Bạn đăng ký lại từ trang lớp học nhé."
+    },
+    "allBookings": "Tất cả lượt đặt của tôi"
+  },
+  "mockPay": {
+    "eyebrow": "( Thanh toán thử )",
+    "title": "Thanh Toán Thử",
+    "notice": "Trang này đóng vai trang thanh toán thật, để thử quy trình đăng ký. Không có tiền thật nào được chuyển.",
+    "merchant": "Người nhận",
+    "amount": "Số tiền",
+    "reference": "Nội dung chuyển khoản",
+    "status": "Trạng thái",
+    "expires": "Hết hạn lúc",
+    "pay": "Thanh Toán",
+    "paySlow": "Thanh toán, ngân hàng xác nhận sau 15 giây",
+    "payTwice": "Thanh toán, webhook gửi hai lần",
+    "fail": "Từ Chối",
+    "cancel": "Huỷ Và Quay Lại",
+    "late": "Đường dẫn này đã đóng. Thanh toán bây giờ giống như một lần chuyển khoản tới sau khi tiệm đã đóng đường dẫn.",
+    "payLate": "Vẫn Thanh Toán (chuyển khoản trễ)",
+    "done": "Đường dẫn này đã được thanh toán.",
+    "back": "Quay lại tiệm",
+    "working": "Đang xử lý...",
+    "notFound": "Không có đường dẫn thanh toán thử này.",
+    "statuses": {
+      "PENDING": "Chờ thanh toán",
+      "PROCESSING": "Đang xử lý",
+      "PAID": "Đã thanh toán",
+      "FAILED": "Bị từ chối",
+      "CANCELLED": "Đã đóng",
+      "EXPIRED": "Hết hạn"
+    }
+  },
+  "classDesk": {
+    "eyebrow": "( Sổ Lớp Học )",
+    "title": "Lớp Học",
+    "tabs": {
+      "tables": "Đặt bàn",
+      "classes": "Lớp học",
+      "guests": "Khách hàng"
+    },
+    "newClass": "Thêm Lớp",
+    "provider": {
+      "label": "Thanh toán",
+      "mock": "Trang thử, không có tiền thật",
+      "payos": "PayOS (chuyển khoản VietQR)",
+      "off": "Đang tắt: thêm khoá PayOS để nhận thanh toán"
+    },
+    "empty": "Chưa có lớp nào. Thêm một lớp để bắt đầu nhận đăng ký.",
+    "phases": {
+      "upcoming": "Sắp tới",
+      "ongoing": "Đang học",
+      "past": "Đã qua"
+    },
+    "statuses": {
+      "draft": "Bản nháp",
+      "published": "Đang mở",
+      "cancelled": "Đã huỷ"
+    },
+    "seatsSold": "{taken} / {capacity} chỗ",
+    "revenue": "Đã thu {amount}",
+    "noDate": "Chưa có ngày",
+    "view": "Xem trang lớp",
+    "sections": {
+      "bookings": "Học viên",
+      "details": "Thông Tin Lớp",
+      "recap": "Lưu Niệm Lớp Học"
+    },
+    "bookingsEmpty": "Chưa có ai đăng ký.",
+    "enrollment": {
+      "pending_payment": "Chờ thanh toán",
+      "confirmed": "Đã thanh toán",
+      "attended": "Đã tới",
+      "expired": "Hết hạn giữ chỗ",
+      "cancelled": "Đã huỷ",
+      "refund_pending": "Cần hoàn tiền",
+      "refunded": "Đã hoàn tiền"
+    },
+    "payment": {
+      "requires_payment": "Đang mở",
+      "processing": "Đang xử lý",
+      "succeeded": "Đã trả",
+      "failed": "Thất bại",
+      "canceled": "Đã đóng",
+      "expired": "Hết hạn",
+      "refund_pending": "Cần hoàn",
+      "refunded": "Đã hoàn"
+    },
+    "heldUntil": "Giữ tới {time}",
+    "paidAt": "Trả lúc {time}",
+    "checkedIn": "Tới lúc {time}",
+    "paidLate": "Trả sau khi hết hạn giữ chỗ",
+    "extra": "Trả thừa {amount}",
+    "reasons": {
+      "studentCancelled": "Học viên tự huỷ",
+      "staffCancelled": "Tiệm huỷ",
+      "classCancelled": "Lớp bị huỷ",
+      "noSeatLeft": "Trả trễ, hết chỗ",
+      "duplicatePayment": "Trả hai lần",
+      "superseded": "Đã có lượt đăng ký mới hơn",
+      "holdLapsed": "Không thanh toán kịp",
+      "checkoutFailed": "Lỗi trang thanh toán",
+      "paidAfterCancel": "Trả sau khi đã huỷ"
+    },
+    "actions": {
+      "checkIn": "Đã tới",
+      "undo": "Hoàn tác",
+      "cancel": "Huỷ",
+      "refund": "Huỷ & hoàn tiền",
+      "markRefunded": "Đã hoàn tiền",
+      "check": "Kiểm tra thanh toán"
+    },
+    "hints": {
+      "opensAt": "Điểm danh từ {time}",
+      "opensOn": "Điểm danh ngày {date}",
+      "closed": "Hết giờ điểm danh"
+    },
+    "dialogs": {
+      "checkIn": {
+        "eyebrow": "( Điểm danh )",
+        "title": "Đánh dấu học viên đã tới?",
+        "confirm": "Đã Tới"
+      },
+      "undo": {
+        "eyebrow": "( Hoàn tác )",
+        "title": "Bỏ điểm danh này?",
+        "confirm": "Hoàn Tác"
+      },
+      "cancel": {
+        "eyebrow": "( Huỷ đăng ký )",
+        "title": "Mở lại những chỗ đang giữ?",
+        "note": "Học viên chưa thanh toán; đường dẫn thanh toán sẽ được đóng.",
+        "confirm": "Mở Lại Chỗ"
+      },
+      "refund": {
+        "eyebrow": "( Huỷ & hoàn tiền )",
+        "title": "Huỷ và hoàn {amount}?",
+        "note": "Chỗ được mở bán lại. Với chuyển khoản, tiệm tự chuyển trả tiền rồi đánh dấu đã hoàn.",
+        "confirm": "Huỷ & Hoàn Tiền"
+      },
+      "markRefunded": {
+        "eyebrow": "( Đã hoàn tiền )",
+        "title": "Đánh dấu đã hoàn {amount}?",
+        "note": "Chỉ đánh dấu khi tiền đã thật sự được chuyển trả cho học viên.",
+        "confirm": "Đã Hoàn Tiền"
+      },
+      "cancelClass": {
+        "eyebrow": "( Huỷ lớp )",
+        "title": "Huỷ cả lớp học này?",
+        "note": "Các chỗ chưa thanh toán được mở lại và mọi lượt đã thanh toán đều được hoàn tiền. Không thể hoàn tác.",
+        "confirm": "Huỷ Lớp"
+      },
+      "deleteClass": {
+        "eyebrow": "( Xoá lớp )",
+        "title": "Xoá lớp học này?",
+        "note": "Chỉ xoá được lớp chưa có ai đăng ký.",
+        "confirm": "Xoá"
+      },
+      "details": "{name} · {seats} · {amount}",
+      "back": "Quay lại",
+      "removePhoto": {
+        "eyebrow": "( Xoá ảnh )",
+        "title": "Xoá ảnh này khỏi lưu niệm lớp học?",
+        "confirm": "Xoá"
+      }
+    },
+    "refunds": {
+      "title": "Cần Hoàn Tiền",
+      "intro": "Chuyển trả những khoản này cho học viên, rồi đánh dấu từng khoản đã hoàn."
+    },
+    "form": {
+      "createTitle": "Thêm Lớp Học",
+      "editTitle": "Sửa Lớp Học",
+      "langs": {
+        "vi": "Tiếng Việt",
+        "en": "English"
+      },
+      "title": "Tên lớp",
+      "summary": "Giới thiệu ngắn",
+      "description": "Mô tả",
+      "learn": "Học viên sẽ học được (mỗi dòng một ý)",
+      "location": "Địa điểm (để trống: tại tiệm)",
+      "recap": "Ghi chép sau buổi học",
+      "sessions": "Các buổi học",
+      "addSession": "Thêm buổi",
+      "removeSession": "Bỏ",
+      "date": "Ngày",
+      "start": "Bắt đầu",
+      "end": "Kết thúc",
+      "capacity": "Số chỗ",
+      "price": "Học phí mỗi chỗ (VND)",
+      "instructor": "Người dạy",
+      "cover": "Ảnh bìa (URL hoặc /đường-dẫn)",
+      "bookingCloses": "Đóng đăng ký (số giờ trước)",
+      "refundUntil": "Hoàn tiền tới (số giờ trước)",
+      "status": "Trạng thái",
+      "source": "Nguồn (ví dụ bài đăng Facebook)",
+      "save": "Lưu Lớp",
+      "create": "Tạo Lớp",
+      "saving": "Đang lưu...",
+      "cancel": "Đóng",
+      "delete": "Xoá lớp",
+      "cancelClass": "Huỷ lớp",
+      "publishNeeds": "Để nhận đăng ký, lớp cần có ngày học, số chỗ, học phí và ở trạng thái đang mở.",
+      "policyNote": "Thời gian giữ chỗ, hạn hoàn tiền và hạn đăng ký là giá trị gợi ý; tiệm xác nhận lại trước khi mở lớp nhé.",
+      "errors": {
+        "required": "( Bắt buộc )",
+        "invalid": "( Kiểm tra lại )"
+      }
+    },
+    "recap": {
+      "intro": "Hình ảnh và ghi chép trong buổi học, hiện trên trang lớp sau khi lớp diễn ra.",
+      "upload": "Thêm Ảnh",
+      "uploading": "Đang tải {done} / {count}...",
+      "captionVi": "Chú thích (Tiếng Việt)",
+      "captionEn": "Chú thích (English)",
+      "saveCaption": "Lưu chú thích",
+      "moveUp": "Lên trước",
+      "moveDown": "Ra sau",
+      "remove": "Xoá",
+      "empty": "Chưa có ảnh nào.",
+      "errors": {
+        "tooLarge": "Ảnh này nặng quá.",
+        "notAnImage": "Tệp này không phải ảnh.",
+        "tooManyImages": "Mỗi lớp có tối đa 40 ảnh.",
+        "noFile": "Bạn chọn ảnh trước nhé.",
+        "failed": "Tải ảnh lên chưa được. Thử lại nhé."
+      },
+      "save": "Lưu Ghi Chép"
+    },
+    "toasts": {
+      "newEyebrow": "( Học viên mới đăng ký )",
+      "newMessage": "{title} · {seats}",
+      "paidEyebrow": "( Đã nhận học phí )",
+      "savedEyebrow": "( Đã lưu )",
+      "createdEyebrow": "( Đã tạo lớp )",
+      "deletedEyebrow": "( Đã xoá lớp )",
+      "checkedInEyebrow": "( Đã điểm danh )",
+      "undoneEyebrow": "( Đã hoàn tác )",
+      "cancelledEyebrow": "( Đã huỷ đăng ký )",
+      "refundEyebrow": "( Bắt đầu hoàn tiền )",
+      "refundedEyebrow": "( Đã hoàn tiền )",
+      "checkedEyebrow": "( Đã kiểm tra thanh toán )",
+      "photoEyebrow": "( Hình ảnh )",
+      "photosAdded": "Đã thêm {count} ảnh",
+      "photoRemoved": "Đã xoá ảnh",
+      "errorEyebrow": "( Chưa lưu được )",
+      "errorTitle": "Chưa cập nhật được",
+      "errorMessage": "Thử lại sau giây lát nhé.",
+      "hasBookings": "Lớp này đã có người đăng ký nên chỉ có thể huỷ lớp."
+    },
+    "login": {
+      "title": "Sổ Lớp Học",
+      "intro": "Đăng nhập để quản lý lớp học làm pizza: đăng ký, thanh toán, điểm danh và lưu niệm lớp học."
+    },
+    "demo": {
+      "eyebrow": "( Dữ liệu mẫu )",
+      "load": "Tạo lớp mẫu",
+      "clear": "Xoá lớp mẫu",
+      "loaded": "Đã thêm {count} lớp mẫu",
+      "cleared": "Đã xoá lớp mẫu"
+    },
+    "search": "Tìm lớp",
+    "searchPlaceholder": "Tên lớp học",
+    "classOne": "1 lớp",
+    "classOther": "{count} lớp",
+    "noMatch": "Không có lớp nào khớp.",
+    "stats": {
+      "upcoming": "Lớp sắp tới",
+      "seats": "Chỗ đã bán, lớp sắp tới",
+      "awaiting": "Chờ thanh toán",
+      "refunds": "Cần hoàn tiền"
+    }
+  },
+  "guestDesk": {
+    "eyebrow": "( Tra Cứu Khách )",
+    "title": "Khách Hàng",
+    "loginIntro": "Đăng nhập để xem các lượt đặt bàn và lớp học của một khách ở cùng một chỗ.",
+    "search": "Tìm khách",
+    "placeholder": "Số điện thoại, tên, email hoặc mã đặt",
+    "start": "Tìm khách bằng số điện thoại hoặc tên để xem tất cả lượt đặt bàn và lớp học của họ.",
+    "empty": "Không có khách nào khớp.",
+    "tableOne": "1 lượt đặt bàn",
+    "tableOther": "{count} lượt đặt bàn",
+    "classOne": "1 lượt đăng ký lớp",
+    "classOther": "{count} lượt đăng ký lớp",
+    "openTables": "Sổ đặt bàn ↗",
+    "openClasses": "Sổ lớp học ↗",
+    "history": "Mọi lượt đặt ↗",
+    "kinds": {
+      "table": "Đặt bàn",
+      "class": "Lớp học"
+    }
+  },
+  "common": {
+    "backToTop": "Lên đầu trang"
+  }
+}

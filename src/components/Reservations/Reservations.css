@@ -1,0 +1,460 @@
+/* ---------- list controls ---------- */
+
+/* where the bar sticks: just under the nav (its padding plus the logo) */
+:root {
+  --rs-stick-top: 5.5rem;
+}
+
+/* the page colour (--rs-bar-bg, set by the page) runs edge to edge behind
+   the bar and, once it sticks, up under the nav as well, so the list
+   scrolls away beneath both. Nothing clips the bar, so an open dropdown's
+   list can hang below it. The hairline only changes colour, so sticking
+   never changes the bar's height. */
+.rs-bar {
+  position: relative;
+  z-index: 20;
+  padding: 1.25rem 0;
+}
+
+.rs-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: calc(50% - 50vw);
+  bottom: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  border-bottom: 1px solid transparent;
+  background-color: var(--rs-bar-bg, var(--base-600));
+  transition: border-color 0.4s;
+}
+
+.rs-bar.is-sticky {
+  position: sticky;
+  top: var(--rs-stick-top);
+}
+
+.rs-bar.is-stuck::before {
+  top: calc(-1 * var(--rs-stick-top));
+  border-bottom-color: var(--base-400);
+}
+
+/* one line: search, a dropdown per filter, the sort, the count. Picking a
+   filter, flipping the sort or a changing count never moves the rest */
+.rs-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem 1.5rem;
+}
+
+.rs-search {
+  flex: 1 1 14rem;
+  min-width: 0;
+}
+
+/* the field's name is for screen readers; the icon and placeholder say it */
+.rs-search-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.rs-search .reserve-input {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.rs-search-icon {
+  flex-shrink: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  color: var(--base-300);
+}
+
+.rs-search .reserve-input input {
+  font-size: 1.15rem;
+}
+
+.rs-search input::-webkit-search-cancel-button,
+.rs-search input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.rs-inline-filters {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* every variant of a label is laid out in the same cell; only the current
+   one shows, so the label is always as wide as its widest variant */
+.rs-steady {
+  display: inline-grid;
+}
+
+.rs-steady > * {
+  grid-area: 1 / 1;
+}
+
+.rs-steady.align-end {
+  justify-items: end;
+}
+
+.rs-steady-sizer {
+  visibility: hidden;
+}
+
+.rs-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.rs-label,
+.rs-count {
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--base-300);
+}
+
+.rs-count {
+  flex-shrink: 0;
+}
+
+/* without a search box the count goes to the far end */
+.rs-controls.is-searchless .rs-count {
+  margin-left: auto;
+}
+
+.rs-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* same chips as the reserve popup's time slots */
+.rs-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.95rem;
+  border: 1px solid var(--base-400);
+  border-radius: 0.35rem;
+  background: none;
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--base-200);
+  cursor: pointer;
+  transition:
+    border-color 0.3s,
+    background-color 0.3s,
+    color 0.3s,
+    transform 0.35s ease;
+}
+
+.rs-chip:hover {
+  border-color: var(--base-200);
+  color: var(--base-100);
+}
+
+.rs-chip.active {
+  border-color: var(--base-100);
+  background-color: var(--base-100);
+  color: var(--base-500);
+}
+
+.rs-chip:active {
+  transform: scale(0.94);
+}
+
+.rs-chip:focus-visible {
+  outline: 1px dashed var(--base-200);
+  outline-offset: 3px;
+}
+
+/* the filter button only shows where the dropdowns don't fit */
+.rs-controls .rs-drawer-toggle {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --rs-stick-top: 4.75rem;
+  }
+
+  .rs-bar {
+    padding: 0.85rem 0;
+  }
+
+  /* a phone: the search and a filter button; the filters are in the
+     drawer it opens, the count sits under the search */
+  .rs-controls {
+    flex-wrap: wrap;
+    gap: 0.6rem 0.75rem;
+  }
+
+  .rs-search {
+    flex: 1 1 0;
+  }
+
+  .rs-inline-filters {
+    display: none;
+  }
+
+  .rs-controls .rs-drawer-toggle {
+    display: inline-flex;
+  }
+
+  .rs-count {
+    flex-basis: 100%;
+  }
+
+  .rs-controls.is-searchless .rs-count {
+    flex-basis: auto;
+  }
+}
+
+/* ---------- reservation ticket ---------- */
+
+.ticket {
+  --ticket-stub: 5.75rem;
+  --ticket-notch: 0.7rem;
+  --ticket-mask:
+    radial-gradient(
+        circle at var(--ticket-stub) 0,
+        transparent var(--ticket-notch),
+        #000 calc(var(--ticket-notch) + 0.5px)
+      )
+      top / 100% 51% no-repeat,
+    radial-gradient(
+        circle at var(--ticket-stub) 100%,
+        transparent var(--ticket-notch),
+        #000 calc(var(--ticket-notch) + 0.5px)
+      )
+      bottom / 100% 51% no-repeat;
+
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 9.5rem;
+  border-radius: 0.35rem;
+  background-color: var(--menu-paper);
+  font-family: var(--font-typewriter), monospace;
+  color: var(--menu-ink);
+  /* half-moon notches at both ends of the perforation */
+  -webkit-mask: var(--ticket-mask);
+  mask: var(--ticket-mask);
+  transition:
+    opacity 0.4s,
+    filter 0.4s;
+}
+
+.ticket p {
+  font-family: inherit;
+  color: inherit;
+}
+
+.ticket-stub {
+  display: flex;
+  flex: 0 0 var(--ticket-stub);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 1rem 0.5rem;
+  border-right: 2px dashed color-mix(in srgb, var(--menu-ink) 45%, transparent);
+  text-align: center;
+}
+
+.ticket-small,
+.ticket-top,
+.ticket-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ticket-day {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.ticket-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.8rem;
+  min-width: 0;
+  padding: 1.15rem 1.35rem 1.25rem;
+}
+
+/* on a narrow ticket the booking code drops under the label rather than
+   breaking in two */
+.ticket-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+}
+
+.ticket-top > :last-child {
+  white-space: nowrap;
+}
+
+.ticket .ticket-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.ticket-details {
+  display: flex;
+  gap: 2rem;
+}
+
+.ticket-details > div,
+.ticket .ticket-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.ticket-label {
+  opacity: 0.7;
+}
+
+.ticket-value {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.ticket .ticket-notes {
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.ticket-stamp {
+  position: absolute;
+  right: 1.1rem;
+  bottom: 1rem;
+  padding: 0.35rem 0.6rem;
+  border: 2px solid currentColor;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transform: rotate(-8deg);
+  opacity: 0.85;
+}
+
+/* the last lines stay clear of the stamp in the bottom corner */
+.ticket.has-stamp .ticket-notes,
+.ticket.has-stamp .ticket-cancel {
+  margin-right: 7rem;
+}
+
+/* past, cancelled and missed bookings: faded and crossed out */
+.ticket.is-inactive {
+  filter: saturate(0.25);
+  opacity: 0.55;
+}
+
+.ticket.is-inactive .ticket-crossable {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.ticket-cancel {
+  --hover-line-color: var(--menu-ink);
+  --hover-line-color-active: var(--menu-ink);
+  align-self: flex-start;
+  margin-top: 0.15rem;
+  font-family: var(--font-typewriter), monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.ticket-cancel:hover,
+.ticket-cancel:focus-visible {
+  opacity: 1;
+}
+
+/* ---------- a used ticket: checked in ---------- */
+
+/* the stub is torn off along the perforation and lies a little askew; each
+   piece keeps its side of one ragged tear */
+.ticket.is-torn {
+  --tear-gap: 0.45rem;
+  --tear-stub: polygon(0 0, calc(100% - 2px) 0%, calc(100% - 6px) 5%, calc(100% - 1px) 9%, calc(100% - 5px) 14%, calc(100% - 3px) 18%, calc(100% - 7px) 23%, calc(100% - 2px) 27%, calc(100% - 6px) 32%, calc(100% - 1px) 36%, calc(100% - 4px) 41%, calc(100% - 7px) 45%, calc(100% - 2px) 50%, calc(100% - 5px) 54%, calc(100% - 1px) 59%, calc(100% - 6px) 63%, calc(100% - 3px) 68%, calc(100% - 7px) 72%, calc(100% - 2px) 77%, calc(100% - 5px) 81%, calc(100% - 1px) 86%, calc(100% - 6px) 90%, calc(100% - 3px) 95%, calc(100% - 4px) 100%, 0 100%);
+  --tear-main: polygon(100% 0, 100% 100%, 4px 100%, 5px 95%, 2px 90%, 7px 86%, 3px 81%, 6px 77%, 1px 72%, 5px 68%, 2px 63%, 7px 59%, 3px 54%, 6px 50%, 1px 45%, 4px 41%, 7px 36%, 2px 32%, 6px 27%, 1px 23%, 5px 18%, 3px 14%, 7px 9%, 2px 5%, 6px 0%);
+
+  gap: var(--tear-gap);
+  background: none;
+  -webkit-mask: none;
+  mask: none;
+  /* a shadow that follows the torn edges */
+  filter: drop-shadow(0 0.5rem 0.9rem rgba(0, 0, 0, 0.28));
+}
+
+.ticket.is-torn .ticket-stub,
+.ticket.is-torn .ticket-main {
+  background-color: var(--menu-paper);
+}
+
+.ticket.is-torn .ticket-stub {
+  border-right: none;
+  border-radius: 0.35rem 0 0 0.35rem;
+  clip-path: var(--tear-stub);
+  transform: translate(-0.2rem, 0.3rem) rotate(-3.5deg);
+  transform-origin: 100% 0;
+  /* torn off as the page opens */
+  animation: ticket-tear 0.9s cubic-bezier(0.6, 0, 0.2, 1) 0.35s backwards;
+}
+
+.ticket.is-torn .ticket-main {
+  border-radius: 0 0.35rem 0.35rem 0;
+  clip-path: var(--tear-main);
+}
+
+/* checked in on an earlier day: torn, and faded like other past tickets */
+.ticket.is-torn.is-inactive {
+  filter: saturate(0.25) drop-shadow(0 0.5rem 0.9rem rgba(0, 0, 0, 0.28));
+}
+
+@keyframes ticket-tear {
+  from {
+    transform: translateX(var(--tear-gap));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticket.is-torn .ticket-stub {
+    animation: none;
+  }
+}

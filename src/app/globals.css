@@ -1,0 +1,347 @@
+:root {
+  /* Vietnamese stacks tone marks above and dots below, so it needs more room */
+  --heading-leading: 0.85;
+  /* one size for every route's hero heading; capped by height so it fits the page */
+  --hero-scale: 1;
+  --hero-size: clamp(3rem, min(9vw, 15svh) * var(--hero-scale), 14rem);
+  /* brand colours from the logo (navy #151d32, gold #e8bb5a), softened:
+     navy lifted for the backgrounds, gold lightened to a cream for text and
+     cards, so the pair reads calmly instead of gold-on-navy glare */
+  --base-100: #f2e6cc;
+  --base-200: #cfc3a5;
+  --base-300: #5a668e;
+  --base-400: #313e66;
+  --base-500: #242f50;
+  --base-600: #1c2541;
+  --accent: #e6c27c;
+  /* the shop's printed menu: golden paper, navy ink */
+  --menu-paper: #f3c246;
+  --menu-ink: #1c2640;
+}
+
+:root:lang(vi) {
+  --heading-leading: 1.12;
+  --hero-scale: 0.85;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--base-600);
+  font-family: var(--font-host-grotesk), sans-serif;
+  color: var(--base-100);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display), serif;
+  font-weight: 900;
+  line-height: var(--heading-leading);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(4rem, 12vw, 20rem);
+}
+
+h2 {
+  font-size: clamp(3rem, 8vw, 13rem);
+}
+
+h3 {
+  font-size: clamp(2rem, 5vw, 8rem);
+}
+
+h4 {
+  font-size: clamp(1.75rem, 3.5vw, 5.25rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 3vw, 4.5rem);
+}
+
+h6 {
+  font-size: clamp(1.25rem, 2vw, 4rem);
+}
+
+p {
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 1.15rem;
+  font-weight: 450;
+  line-height: 1.15;
+  letter-spacing: -0.025rem;
+  color: var(--base-200);
+}
+
+p.sm {
+  font-size: 1rem;
+}
+
+p.md {
+  font-size: 1.45rem;
+  letter-spacing: -0.035rem;
+}
+
+p.lg {
+  font-size: 1.75rem;
+  letter-spacing: -0.045rem;
+}
+
+.hero h1,
+.hero-heading h1,
+.menu-hero h2,
+.reservation-hero h2 {
+  font-size: var(--hero-size);
+}
+
+/* SplitText masks clip at the line box; extend them so diacritics survive */
+.line-mask,
+.word-mask {
+  padding-block: 0.2em;
+  margin-block: -0.2em;
+}
+
+p.mono {
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: var(--base-300);
+}
+
+a[href^="tel"],
+a[href^="mailto"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* full-bleed photos behind text: a soft navy veil keeps the cream headings
+   legible on bright food shots */
+.hero-img::after,
+.image-banner-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: color-mix(in srgb, var(--base-600) 40%, transparent);
+  pointer-events: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  height: 100%;
+  padding: 2.5rem;
+  margin: 0 auto;
+}
+
+.section-footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 2000px;
+  padding: 2.5rem;
+  transform: translateX(-50%);
+}
+
+.section-footer p {
+  color: var(--base-100);
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none !important;
+}
+
+::view-transition-group(root) {
+  z-index: auto !important;
+}
+
+::view-transition-image-pair(root) {
+  z-index: 1;
+  isolation: isolate;
+  will-change: transform, opacity, clip-path;
+}
+
+/* shared text-link hover (from the nav socials): dim -> bright, and an
+   underline wipes in from the left, out to the right.
+   `.is-active` holds the hovered look (current route, current locale).
+   Per-use knobs: --hover-line-color, --hover-line-color-active,
+   --hover-line-weight. */
+.hover-line {
+  position: relative;
+  display: inline-block;
+  /* the line lives inside the box so parent masks (SplitText lines,
+     clip-path reveals) never cut it off */
+  padding: 0 0 calc(var(--hover-line-weight, 1.25px) + 2px);
+  border: none;
+  background: none;
+  font: inherit;
+  text-decoration: none;
+  color: var(--hover-line-color, var(--base-300));
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.hover-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--hover-line-weight, 1.25px);
+  background: var(--hover-line-color-active, var(--base-100));
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.6, 0, 0.4, 1);
+  pointer-events: none;
+}
+
+.hover-line:hover,
+.hover-line:focus-visible,
+.hover-line.is-active {
+  color: var(--hover-line-color-active, var(--base-100));
+}
+
+.hover-line:hover::after,
+.hover-line:focus-visible::after,
+.hover-line.is-active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.hover-line:focus-visible {
+  outline: none;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+  animation: none !important;
+}
+
+::view-transition-new(root) {
+  z-index: 10000;
+  animation: none !important;
+}
+
+@media (max-width: 1000px) {
+  .container,
+  .section-footer {
+    padding: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  p.sm {
+    font-size: 0.9rem;
+  }
+
+  p.md {
+    font-size: 1.35rem;
+    letter-spacing: -0.035rem;
+  }
+
+  p.lg {
+    font-size: 1.5rem;
+    letter-spacing: -0.045rem;
+  }
+}
+
+/* touch screens: the outlined buttons (chips, desk tabs, dropdowns, the
+   filter button, class cards) can't be hovered, so pressing one shows the
+   look its hover has on a desktop and gives a little press */
+@media (hover: none) {
+  .rs-chip,
+  .desk-tab,
+  .rs-select,
+  .rs-filter-button,
+  .cd-class,
+  .dining-nav-button {
+    transition:
+      border-color 0.25s,
+      background-color 0.25s,
+      color 0.25s,
+      transform 0.25s ease;
+  }
+
+  .rs-chip:active,
+  .desk-tab:active,
+  .rs-select:active,
+  .rs-filter-button:active,
+  .cd-class:active {
+    border-color: var(--base-100);
+    color: var(--base-100);
+    transform: scale(0.95);
+  }
+
+  .rs-chip.active:active,
+  .desk-tab.is-active:active {
+    color: var(--base-500);
+  }
+
+  .dining-nav-button:active {
+    transform: scale(0.85);
+  }
+}
+
+/* long lists are drawn a few at a time (useIncremental): the marker that
+   asks for the next few, and the fade-up of the ones that arrive later */
+.list-sentinel {
+  display: block;
+  width: 100%;
+  height: 1px;
+}
+
+.list-item-in {
+  animation: list-item-in 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes list-item-in {
+  from {
+    opacity: 0;
+    translate: 0 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .list-item-in {
+    animation: none;
+  }
+}

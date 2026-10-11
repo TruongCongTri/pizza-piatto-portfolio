@@ -1,0 +1,650 @@
+.reserve-overlay {
+  --reserve-warn: #d0896b;
+
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  width: 100%;
+  height: 100svh;
+  background-color: var(--base-600);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+  visibility: hidden;
+  outline: none;
+}
+
+/* top bar sits exactly where the nav bar does */
+.reserve-bar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 2000px;
+  padding: 2.5rem;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.reserve-bar > * {
+  pointer-events: auto;
+}
+
+.reserve-close {
+  --hover-line-color: var(--base-100);
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.reserve-content {
+  position: relative;
+  display: flex;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 2000px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  transform: translateX(-100px) translateY(-100px) scale(1.5) rotate(-15deg);
+  transform-origin: left bottom;
+  opacity: 0.25;
+  will-change: opacity, transform;
+}
+
+.reserve-col-lg {
+  position: relative;
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* the photo is 75% of the screen tall (at most 700px) and centred */
+.reserve-content {
+  --reserve-photo-h: min(75svh, 700px);
+}
+
+/* from the photo's top edge down to the address line, so the title lines
+   up with the photo and the button with the address */
+.reserve-col-sm {
+  display: flex;
+  flex: 2;
+  align-self: stretch;
+  min-width: 0;
+  padding-top: calc((100svh - var(--reserve-photo-h)) / 2);
+  padding-bottom: 2.5rem;
+}
+
+.reserve-photo {
+  position: relative;
+  width: 45%;
+  height: var(--reserve-photo-h);
+}
+
+.reserve-preview-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0.35rem;
+}
+
+/* a slip of menu paper over the photo's corner */
+.reserve-note {
+  position: absolute;
+  right: -3rem;
+  bottom: 3rem;
+  width: min(22rem, 90%);
+  padding: 1.1rem 1.25rem;
+  border-radius: 0.3rem;
+  background-color: var(--menu-paper);
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.4);
+  font-family: var(--font-typewriter), monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--menu-ink);
+  transform: rotate(-2.5deg);
+}
+
+/* beside the photo the note is on it, so the form starts with the fields */
+.reserve-head .reserve-intro {
+  display: none;
+}
+
+.reserve-info {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* masked slide-up reveal, same motion as the nav links */
+.reserve-mask {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.reserve-reveal {
+  will-change: transform;
+}
+
+/* title and intro stay at the top and the button at the bottom; only the
+   fields between them scroll */
+.reserve-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 40rem;
+  height: 100%;
+  min-height: 0;
+}
+
+.reserve-head {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.reserve-panel h3 {
+  padding: 0.12em 0 0.08em;
+  color: var(--base-100);
+}
+
+/* fields fade out under the title and button, on whichever side has more
+   to scroll to (ReservePopup toggles .fade-top / .fade-bottom) */
+.reserve-body {
+  --fade-top: 0px;
+  --fade-bottom: 0px;
+  --fade-mask: linear-gradient(
+    to bottom,
+    transparent,
+    #000 var(--fade-top),
+    #000 calc(100% - var(--fade-bottom)),
+    transparent
+  );
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1.75rem;
+  min-height: 0;
+  padding: 0.5rem 0 1.5rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-mask-image: var(--fade-mask);
+  mask-image: var(--fade-mask);
+}
+
+.reserve-body.fade-top {
+  --fade-top: 2.5rem;
+}
+
+.reserve-body.fade-bottom {
+  --fade-bottom: 2.5rem;
+}
+
+.reserve-foot {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-top: 1.25rem;
+}
+
+.reserve-intro {
+  max-width: 28rem;
+}
+
+.reserve-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem 1.25rem;
+}
+
+/* field shell */
+.reserve-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+.reserve-label .mono {
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--base-300);
+  transition: color 0.4s;
+}
+
+/* the label clips its overflow (for the warning slide); Vietnamese capitals
+   carry tone marks above the line, so give them room inside the box */
+:lang(vi) .reserve-label .mono {
+  line-height: 1.5;
+}
+
+.reserve-warning {
+  white-space: nowrap;
+  transform: translateY(110%);
+  opacity: 0;
+  transition:
+    transform 0.5s cubic-bezier(0.6, 0, 0.4, 1),
+    opacity 0.5s;
+}
+
+.reserve-field.has-error .reserve-label .mono {
+  color: var(--reserve-warn);
+}
+
+/* hint ("( Optional )") and warning share the right side of the label */
+.reserve-label-side {
+  display: grid;
+  justify-items: end;
+}
+
+.reserve-label-side > * {
+  grid-area: 1 / 1;
+}
+
+.reserve-hint {
+  transition: opacity 0.4s;
+}
+
+.reserve-field.has-error .reserve-hint {
+  opacity: 0;
+}
+
+.reserve-field.has-error .reserve-warning {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* text inputs: bare line with an animated underline */
+.reserve-input {
+  position: relative;
+  display: block;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--base-400);
+  transition: border-color 0.4s;
+}
+
+.reserve-input input,
+.reserve-input textarea {
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  resize: none;
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 1.45rem;
+  font-weight: 450;
+  line-height: 1.2;
+  letter-spacing: -0.035rem;
+  color: var(--base-100);
+  caret-color: var(--base-100);
+  user-select: text;
+}
+
+.reserve-input input::placeholder,
+.reserve-input textarea::placeholder {
+  color: var(--base-400);
+}
+
+.reserve-input input:-webkit-autofill {
+  -webkit-text-fill-color: var(--base-100);
+  transition: background-color 9999s;
+}
+
+.reserve-input-line {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: var(--base-100);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+.reserve-input:focus-within .reserve-input-line {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.reserve-field.has-error .reserve-input {
+  border-color: var(--reserve-warn);
+}
+
+.reserve-field.has-error .reserve-input-line {
+  background: var(--reserve-warn);
+}
+
+/* guests stepper */
+.reserve-stepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--base-400);
+}
+
+.reserve-stepper button {
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--base-400);
+  border-radius: 50%;
+  background: none;
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 1.15rem;
+  line-height: 1;
+  color: var(--base-100);
+  cursor: pointer;
+  transition:
+    border-color 0.3s,
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.reserve-stepper button:hover:not(:disabled) {
+  border-color: var(--base-100);
+  background-color: var(--base-100);
+  color: var(--base-500);
+}
+
+.reserve-stepper button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.reserve-stepper-value {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.reserve-stepper-value span {
+  font-family: var(--font-display), serif;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--base-100);
+}
+
+.reserve-stepper-value em {
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.75rem;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--base-300);
+}
+
+/* date + time chips */
+.reserve-chips {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.reserve-days {
+  padding-bottom: 0.25rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.reserve-times {
+  flex-wrap: wrap;
+}
+
+.reserve-day,
+.reserve-time {
+  flex-shrink: 0;
+  border: 1px solid var(--base-400);
+  border-radius: 0.35rem;
+  background: none;
+  color: var(--base-200);
+  cursor: pointer;
+  transition:
+    border-color 0.3s,
+    background-color 0.3s,
+    color 0.3s,
+    transform 0.35s ease;
+}
+
+.reserve-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  width: 4.25rem;
+  padding: 0.75rem 0;
+}
+
+.reserve-day-weekday,
+.reserve-day-month {
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.reserve-day-number {
+  font-family: var(--font-display), serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: var(--heading-leading);
+}
+
+.reserve-time {
+  padding: 0.75rem 1.1rem;
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.reserve-day:hover,
+.reserve-time:hover {
+  border-color: var(--base-200);
+  color: var(--base-100);
+}
+
+.reserve-day.active,
+.reserve-time.active {
+  border-color: var(--base-100);
+  background-color: var(--base-100);
+  color: var(--base-500);
+}
+
+.reserve-day:active,
+.reserve-time:active {
+  transform: scale(0.94);
+}
+
+/* closed days (Sundays) */
+.reserve-day:disabled {
+  border-style: dashed;
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.reserve-day:disabled:hover {
+  border-color: var(--base-400);
+  color: var(--base-200);
+}
+
+/* no table left at that time for this many guests */
+.reserve-time:disabled {
+  border-style: dashed;
+  text-decoration: line-through;
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.reserve-time:disabled:hover {
+  border-color: var(--base-400);
+  color: var(--base-200);
+}
+
+/* bigger groups than one table: call the shop */
+.reserve-group-note {
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--base-300);
+}
+
+.reserve-group-note a {
+  color: var(--base-200);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.reserve-time-hint {
+  padding: 0.75rem 0;
+  color: var(--base-300);
+}
+
+.reserve-field.has-error .reserve-day,
+.reserve-field.has-error .reserve-time {
+  border-color: color-mix(in srgb, var(--reserve-warn) 55%, transparent);
+}
+
+.reserve-day:focus-visible,
+.reserve-time:focus-visible,
+.reserve-stepper button:focus-visible,
+.reserve-overlay .slide-button:focus-visible {
+  outline: 1px dashed var(--base-200);
+  outline-offset: 3px;
+}
+
+/* missing-fields notice above the button */
+.reserve-missing {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+.reserve-missing > p {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 0;
+  overflow: hidden;
+  color: var(--reserve-warn);
+  transform: translateY(100%);
+  opacity: 0;
+  transition:
+    transform 0.5s cubic-bezier(0.6, 0, 0.4, 1),
+    opacity 0.5s;
+}
+
+.reserve-missing.is-visible {
+  grid-template-rows: 1fr;
+}
+
+.reserve-missing.is-visible > p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reserve-missing-dot {
+  flex-shrink: 0;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--reserve-warn);
+  animation: reserve-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes reserve-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+/* thank-you view; beats p.mono's tight line-height, which let the reveal
+   mask clip Vietnamese tone marks */
+.reserve-success .reserve-email-note {
+  line-height: 1.4;
+}
+
+.reserve-success-actions {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem 2.5rem;
+}
+
+.reserve-track-link {
+  --hover-line-color: var(--base-200);
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* short laptop screens: a smaller title and intro leave the fields more
+   room to scroll */
+@media (max-height: 760px) and (min-width: 901px) {
+  .reserve-panel h3 {
+    font-size: min(5vw, 9svh);
+  }
+
+  .reserve-head .reserve-intro {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .reserve-bar {
+    padding: 2rem 1.5rem;
+  }
+
+  .reserve-head .reserve-intro {
+    display: block;
+  }
+
+  .reserve-content {
+    padding: 0 1.5rem;
+  }
+
+  .reserve-col-lg {
+    display: none;
+  }
+
+  .reserve-col-sm {
+    padding: 6rem 0 1.5rem;
+  }
+
+  .reserve-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reserve-input input,
+  .reserve-input textarea {
+    font-size: 1.2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reserve-missing-dot {
+    animation: none;
+  }
+}

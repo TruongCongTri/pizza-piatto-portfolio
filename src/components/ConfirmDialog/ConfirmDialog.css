@@ -1,0 +1,74 @@
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: color-mix(in srgb, var(--base-600) 80%, transparent);
+}
+
+.confirm-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 34rem;
+  max-height: calc(100svh - 3rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 2.5rem;
+  border: 1px solid var(--base-400);
+  border-radius: 0.35rem;
+  background-color: var(--base-500);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+  will-change: transform, clip-path;
+}
+
+.confirm-panel.is-wide {
+  max-width: 46rem;
+}
+
+.confirm-panel.is-xl {
+  max-width: 64rem;
+}
+
+.confirm-panel h4 {
+  color: var(--base-100);
+}
+
+.confirm-panel .md {
+  line-height: 1.3;
+}
+
+.confirm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 0.75rem;
+}
+
+.confirm-cancel {
+  --hover-line-color: var(--base-200);
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.confirm-cancel:disabled {
+  opacity: 0.5;
+  cursor: progress;
+}
+
+.confirm-panel .slide-button:focus-visible {
+  outline: 1px dashed var(--base-200);
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .confirm-panel {
+    padding: 2rem 1.5rem;
+  }
+}

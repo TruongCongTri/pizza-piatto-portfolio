@@ -1,0 +1,193 @@
+.track {
+  --track-warn: #d0896b;
+  /* behind the sticky filter bar */
+  --rs-bar-bg: var(--base-500);
+
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  /* the filter bar's backdrop is as wide as the screen; never let it
+     scroll sideways (clip, unlike hidden, keeps sticky working) */
+  overflow-x: clip;
+  background-color: var(--base-500);
+}
+
+.track .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.track-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 64rem;
+  text-align: center;
+}
+
+.track-head h2 {
+  font-size: clamp(3rem, 7vw, 9rem);
+}
+
+.track .track-intro {
+  max-width: 44rem;
+  font-weight: 400;
+}
+
+.track-loading {
+  padding: 2rem 0;
+}
+
+/* phone and code steps */
+.track-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  width: 100%;
+  max-width: 34rem;
+}
+
+.track .track-sent {
+  line-height: 1.4;
+  color: var(--base-100);
+}
+
+.track .track-notice {
+  line-height: 1.4;
+  color: var(--track-warn);
+}
+
+.track-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem 2.5rem;
+  padding-top: 0.5rem;
+}
+
+.track-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.75rem;
+}
+
+.track-links .hover-line,
+.track-account .hover-line {
+  --hover-line-color: var(--base-200);
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.track-links .hover-line:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.track .slide-button:focus-visible {
+  outline: 1px dashed var(--base-200);
+  outline-offset: 3px;
+}
+
+/* signed in: the tickets, with a screen of room under them so even a
+   short list scrolls far enough to show the filter bar sticking */
+.track-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 82rem;
+  padding-bottom: 70svh;
+}
+
+.track-list .rs-results {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-top: 1rem;
+}
+
+.track-account {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--base-400);
+}
+
+.track-account .mono {
+  line-height: 1.2;
+  color: var(--base-200);
+}
+
+.track-tickets {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 26rem), 1fr));
+  gap: 1rem;
+}
+
+.track .track-empty {
+  padding: 3rem 0;
+  text-align: center;
+  color: var(--base-300);
+}
+
+.track-book {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+:lang(vi) .track-head h2 {
+  font-size: clamp(2.5rem, 6vw, 8rem);
+}
+
+@media (max-width: 1000px) {
+  .track .container {
+    gap: 2.5rem;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* a class booking: its ticket, then where it stands and a way into it */
+.track-class {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.track-class-foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem 1.25rem;
+  padding: 0 0.25rem;
+}
+
+.track .track-class-foot .mono {
+  line-height: 1.2;
+  color: var(--base-200);
+}
+
+.track-class-foot .hover-line,
+.track-classes-link {
+  --hover-line-color: var(--base-200);
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.track-book {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem 2.5rem;
+}

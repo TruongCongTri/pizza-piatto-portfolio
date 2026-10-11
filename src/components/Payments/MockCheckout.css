@@ -1,0 +1,154 @@
+/* the test checkout: deliberately plainer than the shop's own pages, like
+   a payment provider's page would be */
+.mockpay {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  background-color: var(--base-600);
+}
+
+.mockpay .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 9rem;
+  padding-bottom: 6rem;
+}
+
+.mockpay-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  width: 100%;
+  max-width: 30rem;
+  padding: 2rem;
+  border: 1px dashed var(--base-300);
+  border-radius: 0.75rem;
+  background-color: var(--base-500);
+}
+
+.mockpay-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mockpay-head h4 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  color: var(--base-100);
+}
+
+.mockpay .mockpay-notice {
+  line-height: 1.4;
+  color: var(--accent);
+}
+
+.mockpay-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.mockpay-rows > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--base-400);
+}
+
+.mockpay-rows dt {
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--base-300);
+}
+
+.mockpay-rows dd {
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.95rem;
+  text-align: right;
+  overflow-wrap: anywhere;
+  color: var(--base-100);
+}
+
+.mockpay-rows .mockpay-amount {
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.mockpay-status.is-paid {
+  color: #9fd3a5;
+}
+
+.mockpay-status.is-failed,
+.mockpay-status.is-cancelled,
+.mockpay-status.is-expired {
+  color: #d0896b;
+}
+
+.mockpay-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.mockpay .mockpay-actions p {
+  line-height: 1.4;
+}
+
+.mockpay-pay {
+  width: 100%;
+  padding: 1.05rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  background-color: var(--base-100);
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--base-600);
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s;
+}
+
+.mockpay-pay:hover:not(:disabled) {
+  transform: scale(1.02);
+}
+
+.mockpay-pay:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.mockpay-more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.mockpay-more .rs-chip {
+  white-space: normal;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.mockpay-cancel {
+  --hover-line-color: var(--base-200);
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  .mockpay .container {
+    padding-top: 7.5rem;
+  }
+
+  .mockpay-card {
+    padding: 1.5rem;
+  }
+}

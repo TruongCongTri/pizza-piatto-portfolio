@@ -1,0 +1,48 @@
+.status-page {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  background-color: var(--base-600);
+}
+
+.status-page .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  min-height: 100svh;
+  text-align: center;
+}
+
+.status-page h1 {
+  color: var(--base-100);
+}
+
+.status-page h3 {
+  color: var(--base-200);
+}
+
+.status-page-message {
+  max-width: 36rem;
+}
+
+.status-page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.status-page-actions:has(.status-page-link) {
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.status-page-link {
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}

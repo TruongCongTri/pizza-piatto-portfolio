@@ -1,0 +1,202 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  overflow: hidden;
+  background: var(--base-600);
+  transition:
+    opacity 0.7s ease,
+    visibility 0.7s ease;
+}
+
+.preloader.is-exiting {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* the dishes drifting behind (Preloader.jsx), under a navy veil that is
+   darkest behind the title so it reads */
+.preloader-drift {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  gap: 0.75rem;
+  width: 112%;
+  margin-left: -6%;
+  opacity: 0;
+  animation: preloader-drift-in 1.4s ease 0.15s forwards;
+}
+
+.preloader-drift::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at center, color-mix(in srgb, var(--base-600) 88%, transparent) 0%, transparent 70%),
+    color-mix(in srgb, var(--base-600) 66%, transparent);
+}
+
+.preloader-drift-col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+  will-change: transform;
+  animation: preloader-drift-up 70s linear infinite;
+}
+
+/* every other column goes the other way, a little faster */
+.preloader-drift-col:nth-child(even) {
+  animation-name: preloader-drift-down;
+  animation-duration: 55s;
+}
+
+.preloader-drift-tile {
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 0.35rem;
+  aspect-ratio: 4 / 5;
+  background-color: var(--base-500);
+}
+
+/* the photos are listed twice: moving a column by half (plus half a gap)
+   brings it back to where it started, so the loop doesn't jump */
+@keyframes preloader-drift-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-50% - 0.375rem));
+  }
+}
+
+@keyframes preloader-drift-down {
+  from {
+    transform: translateY(calc(-50% - 0.375rem));
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes preloader-drift-in {
+  to {
+    opacity: 1;
+  }
+}
+
+.preloader-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.preloader-title-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.preloader-title {
+  white-space: nowrap;
+  text-align: center;
+  line-height: var(--heading-leading);
+}
+
+.preloader-title-base {
+  color: color-mix(in srgb, var(--base-100) 16%, transparent);
+}
+
+.preloader-title-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  overflow: hidden;
+  color: var(--accent);
+  will-change: width;
+}
+
+.preloader-action-slot {
+  position: relative;
+  min-width: 16rem;
+  height: 3.75rem;
+}
+
+.preloader-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  white-space: nowrap;
+  font-family: var(--font-dm-mono), monospace;
+  text-transform: uppercase;
+  color: var(--base-200);
+  transform: translate(-50%, -50%);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+.preloader-loading.is-hidden {
+  opacity: 0;
+  transform: translate(-50%, calc(-50% - 6px));
+  pointer-events: none;
+}
+
+.preloader-button-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(-50%, calc(-50% + 10px));
+  pointer-events: none;
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+  transition-delay: 0.35s;
+}
+
+.preloader-button-wrap.is-visible {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+}
+
+@media (max-width: 1000px) {
+  .preloader {
+    padding: 1.5rem;
+  }
+
+  /* fewer, larger dishes on narrow screens */
+  .preloader-drift-col:nth-child(n + 5) {
+    display: none;
+  }
+
+  .preloader-inner {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .preloader-drift-col:nth-child(n + 4) {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preloader-drift-col {
+    animation: none;
+  }
+}

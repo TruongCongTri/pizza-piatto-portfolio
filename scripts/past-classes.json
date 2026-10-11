@@ -1,0 +1,762 @@
+[
+  {
+    "source": "https://www.facebook.com/permalink.php?story_fbid=pfbid034ogwouzqTmguUxS6ki5XxornDj3QAAsHbR5ACtMyDZmEPhYpbqweouxpHYRFn5xGl&id=100078662955818",
+    "title": {
+      "vi": "Lớp pizza khoá 1",
+      "en": "Pizza Class: Course 1"
+    },
+    "summary": {
+      "vi": "Lớp pizza đầu tiên của tiệm: 3 ngày học tại trường Accademia Pizzaioli Vietnam.",
+      "en": "The shop's first pizza class: three days at the Accademia Pizzaioli Vietnam school."
+    },
+    "description": {
+      "vi": "Lớp học có giáo trình lý thuyết xen lẫn thực hành, dựa trên giáo trình từ trường Accademia Pizzaioli, tập trung vào dough Napoli với 2 dòng: cổ điển (ít nước) và đương đại (nhiều nước). Mỗi ngày học viên đều thực hành đánh dough và mở dough; tiệm hướng dẫn 3 loại xốt nền và cách nấu dầu ớt của tiệm, và chia sẻ về vận hành, bảo quản dough và thực phẩm từ chính kinh nghiệm của tiệm.\n\nLớp dùng cối trộn bột Sunmix, lò Effeuno và Moretti Forni, cùng 2 dòng bột của AB Mauri, cũng là 2 dòng bột tiệm dùng khi dự thi pizza tại Ý hồi tháng 1. Sau khoá học, tiệm giải đáp trong 1 tháng khi học viên thực hành tại nhà.",
+      "en": "The course mixes theory and practice, based on the Accademia Pizzaioli curriculum, and centres on Neapolitan dough in two styles: classic (lower hydration) and contemporary (higher hydration). Every day students mix and open dough; the shop teaches three base sauces and its chili oil, and shares how it runs its kitchen and keeps dough and ingredients, from its own experience.\n\nThe class used a Sunmix dough mixer, Effeuno and Moretti Forni ovens, and two AB Mauri flours, the same flours the shop used at its pizza competition in Italy that January. For a month after the course, the shop answers students' questions as they practise at home."
+    },
+    "learn": {
+      "vi": "2 dòng dough Napoli: cổ điển (ít nước) và đương đại (nhiều nước)\nĐánh bột, bảo quản dough khi lên men dài ngày và mở dough\n3 loại xốt nền và cách nấu dầu ớt của tiệm\nVận hành, bảo quản dough và thực phẩm, từ kinh nghiệm của tiệm\nBài thi ngày cuối",
+      "en": "Two Neapolitan doughs: classic (lower hydration) and contemporary (higher hydration)\nMixing, keeping dough through a long fermentation, and opening it\nThree base sauces and the shop's chili oil\nRunning a kitchen and keeping dough and ingredients, from the shop's experience\nA test on the last day"
+    },
+    "sessions": [
+      {
+        "date": "2026-05-12",
+        "start": "09:00",
+        "end": "17:00"
+      },
+      {
+        "date": "2026-05-13",
+        "start": "09:00",
+        "end": "17:00"
+      },
+      {
+        "date": "2026-05-14",
+        "start": "09:00",
+        "end": "17:00"
+      }
+    ],
+    "location": {
+      "vi": "Bếp demo Charles Wembley (trường Accademia Pizzaioli Vietnam), 14/7A Thân Nhân Trung, Tân Bình, TP.HCM",
+      "en": "Charles Wembley demo kitchen (Accademia Pizzaioli Vietnam school), 14/7A Thân Nhân Trung, Tân Bình, Ho Chi Minh City"
+    },
+    "capacity": 0,
+    "price": 15000000,
+    "instructor": "Phuong Huynh",
+    "status": "published",
+    "bookingClosesHours": 24,
+    "refundUntilHours": 72,
+    "recap": {
+      "text": {
+        "vi": "Ngày 1: Ngày đầu học khá nặng, mọi người vừa hấp thụ kiến thức, vừa thực hành Pizza Cổ Điển, Biga và Pizza Đương Đại, vừa tập mở dough và cho dough vào lò. Ai cũng nghiêm túc nghe giảng và hăng hái thực hành, kể cả những người đã có kinh nghiệm và những người chưa có.\n\nNgày 2: Đầu ngày vẫn ôn lý thuyết. Trưa, sau khi hướng dẫn làm xốt, cả lớp thưởng thức pasta ngay tại chỗ do chef Quyền nấu, và có pizza mang về.\n\nNgày 3: Mọi người đã cố gắng hết sức để hoàn thành phần thi, và lớp đầu tiên còn tặng hoa cho cô giáo.\n\nLớp có đến 4 bạn chưa từng làm bánh bao giờ; 2 bạn trong số đó sau khoá học đã rất chăm luyện tập tại nhà và gửi bài cho cô sửa.",
+        "en": "Day 1: A heavy first day: taking in the theory while practising classic pizza, biga and contemporary pizza, opening dough and getting it into the oven. Everyone listened closely and threw themselves into the practice, with or without experience.\n\nDay 2: The day began with a review of the theory. At lunch, after the sauce lesson, the class ate pasta cooked on the spot by chef Quyền, and took pizza home.\n\nDay 3: Everyone gave the test their all, and the first class even brought the teacher flowers.\n\nFour students had never baked before; two of them kept practising at home after the course and sent their bakes in for corrections."
+      }
+    },
+    "cover": "/classes/lop-pizza-khoa-1/01.jpg",
+    "photos": [
+      {
+        "url": "/classes/lop-pizza-khoa-1/01.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Lớp đầu tiên của tiệm",
+          "en": "The shop's first class"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-1/02.jpg",
+        "width": 1351,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-1/03.jpg",
+        "width": 1351,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-1/04.jpg",
+        "width": 1351,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-1/05.jpg",
+        "width": 1352,
+        "height": 1800,
+        "caption": {
+          "vi": "",
+          "en": ""
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-1/06.jpg",
+        "width": 1352,
+        "height": 1800,
+        "caption": {
+          "vi": "",
+          "en": ""
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-1/07.jpg",
+        "width": 1351,
+        "height": 1800,
+        "caption": {
+          "vi": "",
+          "en": ""
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-1/08.jpg",
+        "width": 1351,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 2: pasta do chef Quyền nấu cho cả lớp",
+          "en": "Day 2: pasta cooked for the class by chef Quyền"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-1/09.jpg",
+        "width": 1351,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 2",
+          "en": "Day 2"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-1/10.jpg",
+        "width": 1351,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 2",
+          "en": "Day 2"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-1/11.jpg",
+        "width": 1351,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-1/12.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 3: thành phẩm sau 3 ngày học",
+          "en": "Day 3: results after three days"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-1/13.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 3: thành phẩm sau 3 ngày học",
+          "en": "Day 3: results after three days"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-1/14.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 3",
+          "en": "Day 3"
+        }
+      }
+    ]
+  },
+  {
+    "source": "https://www.facebook.com/permalink.php?story_fbid=pfbid03mqvyJCfaUFwV8HzRvH1UCMCrFFzAXF7d3xHhnEpwH7ctB5GMcCpnyShS6LAqLi3l&id=100078662955818",
+    "title": {
+      "vi": "Lớp pizza khoá 2",
+      "en": "Pizza Class: Course 2"
+    },
+    "summary": {
+      "vi": "Lớp tháng 6: 3 ngày học dough cổ điển và đương đại, tối đa 9 học viên.",
+      "en": "The June class: three days of classic and contemporary dough, for at most nine students."
+    },
+    "description": {
+      "vi": "Lớp tập trung vào dough Napoli với 2 dòng: cổ điển (đánh dough trực tiếp) và đương đại (dùng biga). Lý thuyết được chọn lọc dựa trên giáo trình từ trường Accademia Pizzaioli Vietnam, và mỗi ngày học viên đều thực hành đánh dough, mở dough và nướng bánh.\n\nNgày đầu học lý thuyết và nấu dầu ớt theo công thức của tiệm; trưa cả lớp ăn pizza của cả 2 dòng để thấy sự khác nhau. Ngày thứ 2 ôn lý thuyết, học 3 loại xốt nền (xốt cà, pesto, kem tỏi) và xem làm 3 món pasta từ các xốt này (pasta là phần phụ, không thực hành). Ngày cuối thi lý thuyết và thực hành.\n\nLớp dành 60% thời gian cho thực hành.",
+      "en": "The class is about Neapolitan dough in two styles: classic (direct dough) and contemporary (with biga). The theory is drawn from the curriculum of the Accademia Pizzaioli Vietnam school, and every day students mix, open and bake their own dough.\n\nDay one covers the theory and the shop's chili oil; lunch is pizza in both styles, to taste the difference. Day two reviews the theory and teaches three base sauces (tomato, pesto and garlic cream), with three pastas made from them as a demonstration. The last day ends with a written and a practical test.\n\n60% of the class time is hands-on practice."
+    },
+    "learn": {
+      "vi": "Bột, men, muối, nước: vì sao dough thay đổi qua các ngày ủ, ủ ngắn và ủ dài khác nhau ra sao\n2 dòng dough Napoli: cổ điển (đánh trực tiếp) và đương đại (dùng biga)\nĐánh dough, mở dough và nướng bánh mỗi ngày\n3 loại xốt nền (xốt cà, pesto, kem tỏi) và dầu ớt theo công thức của tiệm\n3 món pasta từ 3 loại xốt nền (phần phụ, không thực hành)\nBài thi lý thuyết và thực hành ngày cuối",
+      "en": "Flour, yeast, salt and water: why dough changes over the days it ferments, and how a short rise differs from a long one\nTwo Neapolitan doughs: classic (direct) and contemporary (with biga)\nMixing, opening and baking dough every day\nThree base sauces (tomato, pesto, garlic cream) and the shop's chili oil\nThree pastas made from the base sauces (a demonstration, not hands-on)\nA written and a practical test on the last day"
+    },
+    "sessions": [
+      {
+        "date": "2026-06-30",
+        "start": "",
+        "end": ""
+      },
+      {
+        "date": "2026-07-01",
+        "start": "",
+        "end": ""
+      },
+      {
+        "date": "2026-07-02",
+        "start": "",
+        "end": ""
+      }
+    ],
+    "location": {
+      "vi": "Bếp demo công ty Charles Wembley, 14/7A Thân Nhân Trung, P. Tân Bình, TP.HCM",
+      "en": "Charles Wembley demo kitchen, 14/7A Thân Nhân Trung, Tân Bình, Ho Chi Minh City"
+    },
+    "capacity": 9,
+    "price": 15000000,
+    "instructor": "Phuong Huynh",
+    "status": "published",
+    "bookingClosesHours": 24,
+    "refundUntilHours": 72,
+    "recap": {
+      "text": {
+        "vi": "Vậy là đã xong lớp pizza khoá 2. Dạy xong lớp nào cũng khá mệt nhưng vui.\n\nHọc viên khoá 2 với 2 dòng bánh cổ điển và đương đại: dough được các bạn tự đánh, tự canh nở và tự nướng. Khoá này các bạn đánh dough khá tốt nên sản phẩm cũng khá đẹp mắt.\n\nỞ phần thi thực hành, các bạn thi cả 2 dòng dough, với dough tự chuẩn bị từ 2 ngày trước, và thành phẩm của 2 dòng nhìn khác biệt rõ rệt.",
+        "en": "That's course 2 done. Every class is tiring to teach, but fun.\n\nCourse 2 with both styles, classic and contemporary: the students mixed, proofed and baked their own dough. They handled the dough well, and it showed in the pizzas.\n\nIn the practical test they baked both styles, from dough they had made two days before, and the two came out clearly different."
+      }
+    },
+    "cover": "/classes/lop-pizza-khoa-2/01.jpg",
+    "photos": [
+      {
+        "url": "/classes/lop-pizza-khoa-2/01.jpg",
+        "width": 1800,
+        "height": 1350,
+        "caption": {
+          "vi": "Khoá 2 cùng thành phẩm",
+          "en": "Course 2 with their pizzas"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-2/02.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Lớp đã sẵn sàng",
+          "en": "The classroom, ready"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-2/03.jpg",
+        "width": 1364,
+        "height": 1800,
+        "caption": {
+          "vi": "Giờ lý thuyết",
+          "en": "Theory"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-2/04.jpg",
+        "width": 1364,
+        "height": 1800,
+        "caption": {
+          "vi": "Giờ lý thuyết",
+          "en": "Theory"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-2/05.jpg",
+        "width": 1364,
+        "height": 1800,
+        "caption": {
+          "vi": "Đánh dough",
+          "en": "Mixing the dough"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-2/06.jpg",
+        "width": 1364,
+        "height": 1800,
+        "caption": {
+          "vi": "",
+          "en": ""
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-2/07.jpg",
+        "width": 1364,
+        "height": 1800,
+        "caption": {
+          "vi": "Chia dough",
+          "en": "Balling the dough"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-2/08.jpg",
+        "width": 1364,
+        "height": 1800,
+        "caption": {
+          "vi": "",
+          "en": ""
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-2/09.jpg",
+        "width": 1364,
+        "height": 1800,
+        "caption": {
+          "vi": "Cho bánh vào lò",
+          "en": "Into the oven"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-2/10.jpg",
+        "width": 1364,
+        "height": 1800,
+        "caption": {
+          "vi": "",
+          "en": ""
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-2/11.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Thành phẩm 2 dòng cổ điển và đương đại",
+          "en": "Classic and contemporary, side by side"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-2/12.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Thành phẩm 2 dòng cổ điển và đương đại",
+          "en": "Classic and contemporary, side by side"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-2/13.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Thành phẩm 2 dòng cổ điển và đương đại",
+          "en": "Classic and contemporary, side by side"
+        }
+      }
+    ]
+  },
+  {
+    "source": "https://www.facebook.com/permalink.php?story_fbid=pfbid0KNyff1SmuQa5KUCWfyzP8zrTqmZ8zpYTWBeLXsDo2pwbUPstYjUwVFD8QaAMZh67l&id=100078662955818",
+    "title": {
+      "vi": "Lớp pizza đương đại tại Đà Nẵng",
+      "en": "Contemporary Pizza Class in Da Nang"
+    },
+    "summary": {
+      "vi": "Một ngày chia sẻ về dòng pizza đương đại, Piatto phối hợp cùng Charles Wembley.",
+      "en": "A one-day session on contemporary pizza, run by Piatto with Charles Wembley."
+    },
+    "description": {
+      "vi": "Piatto phối hợp cùng công ty Charles Wembley tổ chức 1 buổi chia sẻ với các bạn yêu thích dòng pizza đương đại mà tiệm đang kinh doanh. Tại buổi học, tiệm chia sẻ kiến thức sơ bộ về bột, men, muối, nước và cách đánh dough của tiệm, rồi cùng giải đáp những thắc mắc mà mọi người gặp phải khi làm pizza. Cuối buổi, mỗi người được tự tay nướng pizza đem về.\n\nGiảng dạy: Chef Phuong Huynh và Chef Quyen Truong. Số lượng: 20 người. Học phí 3.000.000 ₫/người, ưu đãi 2.000.000 ₫ khi đăng ký đến hết 31/7.",
+      "en": "Piatto and Charles Wembley ran a session for people who love the contemporary style of pizza the shop makes. It covered the basics of flour, yeast, salt and water and how the shop mixes its dough, then answered the questions people had about their own pizza making. At the end, everyone baked a pizza to take home.\n\nTaught by Chef Phuong Huynh and Chef Quyen Truong, for 20 people. 3,000,000 ₫ per person, or 2,000,000 ₫ for those who signed up by 31 July."
+    },
+    "learn": {
+      "vi": "Kiến thức sơ bộ về bột, men, muối, nước\nCách đánh dough của tiệm\nGiải đáp thắc mắc khi tự làm pizza\nTự tay nướng pizza đem về",
+      "en": "The basics of flour, yeast, salt and water\nHow the shop mixes its dough\nAnswers to the questions you have about your own pizza making\nBaking a pizza to take home"
+    },
+    "sessions": [
+      {
+        "date": "2026-08-19",
+        "start": "10:00",
+        "end": "16:00"
+      }
+    ],
+    "location": {
+      "vi": "Charles Wembley Đà Nẵng, 28 Nại Nam, P. Hòa Cường, Đà Nẵng",
+      "en": "Charles Wembley Da Nang, 28 Nai Nam Street, Hoa Cuong Ward, Da Nang"
+    },
+    "capacity": 20,
+    "price": 3000000,
+    "instructor": "Phuong Huynh, Quyen Truong",
+    "status": "published",
+    "bookingClosesHours": 24,
+    "refundUntilHours": 72,
+    "recap": {
+      "text": {
+        "vi": "",
+        "en": ""
+      }
+    },
+    "cover": "/classes/lop-pizza-da-nang/01.jpg",
+    "photos": [
+      {
+        "url": "/classes/lop-pizza-da-nang/01.jpg",
+        "width": 1440,
+        "height": 1800,
+        "caption": {
+          "vi": "Poster của lớp",
+          "en": "The class poster"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-da-nang/02.jpg",
+        "width": 675,
+        "height": 1200,
+        "caption": {
+          "vi": "Dough chuẩn bị trước cho buổi học",
+          "en": "Dough made ahead for the class"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-da-nang/03.jpg",
+        "width": 675,
+        "height": 1200,
+        "caption": {
+          "vi": "Nướng thử trước buổi học",
+          "en": "A test bake before the class"
+        }
+      }
+    ]
+  },
+  {
+    "source": "https://www.facebook.com/permalink.php?story_fbid=pfbid02FinFxmTQoy4ASmjc9ZCYkiuHMt3iuX5L6CGA46UmqajTRKFU4HaTBKKMhsH7vVzal&id=100078662955818",
+    "title": {
+      "vi": "Lớp pizza khoá 3",
+      "en": "Pizza Class: Course 3"
+    },
+    "summary": {
+      "vi": "Lớp tháng 8, kín chỗ từ tháng 7.",
+      "en": "The August class, fully booked in July."
+    },
+    "description": {
+      "vi": "Lớp tập trung vào dough Napoli với 2 dòng: cổ điển (đánh dough trực tiếp) và đương đại (dùng biga). Lý thuyết được chọn lọc dựa trên giáo trình từ trường Accademia Pizzaioli Vietnam, và mỗi ngày học viên đều thực hành đánh dough, mở dough và nướng bánh.\n\nNgày đầu học lý thuyết và nấu dầu ớt theo công thức của tiệm; trưa cả lớp ăn pizza của cả 2 dòng để thấy sự khác nhau. Ngày thứ 2 ôn lý thuyết, học 3 loại xốt nền (xốt cà, pesto, kem tỏi) và xem làm 3 món pasta từ các xốt này (pasta là phần phụ, không thực hành). Ngày cuối thi lý thuyết và thực hành.\n\nTừ khoá này, bài thi cuối khoá được chấm theo thang điểm tiêu chuẩn hơn, theo cách chấm thi cô được hướng dẫn tại trường Accademia Pizzaioli Vietnam.",
+      "en": "The class is about Neapolitan dough in two styles: classic (direct dough) and contemporary (with biga). The theory is drawn from the curriculum of the Accademia Pizzaioli Vietnam school, and every day students mix, open and bake their own dough.\n\nDay one covers the theory and the shop's chili oil; lunch is pizza in both styles, to taste the difference. Day two reviews the theory and teaches three base sauces (tomato, pesto and garlic cream), with three pastas made from them as a demonstration. The last day ends with a written and a practical test.\n\nFrom this course on, the final test is marked on a more standard scale, the way the teacher was shown to mark at the Accademia Pizzaioli Vietnam school."
+    },
+    "learn": {
+      "vi": "Bột, men, muối, nước: vì sao dough thay đổi qua các ngày ủ, ủ ngắn và ủ dài khác nhau ra sao\n2 dòng dough Napoli: cổ điển (đánh trực tiếp) và đương đại (dùng biga)\nĐánh dough, mở dough và nướng bánh mỗi ngày\n3 loại xốt nền (xốt cà, pesto, kem tỏi) và dầu ớt theo công thức của tiệm\n3 món pasta từ 3 loại xốt nền (phần phụ, không thực hành)\nBài thi lý thuyết và thực hành ngày cuối",
+      "en": "Flour, yeast, salt and water: why dough changes over the days it ferments, and how a short rise differs from a long one\nTwo Neapolitan doughs: classic (direct) and contemporary (with biga)\nMixing, opening and baking dough every day\nThree base sauces (tomato, pesto, garlic cream) and the shop's chili oil\nThree pastas made from the base sauces (a demonstration, not hands-on)\nA written and a practical test on the last day"
+    },
+    "sessions": [
+      {
+        "date": "2026-08-25",
+        "start": "09:00",
+        "end": "17:00"
+      },
+      {
+        "date": "2026-08-26",
+        "start": "09:00",
+        "end": "17:00"
+      },
+      {
+        "date": "2026-08-27",
+        "start": "09:00",
+        "end": "17:00"
+      }
+    ],
+    "location": {
+      "vi": "",
+      "en": ""
+    },
+    "capacity": 9,
+    "price": 0,
+    "instructor": "Phuong Huynh",
+    "status": "published",
+    "bookingClosesHours": 24,
+    "refundUntilHours": 72,
+    "recap": {
+      "text": {
+        "vi": "Ngày đầu tiên, khoá này đã lên bảng làm bài tập. Như các khoá trước, mọi người đánh 2 dòng dough cổ điển và đương đại, mở dough và cho vào lò (không topping), rồi đánh dough chuẩn bị cho ngày hôm sau.\n\nMỗi buổi chiều, học viên đều thực hành đánh 2 dòng dough và mở dough cho vào lò nướng. Và như mọi lớp, có 3 món pasta làm từ 3 loại xốt nền cơ bản.",
+        "en": "On the first day this course was already up at the board doing exercises. As in earlier courses, everyone mixed both doughs, classic and contemporary, opened them and baked them plain, then mixed dough for the next day.\n\nEvery afternoon the students mixed both doughs, opened them and baked them. And as in every class, there were three pastas made from the three base sauces."
+      }
+    },
+    "cover": "/classes/lop-pizza-khoa-3/01.jpg",
+    "photos": [
+      {
+        "url": "/classes/lop-pizza-khoa-3/01.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1: lý thuyết",
+          "en": "Day 1: theory"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-3/02.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-3/03.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-3/04.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-3/05.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1: đánh dough",
+          "en": "Day 1: mixing dough"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-3/06.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1: đánh dough",
+          "en": "Day 1: mixing dough"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-3/07.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-3/08.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-3/09.jpg",
+        "width": 675,
+        "height": 1200,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-3/10.jpg",
+        "width": 1800,
+        "height": 1800,
+        "caption": {
+          "vi": "Pasta từ 3 loại xốt nền",
+          "en": "Pasta from the three base sauces"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-3/11.jpg",
+        "width": 1800,
+        "height": 1800,
+        "caption": {
+          "vi": "Pasta từ 3 loại xốt nền",
+          "en": "Pasta from the three base sauces"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-3/12.jpg",
+        "width": 1800,
+        "height": 1800,
+        "caption": {
+          "vi": "Pasta từ 3 loại xốt nền",
+          "en": "Pasta from the three base sauces"
+        }
+      }
+    ]
+  },
+  {
+    "source": "https://www.facebook.com/permalink.php?story_fbid=pfbid02HQXP1PaoYLzdQi2FsUMNqCxCmZy9RHtMqQwoM58xmRi2pdRzRFVJ9BMxhrUWuWSBl&id=100078662955818",
+    "title": {
+      "vi": "Lớp pizza khoá 4",
+      "en": "Pizza Class: Course 4"
+    },
+    "summary": {
+      "vi": "Lớp tháng 9, khoá thứ 4 của tiệm: 9 học viên, 40% lý thuyết và 60% thực hành.",
+      "en": "The September class, the shop's fourth course: nine students, 40% theory and 60% practice."
+    },
+    "description": {
+      "vi": "Lớp tập trung vào dough Napoli với 2 dòng: cổ điển (đánh dough trực tiếp) và đương đại (dùng biga). Lý thuyết được chọn lọc dựa trên giáo trình từ trường Accademia Pizzaioli Vietnam, và mỗi ngày học viên đều thực hành đánh dough, mở dough và nướng bánh.\n\nNgày đầu học lý thuyết và nấu dầu ớt theo công thức của tiệm; trưa cả lớp ăn pizza của cả 2 dòng để thấy sự khác nhau. Ngày thứ 2 ôn lý thuyết, học 3 loại xốt nền (xốt cà, pesto, kem tỏi) và xem làm 3 món pasta từ các xốt này (pasta là phần phụ, không thực hành). Ngày cuối thi lý thuyết và thực hành.\n\nLý thuyết học vào buổi sáng của 2 ngày đầu; mỗi buổi chiều học viên chia nhóm thực hành đánh dough, mở dough và nướng bánh. Thiết bị: cối Sunmix, lò Moretti Forni, lò vòm Leonardo và lò Effeuno.",
+      "en": "The class is about Neapolitan dough in two styles: classic (direct dough) and contemporary (with biga). The theory is drawn from the curriculum of the Accademia Pizzaioli Vietnam school, and every day students mix, open and bake their own dough.\n\nDay one covers the theory and the shop's chili oil; lunch is pizza in both styles, to taste the difference. Day two reviews the theory and teaches three base sauces (tomato, pesto and garlic cream), with three pastas made from them as a demonstration. The last day ends with a written and a practical test.\n\nThe theory is taught in the mornings of the first two days; every afternoon the students work in groups, mixing, opening and baking dough. Equipment: a Sunmix mixer, a Moretti Forni oven, a Leonardo dome oven and an Effeuno oven."
+    },
+    "learn": {
+      "vi": "Bột, men, muối, nước: vì sao dough thay đổi qua các ngày ủ, ủ ngắn và ủ dài khác nhau ra sao\n2 dòng dough Napoli: cổ điển (đánh trực tiếp) và đương đại (dùng biga)\nĐánh dough, mở dough và nướng bánh mỗi ngày\n3 loại xốt nền (xốt cà, pesto, kem tỏi) và dầu ớt theo công thức của tiệm\n3 món pasta từ 3 loại xốt nền (phần phụ, không thực hành)\nBài thi lý thuyết và thực hành ngày cuối",
+      "en": "Flour, yeast, salt and water: why dough changes over the days it ferments, and how a short rise differs from a long one\nTwo Neapolitan doughs: classic (direct) and contemporary (with biga)\nMixing, opening and baking dough every day\nThree base sauces (tomato, pesto, garlic cream) and the shop's chili oil\nThree pastas made from the base sauces (a demonstration, not hands-on)\nA written and a practical test on the last day"
+    },
+    "sessions": [
+      {
+        "date": "2026-09-22",
+        "start": "09:00",
+        "end": "17:30"
+      },
+      {
+        "date": "2026-09-23",
+        "start": "09:00",
+        "end": "17:30"
+      },
+      {
+        "date": "2026-09-24",
+        "start": "09:00",
+        "end": "17:30"
+      }
+    ],
+    "location": {
+      "vi": "",
+      "en": ""
+    },
+    "capacity": 9,
+    "price": 15000000,
+    "instructor": "Phuong Huynh",
+    "status": "published",
+    "bookingClosesHours": 24,
+    "refundUntilHours": 72,
+    "recap": {
+      "text": {
+        "vi": "Ngày đầu tiên kết thúc bằng 1 cơn mưa siêu lớn. Qua ngày 2, chiếc tiệm bé xinh đã mở được 4 khoá, vẫn với 2 dòng dough cổ điển và đương đại; lý thuyết là 1 phần quan trọng không thể thiếu, và lớp này thực hành rất nhiều.\n\nChiều nào cả lớp cũng thực hành gần chục cont dough mới kết thúc, và có bữa trưa bằng chiếc dough được ủ 5 ngày.\n\nỞ lớp, hầu như ai cũng đánh dough đạt vì có cô đứng kế bên canh chỉnh, nhưng về nhà lại là câu chuyện khác, nên học viên luôn được nhắc tập trung nghe giảng và ghi chú lại.",
+        "en": "The first day ended in a huge downpour. By day two the little shop had run four courses, still with both doughs, classic and contemporary; the theory matters just as much, and this class practised a lot.\n\nEvery afternoon ended only after nearly ten containers of dough had been worked, and lunch was pizza from dough fermented for five days.\n\nIn class almost everyone gets the dough right, with the teacher at their side; at home it's another story, so students are always reminded to listen closely and take notes."
+      }
+    },
+    "cover": "/classes/lop-pizza-khoa-4/06.jpg",
+    "photos": [
+      {
+        "url": "/classes/lop-pizza-khoa-4/01.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-4/02.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1: lý thuyết",
+          "en": "Day 1: theory"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-4/03.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1: đánh dough",
+          "en": "Day 1: mixing dough"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-4/04.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1: đánh dough",
+          "en": "Day 1: mixing dough"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-4/05.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-4/06.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-4/07.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-4/08.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Ngày 1",
+          "en": "Day 1"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-4/09.jpg",
+        "width": 675,
+        "height": 1200,
+        "caption": {
+          "vi": "Ngày thực hành đầu tiên: mở dough và nướng không topping",
+          "en": "The first practice day: opening dough and baking it plain"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-4/10.jpg",
+        "width": 675,
+        "height": 1200,
+        "caption": {
+          "vi": "Ngày 2",
+          "en": "Day 2"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-4/11.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Pasta tại lớp",
+          "en": "Pasta at the class"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-4/12.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Pasta tại lớp",
+          "en": "Pasta at the class"
+        }
+      },
+      {
+        "url": "/classes/lop-pizza-khoa-4/13.jpg",
+        "width": 1350,
+        "height": 1800,
+        "caption": {
+          "vi": "Pasta tại lớp",
+          "en": "Pasta at the class"
+        }
+      }
+    ]
+  }
+]

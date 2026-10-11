@@ -1,0 +1,272 @@
+/* ---------- a desk's top block (DeskHeader.jsx) ---------- */
+
+.desk-top-block {
+  --desk-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* the title and counts get smaller as they scroll away, and grow back on
+   the way up */
+.desk-top-block .desk-title h3 {
+  transform: scale(calc(1 - var(--desk-shrink) * 0.35));
+  transform-origin: left bottom;
+}
+
+.desk-top-block .desk-title .mono,
+.desk-top-block .desk-status {
+  opacity: calc(1 - var(--desk-shrink) * 0.8);
+}
+
+.desk-top-block .desk-stats {
+  transform: scale(calc(1 - var(--desk-shrink) * 0.08));
+  transform-origin: left top;
+  opacity: calc(1 - var(--desk-shrink) * 0.5);
+}
+
+/* ---------- the slim copy pinned under the nav ---------- */
+
+.desk-pinned {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  /* under the nav's logo and menu button, which stay on top */
+  z-index: 95;
+  border-bottom: 1px solid var(--base-400);
+  background-color: var(--base-600);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%);
+  transition:
+    transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1),
+    opacity 0.3s;
+}
+
+.desk-pinned.is-shown {
+  opacity: 1;
+  pointer-events: auto;
+  transform: none;
+}
+
+/* the first row shares the nav's line, between its logo and menu */
+.desk-pinned-inner {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas:
+    "tabs head ."
+    "stats stats actions";
+  align-items: center;
+  gap: 0.9rem 1.5rem;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 2.1rem 2.5rem 1rem;
+}
+
+.desk-pinned .desk-tabs {
+  grid-area: tabs;
+  margin: 0 0 0 7rem;
+}
+
+.desk-tabs.is-small .desk-tab {
+  padding: 0.45rem 0.7rem;
+  font-size: 0.65rem;
+}
+
+.desk-pinned-head {
+  display: flex;
+  grid-area: head;
+  align-items: baseline;
+  gap: 1.25rem;
+  min-width: 0;
+}
+
+.desk-pinned-title {
+  overflow: hidden;
+  font-family: var(--font-display), serif;
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--base-100);
+}
+
+.desk-pinned .desk-live {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+}
+
+.desk-pinned-stats {
+  display: flex;
+  grid-area: stats;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.desk-pinned-stats p {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.3rem;
+  background-color: var(--base-500);
+}
+
+.desk-pinned-stats p:nth-child(even) {
+  background-color: var(--base-400);
+}
+
+.desk-pinned-value {
+  font-family: var(--font-display), serif;
+  font-size: 1.15rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--base-100);
+}
+
+.desk-pinned-stats .mono {
+  font-size: 0.62rem;
+  line-height: 1.1;
+  color: var(--base-200);
+}
+
+.desk-pinned-actions {
+  display: flex;
+  grid-area: actions;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.desk-pinned-action {
+  padding-block: 0.75rem;
+}
+
+/* a phone: the title and time in the nav's line, then the tabs with the
+   buttons, then the counts in a row of four */
+@media (max-width: 900px) {
+  .desk-top-block {
+    gap: 2.25rem;
+  }
+
+  .desk-pinned-inner {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "head head"
+      "tabs actions"
+      "stats stats";
+    gap: 0.6rem 0.75rem;
+    padding: 1.45rem 1.5rem 0.75rem;
+  }
+
+  /* as tall as the nav's line even without a live time, so the row below
+     stays clear of the menu button */
+  .desk-pinned-head {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    min-height: 2.6rem;
+    margin: 0 4.5rem 0 6rem;
+  }
+
+  .desk-pinned-title {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .desk-pinned .desk-live {
+    font-size: 0.6rem;
+  }
+
+  .desk-pinned .desk-tabs {
+    flex-wrap: nowrap;
+    margin: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .desk-tabs.is-small .desk-tab {
+    padding: 0.42rem 0.55rem;
+    font-size: 0.6rem;
+    white-space: nowrap;
+  }
+
+  .desk-pinned-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.35rem;
+  }
+
+  .desk-pinned-stats p {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.4rem 0.45rem;
+  }
+
+  .desk-pinned-stats .mono {
+    overflow: hidden;
+    font-size: 0.52rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  .desk-pinned-action {
+    padding: 0.7rem 0.75rem;
+    font-size: 0.65rem;
+  }
+
+  .desk-pinned .rs-filter-button {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .desk-pinned {
+    transition: none;
+  }
+}
+
+/* the pinned bar's filters on a tablet or desktop: a panel dropping from
+   the filter button, like the list's dropdowns */
+.desk-pinned-actions {
+  position: relative;
+}
+
+.desk-filter-drop {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: min(30rem, calc(100vw - 3rem));
+  max-height: calc(100svh - 11rem);
+  border: 1px solid var(--base-400);
+  border-radius: 0.35rem;
+  background-color: var(--base-500);
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.4);
+  animation: rs-options-in 0.18s ease-out;
+}
+
+.desk-filter-drop-body {
+  flex: 1;
+  min-height: 0;
+  padding: 1.5rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.desk-filter-drop .rs-drawer-foot {
+  padding: 1rem 1.5rem;
+}
+
+.desk-filter-drop .rs-drawer-summary {
+  margin-right: auto;
+  line-height: 1.2;
+  color: var(--base-200);
+}

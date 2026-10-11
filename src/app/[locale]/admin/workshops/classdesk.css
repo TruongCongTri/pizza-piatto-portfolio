@@ -1,0 +1,646 @@
+/* ---------- the class desk (on top of the reservation desk's styles) ---------- */
+
+.class-desk .cd-provider {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-top: -1.5rem;
+  line-height: 1.3;
+  color: var(--base-200);
+}
+
+.class-desk .cd-provider span {
+  color: var(--base-300);
+}
+
+.class-desk .cd-provider.is-off {
+  color: var(--desk-warn);
+}
+
+.class-desk .cd-provider.is-mock {
+  color: var(--accent);
+}
+
+/* refunds the shop still has to send */
+.cd-refunds {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--desk-warn);
+  border-radius: 0.5rem;
+}
+
+.cd-refunds header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cd-refunds h6 {
+  color: var(--base-100);
+}
+
+.cd-refunds ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.cd-refunds li {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 0.75rem 1.5rem;
+  padding: 0.85rem 0;
+  border-top: 1px dashed var(--base-400);
+}
+
+.cd-refunds .mono {
+  line-height: 1.3;
+}
+
+.class-desk .cd-refund-who {
+  color: var(--base-100);
+}
+
+.class-desk .cd-refund-amount {
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--base-100);
+}
+
+/* classes on the left, the open one on the right */
+.cd-layout {
+  display: grid;
+  grid-template-columns: minmax(16rem, 22rem) minmax(0, 1fr);
+  align-items: start;
+  gap: 2.5rem;
+}
+
+/* the class list sticks under the desk's pinned header and scrolls on
+   its own when it is longer than the screen */
+.cd-classes {
+  position: sticky;
+  top: calc(var(--desk-pinned-h, 6rem) + 1rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-height: calc(100svh - var(--desk-pinned-h, 6rem) - 2rem);
+  padding-right: 0.4rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--base-400) transparent;
+}
+
+/* the open class's heading and tabs stick under the pinned header too;
+   the page's background behind them, so the bookings scroll away under
+   it. Once stuck the title gets smaller. */
+.cd-detail-top {
+  position: sticky;
+  top: var(--desk-pinned-h, 6rem);
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1rem 0 1.25rem;
+  border-bottom: 1px solid transparent;
+  background-color: var(--base-600);
+  transition: border-color 0.3s;
+}
+
+.cd-detail-top.is-stuck {
+  border-bottom-color: var(--base-400);
+}
+
+.cd-detail-top h5 {
+  transition: font-size 0.3s ease;
+}
+
+.cd-detail-top.is-stuck h5 {
+  font-size: 1.5rem;
+}
+
+.cd-class {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  width: 100%;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--base-400);
+  border-radius: 0.5rem;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color 0.3s,
+    background-color 0.3s;
+}
+
+.cd-class:hover {
+  border-color: var(--base-300);
+}
+
+.cd-class.is-active {
+  border-color: var(--base-100);
+  background-color: var(--base-500);
+}
+
+.cd-class.is-past:not(.is-active) {
+  opacity: 0.7;
+}
+
+.cd-class:focus-visible {
+  outline: 1px dashed var(--base-200);
+  outline-offset: 3px;
+}
+
+.class-desk .cd-class-when {
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: var(--base-300);
+}
+
+/* desk chips (sections, statuses) wrap rather than widen the page */
+.class-desk .rs-chips {
+  flex-wrap: wrap;
+}
+
+.cd-class-title {
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--base-100);
+}
+
+.cd-class-meta,
+.class-desk .cd-detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.85rem;
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.72rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--base-200);
+}
+
+.cd-class-meta .mono {
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.cd-chip {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--base-300);
+  border-radius: 999px;
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.68rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--base-200);
+}
+
+.cd-chip.is-published {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.cd-chip.is-cancelled {
+  border-color: var(--desk-warn);
+  color: var(--desk-warn);
+}
+
+.cd-detail {
+  min-width: 0;
+}
+
+.cd-detail-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.cd-detail-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem 2rem;
+}
+
+.cd-detail-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.cd-detail-title h5 {
+  color: var(--base-100);
+}
+
+.class-desk .cd-detail-title .mono {
+  line-height: 1.3;
+}
+
+/* bookings */
+.cd-rows {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.cd-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.2fr) minmax(0, 0.9fr) minmax(0, 1.3fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--base-400);
+}
+
+.cd-row-who,
+.cd-row-contact,
+.cd-row-state {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+.class-desk .cd-row-name {
+  font-weight: 600;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  color: var(--base-100);
+}
+
+.cd-row-contact a {
+  --hover-line-color: var(--base-200);
+  align-self: flex-start;
+  max-width: 100%;
+  overflow: hidden;
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.class-desk .cd-row-seats,
+.class-desk .cd-row-detail {
+  line-height: 1.3;
+}
+
+.class-desk .cd-row-seats {
+  color: var(--base-200);
+}
+
+.cd-state.is-confirmed,
+.cd-state.is-attended {
+  color: var(--base-100);
+}
+
+.cd-state.is-confirmed .desk-state-dot,
+.cd-state.is-attended .desk-state-dot {
+  border-color: var(--accent);
+  background-color: var(--accent);
+}
+
+.class-desk .cd-state.is-pending_payment {
+  color: var(--accent);
+}
+
+.cd-state.is-pending_payment .desk-state-dot {
+  animation: desk-pulse 1.6s ease-in-out infinite;
+}
+
+.class-desk .cd-state.is-refund_pending {
+  color: var(--desk-warn);
+}
+
+.class-desk .cd-state.is-expired,
+.class-desk .cd-state.is-cancelled,
+.class-desk .cd-state.is-refunded {
+  color: var(--base-300);
+}
+
+.cd-row.is-expired > *:not(.cd-row-actions),
+.cd-row.is-cancelled > *:not(.cd-row-actions),
+.cd-row.is-refunded > *:not(.cd-row-actions) {
+  opacity: 0.6;
+}
+
+.cd-pays {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.cd-pay {
+  padding: 0.2rem 0.45rem;
+  border: 1px solid var(--base-400);
+  border-radius: 0.25rem;
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.65rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--base-200);
+}
+
+.cd-pay.is-succeeded {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.cd-pay.is-processing {
+  border-style: dashed;
+  border-color: var(--accent);
+}
+
+.cd-pay.is-refund_pending,
+.cd-pay.is-failed {
+  border-color: var(--desk-warn);
+  color: var(--desk-warn);
+}
+
+.cd-row-actions {
+  justify-content: flex-end;
+}
+
+/* forms: a class, its recap */
+.cd-form,
+.cd-recap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.cd-form-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.cd-form-head h6 {
+  color: var(--base-100);
+}
+
+.cd-pair,
+.cd-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 2rem;
+}
+
+/* a working form: smaller type than the guest-facing one, and text boxes
+   that grow with what is typed */
+.class-desk .cd-form .reserve-input input,
+.class-desk .cd-form .reserve-input textarea,
+.class-desk .cd-recap .reserve-input textarea {
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.class-desk .cd-form .reserve-input textarea,
+.class-desk .cd-recap .reserve-input textarea {
+  field-sizing: content;
+  min-height: 3lh;
+  max-height: 28rem;
+}
+
+.cd-grid {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+}
+
+.cd-sessions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.cd-session {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.75rem 1rem;
+}
+
+.cd-session label,
+.cd-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cd-session .mono,
+.cd-caption .mono {
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  color: var(--base-300);
+}
+
+.cd-input {
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--base-400);
+  border-radius: 0.35rem;
+  background-color: var(--base-500);
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.9rem;
+  color: var(--base-100);
+  color-scheme: dark;
+  user-select: text;
+}
+
+.cd-input:focus {
+  border-color: var(--base-200);
+  outline: none;
+}
+
+.cd-session-remove {
+  padding-bottom: 0.6rem;
+}
+
+.cd-add {
+  align-self: flex-start;
+}
+
+.cd-add.is-busy {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.cd-form-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.class-desk .cd-form-notes p {
+  line-height: 1.4;
+  color: var(--base-300);
+}
+
+.cd-form-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 2rem;
+}
+
+.class-desk .cd-danger {
+  --hover-line-color: var(--desk-warn);
+  --hover-line-color-active: var(--desk-warn);
+}
+
+.class-desk .cd-recap-intro {
+  line-height: 1.4;
+}
+
+.cd-upload {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cd-upload label {
+  cursor: pointer;
+}
+
+.cd-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  gap: 1.25rem;
+  list-style: none;
+}
+
+.cd-photo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.cd-photo-image {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 0.35rem;
+  background-color: var(--base-500);
+}
+
+.cd-photo .cd-input {
+  width: 100%;
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 0.85rem;
+}
+
+.cd-photo-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.85rem;
+}
+
+.cd-photo-actions .desk-link:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+@media (max-width: 1300px) {
+  .cd-row {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .cd-row-actions {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cd-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  .cd-classes {
+    position: static;
+    flex-direction: row;
+    max-height: none;
+    margin-inline: -1.5rem;
+    padding-inline: 1.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  /* a phone: the class's heading stays in the flow with its bookings */
+  .cd-detail-top {
+    position: static;
+    padding-top: 0;
+  }
+
+  .cd-class {
+    flex: 0 0 min(80%, 18rem);
+  }
+
+  .cd-refunds li {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .cd-pair {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cd-row {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cd-state.is-pending_payment .desk-state-dot {
+    animation: none;
+  }
+}
+
+/* the class row on a phone: swiped, or dragged with a mouse */
+@media (max-width: 1000px) {
+  .cd-classes {
+    cursor: grab;
+    touch-action: pan-x pan-y;
+    scroll-snap-type: x proximity;
+  }
+
+  .cd-classes .cd-class {
+    scroll-snap-align: start;
+  }
+
+  .cd-classes.is-dragging {
+    cursor: grabbing;
+    scroll-snap-type: none;
+    user-select: none;
+  }
+}
+
+/* the screen of room under the desk lives inside the open class here (and
+   the open guest on the guest desk), so the class list and the heading
+   stay pinned all the way down, even for a short list of bookings */
+.class-desk .container {
+  padding-bottom: 6rem;
+}
+
+.class-desk .cd-detail-inner,
+.guest-desk .gd-detail {
+  min-height: calc(100svh + 30rem);
+}

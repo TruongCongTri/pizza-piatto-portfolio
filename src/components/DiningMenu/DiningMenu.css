@@ -1,0 +1,424 @@
+/* a collage of the shop's dishes behind pieces styled after its printed
+   menu: golden paper, navy ink, a typewriter face for titles and dish names,
+   bold italic ingredient lines */
+.dining-menu {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 12rem 0;
+  overflow: hidden;
+  /* clip, unlike hidden, leaves the sticky collage frame working */
+  overflow: clip;
+  isolation: isolate;
+  background-color: var(--base-600);
+  color: var(--menu-ink);
+}
+
+.dining-menu-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+/* screen-sized window onto the collage, held in view while the menu is
+   pinned; the columns inside drift up on scroll (DiningMenu.jsx) */
+.dining-menu-bg-frame {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+}
+
+/* navy veil so the cream labels read and the golden menu stands out */
+.dining-menu-bg-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: color-mix(in srgb, var(--base-600) 55%, transparent);
+  pointer-events: none;
+}
+
+.dining-collage {
+  display: flex;
+  gap: 0.75rem;
+  width: 112%;
+  margin-left: -6%;
+}
+
+.dining-collage-col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+  will-change: transform;
+}
+
+.dining-collage-tile {
+  overflow: hidden;
+  border-radius: 0.35rem;
+  aspect-ratio: 4 / 5;
+  background-color: var(--base-500);
+}
+
+.dining-menu .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+
+.dining-menu-header {
+  display: flex;
+  justify-content: center;
+}
+
+/* the title printed on a golden label */
+.menu-ticket-plate {
+  padding: clamp(0.5rem, 0.8vw, 0.9rem);
+  border-radius: 0.35rem;
+  background-color: var(--menu-paper);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.35);
+}
+
+/* framed title with notched corners, like "MENU" on the printed menu */
+.menu-ticket {
+  --ticket-line: 3px;
+  --ticket-notch: clamp(14px, 1.5vw, 22px);
+  position: relative;
+  padding: 0.6em 1.4em 0.5em;
+  border: var(--ticket-line) solid var(--menu-ink);
+  font-size: clamp(2rem, 5vw, 8rem);
+}
+
+.menu-ticket-corner {
+  position: absolute;
+  width: var(--ticket-notch);
+  height: var(--ticket-notch);
+  border: 0 solid var(--menu-ink);
+  background-color: var(--menu-paper);
+}
+
+.menu-ticket-corner.tl {
+  top: calc(var(--ticket-line) * -1);
+  left: calc(var(--ticket-line) * -1);
+  border-right-width: var(--ticket-line);
+  border-bottom-width: var(--ticket-line);
+  border-bottom-right-radius: 100%;
+}
+
+.menu-ticket-corner.tr {
+  top: calc(var(--ticket-line) * -1);
+  right: calc(var(--ticket-line) * -1);
+  border-bottom-width: var(--ticket-line);
+  border-left-width: var(--ticket-line);
+  border-bottom-left-radius: 100%;
+}
+
+.menu-ticket-corner.bl {
+  bottom: calc(var(--ticket-line) * -1);
+  left: calc(var(--ticket-line) * -1);
+  border-top-width: var(--ticket-line);
+  border-right-width: var(--ticket-line);
+  border-top-right-radius: 100%;
+}
+
+.menu-ticket-corner.br {
+  right: calc(var(--ticket-line) * -1);
+  bottom: calc(var(--ticket-line) * -1);
+  border-top-width: var(--ticket-line);
+  border-left-width: var(--ticket-line);
+  border-top-left-radius: 100%;
+}
+
+.dining-menu-header h3 {
+  font-family: var(--font-typewriter), monospace;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.08em;
+  color: var(--menu-ink);
+}
+
+.dining-menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.dining-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 1rem;
+}
+
+.dining-nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  background: var(--menu-paper);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--menu-ink);
+  opacity: 1;
+  cursor: pointer;
+  transition:
+    opacity 0.3s,
+    transform 0.2s ease;
+}
+
+.dining-nav-button:active {
+  transform: scale(0.85);
+}
+
+.dining-nav-button span {
+  position: relative;
+  top: -2px;
+}
+
+.dining-nav-button.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.dining-preview {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+}
+
+.dining-preview-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  width: 600px;
+  height: 750px;
+  padding: 3.5rem 2.5rem;
+  border-radius: 0.35rem;
+  /* the menu page itself, laid over the dishes */
+  background-color: var(--menu-paper);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+  color: var(--menu-ink);
+  transform: scale(0.85);
+  will-change: transform, opacity;
+}
+
+.dining-preview-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dining-preview-card h6 {
+  font-family: var(--font-typewriter), monospace;
+  font-size: clamp(2rem, 2.6vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.14em;
+  color: var(--menu-ink);
+}
+
+.dining-preview-size {
+  align-self: flex-end;
+  margin-top: 0.5rem;
+  font-family: var(--font-typewriter), monospace;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--menu-ink);
+}
+
+.dining-preview-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.dining-preview-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dining-menu .dining-preview-item-name {
+  font-family: var(--font-typewriter), monospace;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--menu-ink);
+}
+
+/* ".MARGHERITA" */
+.dining-preview-item-name::before {
+  content: ".";
+}
+
+.dining-menu .dining-preview-item-price {
+  flex-shrink: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--menu-ink);
+}
+
+.dining-menu .dining-preview-item-description {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: var(--menu-ink);
+}
+
+/* the Vietnamese line on the printed menu is bold italic capitals */
+:lang(vi) .dining-menu .dining-preview-item-description {
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.dining-menu .menu-item-tag {
+  opacity: 1;
+}
+
+/* six pizzas with two-line descriptions: tighten so the card footer stays clear */
+.dining-preview-card.is-dense {
+  gap: 1rem;
+}
+
+.dining-preview-footer {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.dining-menu .dining-preview-footer p {
+  font-family: var(--font-typewriter), monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--menu-ink);
+}
+
+.dining-minimap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 1.5rem;
+}
+
+.dining-minimap-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  will-change: transform, opacity;
+}
+
+.dining-minimap-img {
+  width: 4rem;
+  height: 5rem;
+  overflow: hidden;
+  border-radius: 0.175rem;
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.35);
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.dining-minimap-item p {
+  font-family: var(--font-typewriter), monospace;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--base-100);
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.dining-minimap-item:hover .dining-minimap-img,
+.dining-minimap-item:hover p {
+  opacity: 0.8;
+}
+
+.dining-minimap-item.active .dining-minimap-img,
+.dining-minimap-item.active p {
+  opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  .dining-menu {
+    padding: 6rem 0;
+  }
+
+  .dining-menu .container {
+    gap: 4rem;
+  }
+
+  .dining-menu-content {
+    flex-direction: column-reverse;
+  }
+
+  .dining-nav {
+    flex-direction: row-reverse;
+  }
+
+  .dining-nav-button:nth-child(1),
+  .dining-nav-button:nth-child(2) {
+    transform: rotate(90deg);
+  }
+
+  .dining-minimap {
+    display: none;
+  }
+
+  .dining-preview,
+  .dining-preview-card {
+    width: 100%;
+  }
+
+  /* pinned in the middle of the screen with the arrows under it, so the
+     card keeps to the screen's height */
+  .dining-preview-card {
+    height: min(750px, calc(100svh - 10rem));
+    padding: 2.5rem 1.25rem;
+  }
+
+  /* fewer, larger dishes on narrow screens */
+  .dining-collage-col:nth-child(n + 5) {
+    display: none;
+  }
+
+  .dining-preview-item .dining-preview-item-row p:nth-child(1) {
+    width: 75%;
+  }
+
+  .dining-preview-item-description {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .dining-collage-col:nth-child(n + 4) {
+    display: none;
+  }
+}

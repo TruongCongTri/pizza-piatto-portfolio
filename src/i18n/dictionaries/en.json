@@ -1,0 +1,1255 @@
+{
+  "seo": {
+    "siteName": "Pizza Piatto",
+    "title": "Pizza Piatto — Handmade Italian Pizza in Ho Chi Minh City",
+    "description": "A tiny Italian-style pizza shop with four tables and an open kitchen in Diên Hồng, Ho Chi Minh City. Hand-stretched 30 cm pizzas, spaghetti and salad to dine in, take away or have delivered.",
+    "keywords": [
+      "Pizza Piatto",
+      "pizza Ho Chi Minh City",
+      "pizza Saigon",
+      "Italian pizza Saigon",
+      "handmade pizza",
+      "Neapolitan pizza",
+      "pizza Diên Hồng",
+      "pizza delivery Ho Chi Minh City"
+    ],
+    "imageAlt": "Pizza Piatto logo",
+    "pages": {
+      "about": {
+        "title": "Our Story",
+        "description": "How a four-table pizza shop in Ho Chi Minh City makes every pizza by hand: the dough, the open kitchen, the toppings and our pizza classes."
+      },
+      "menu": {
+        "title": "The Menu",
+        "description": "Twelve hand-stretched 30 cm pizzas, spaghetti, burrata salad and cold drinks, with prices and ingredients."
+      },
+      "reservation": {
+        "title": "Reservations",
+        "description": "Book one of our four tables at Pizza Piatto in Diên Hồng, Ho Chi Minh City. Opening hours, contact details and online booking."
+      },
+      "track": {
+        "title": "Your Bookings",
+        "description": "Look up your Pizza Piatto table bookings and pizza classes with the phone number you booked with."
+      },
+      "admin": {
+        "title": "Reservation Desk",
+        "description": "Pizza Piatto staff view of every reservation."
+      },
+      "workshops": {
+        "title": "Pizza Classes",
+        "description": "Pizza classes at Pizza Piatto in Ho Chi Minh City: dough, fermentation, stretching and baking. Dates, fees, seats left and online booking."
+      },
+      "workshopTicket": {
+        "title": "Your Class Ticket",
+        "description": "Your Pizza Piatto class booking and its payment status."
+      },
+      "classDesk": {
+        "title": "Class Desk",
+        "description": "Pizza Piatto staff view of pizza classes, bookings and payments."
+      },
+      "mockPay": {
+        "title": "Test Checkout",
+        "description": "A test payment page. No real money moves."
+      },
+      "guestDesk": {
+        "title": "Guests",
+        "description": "Pizza Piatto staff view of a guest's table bookings and classes."
+      }
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "essence": "Essence",
+    "carte": "Carte",
+    "book": "Book",
+    "menu": "Menu",
+    "close": "Close",
+    "since": "Since 2022",
+    "location": "Diên Hồng, Ho Chi Minh, Vietnam",
+    "classes": "Classes"
+  },
+  "footer": {
+    "heading": "We Look Forward To Your Visit",
+    "cta": "Plan Your Visit",
+    "rights": "©2026 All Rights Reserved",
+    "credit": "Built by Cong Tri"
+  },
+  "errors": {
+    "notFound": {
+      "code": "404",
+      "title": "Table Not Found",
+      "message": "The page you are looking for has left the dining room. It may have been moved, renamed, or never existed.",
+      "home": "Back to Home"
+    },
+    "error": {
+      "code": "500",
+      "title": "Kitchen Mishap",
+      "message": "Something went wrong while preparing this page. Please try again in a moment.",
+      "retry": "Try Again",
+      "home": "Back to Home"
+    }
+  },
+  "reserve": {
+    "eyebrow": "( Reservation )",
+    "title": "Reserve a Table",
+    "intro": "We only have four tables, so tell us when you would like to come and we will keep one for you. Add your email if you would like your ticket sent to you.",
+    "close": "Close",
+    "closed": "Closed",
+    "fields": {
+      "name": "Full Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "optional": "( Optional )",
+      "phone": "Phone",
+      "phonePlaceholder": "+84 90 000 0000",
+      "date": "Date",
+      "time": "Time",
+      "timeHint": "Pick a date to see the available times",
+      "guests": "Guests",
+      "notes": "Notes",
+      "notesPlaceholder": "Allergies, occasions, seating wishes (optional)",
+      "guestsHint": "( Up to {max} )"
+    },
+    "errors": {
+      "required": "( Required )",
+      "invalidEmail": "( Invalid email )",
+      "invalidPhone": "( Invalid number )",
+      "unavailable": "( No longer available )",
+      "tooLong": "( Too long )",
+      "full": "( Fully booked )",
+      "overlap": "( You have a table then )",
+      "tooMany": "( {max} bookings ahead already )",
+      "partySize": "( Up to {max} guests )"
+    },
+    "submit": "Confirm Reservation",
+    "submitting": "Sending...",
+    "info": [
+      "Pizza Piatto",
+      "91K Cư Xá Lý Thường Kiệt, Nguyễn Kim, P. Diên Hồng, TP.HCM",
+      "034 662 7237"
+    ],
+    "failed": {
+      "eyebrow": "( Not booked yet )",
+      "title": "Something went wrong",
+      "message": "Your table isn't booked yet. Please try again, or call us at {phone}.",
+      "rateLimited": "Too many tries in a short time. Please wait a few minutes, or call us at {phone}."
+    },
+    "success": {
+      "eyebrow": "( Table Reserved )",
+      "title": "Thank You",
+      "message": "{name}, your table for {guests} on {date} at {time} is booked.",
+      "emailSent": "Your ticket is on its way to {email}.",
+      "emailFailed": "We couldn't email your ticket to {email}, but your table is booked.",
+      "noEmail": "Look up your bookings anytime with your phone number.",
+      "another": "Reserve Another Table",
+      "track": "Track my reservations",
+      "hold": "We hold your table for {minutes} minutes. Can't make it? Cancel anytime from your reservations."
+    },
+    "guestOne": "guest",
+    "guestOther": "guests",
+    "missingOne": "1 field still needs your attention",
+    "missingOther": "{count} fields still need your attention",
+    "largeGroup": "A group of {next} or more? Call us at {phone} and we will set up the room for you.",
+    "full": "Full"
+  },
+  "toast": {
+    "close": "Close"
+  },
+  "ticket": {
+    "label": "Reservation",
+    "number": "No. {code}",
+    "time": "Time",
+    "guests": "Guests",
+    "notes": "Notes",
+    "today": "Today",
+    "past": "Past",
+    "arrived": "Arrived",
+    "cancelled": "Cancelled",
+    "missed": "Missed",
+    "cancel": "Cancel booking"
+  },
+  "reservations": {
+    "search": "Search",
+    "searchPlaceholder": "Name, phone, code or note",
+    "show": "Show",
+    "status": "Status",
+    "sort": "Sort",
+    "filters": {
+      "today": "Today",
+      "upcoming": "Upcoming",
+      "past": "Past",
+      "all": "All"
+    },
+    "statuses": {
+      "all": "All",
+      "booked": "Booked",
+      "arrived": "Arrived",
+      "noShow": "No-show",
+      "cancelled": "Cancelled"
+    },
+    "sorts": {
+      "asc": "Earliest first",
+      "desc": "Latest first"
+    },
+    "countOne": "1 reservation",
+    "countOther": "{count} reservations",
+    "empty": "No reservations match.",
+    "showMore": "Show more",
+    "kind": "Type",
+    "kinds": {
+      "all": "All",
+      "tables": "Tables",
+      "classes": "Classes"
+    },
+    "bookingOne": "1 booking",
+    "bookingOther": "{count} bookings",
+    "noBookings": "No bookings match.",
+    "filterTitle": "Filters",
+    "filterOpen": "Open filters",
+    "reset": "Reset",
+    "done": "Done"
+  },
+  "track": {
+    "eyebrow": "( Your Bookings )",
+    "title": "Find Your Bookings",
+    "listTitle": "Your Bookings",
+    "intro": "Enter the phone number you booked with, for a table or a pizza class. We will send you a code to make sure it's you.",
+    "phone": "Phone",
+    "phonePlaceholder": "+84 90 000 0000",
+    "send": "Send Code",
+    "sending": "Sending...",
+    "code": "Code",
+    "codePlaceholder": "6 digits",
+    "verify": "Show My Reservations",
+    "verifying": "Checking...",
+    "sentSms": "We texted a 6-digit code to {destination}.",
+    "sentEmail": "We emailed a 6-digit code to {destination}, the address on your booking.",
+    "sentDemo": "Demo mode, SMS is not set up yet: your code is {code}.",
+    "resend": "Send a new code",
+    "resendIn": "New code in {seconds}s",
+    "changeNumber": "Use another number",
+    "signOut": "Sign out",
+    "signedInAs": "Bookings for {phone}",
+    "loading": "Loading...",
+    "empty": "No bookings yet.",
+    "book": "Book a Table",
+    "errors": {
+      "required": "( Required )",
+      "invalidPhone": "( Invalid number )",
+      "invalid": "( Wrong code )",
+      "expired": "( Code expired )",
+      "expiredHint": "That code has expired. Ask for a new one below.",
+      "noReservations": "We couldn't find any bookings for this number. Did you book with another one?",
+      "cooldown": "A code is already on its way. You can ask for a new one in a minute.",
+      "unavailable": "We can't send a code to this number right now. Call us at {phone} and we'll help.",
+      "rateLimited": "Too many tries. Please wait a few minutes and try again.",
+      "server": "Something went wrong on our side. Please try again."
+    },
+    "cancel": {
+      "eyebrow": "( Cancel booking )",
+      "title": "Cancel this booking?",
+      "confirm": "Cancel Booking",
+      "keep": "Keep It",
+      "doneEyebrow": "( Booking cancelled )",
+      "doneTitle": "{date}, {time}",
+      "doneMessage": "Your table has been released. Hope to see you another time.",
+      "failedEyebrow": "( Not cancelled )",
+      "failedTitle": "Too late to cancel online",
+      "failedMessage": "Please call us at {phone}."
+    },
+    "openTicket": "Open ticket",
+    "classes": "See Pizza Classes"
+  },
+  "admin": {
+    "eyebrow": "( Reservation Desk )",
+    "title": "Reservations",
+    "loading": "Loading...",
+    "signOut": "Sign out",
+    "live": "Live",
+    "updated": "Updated {time}",
+    "offline": "Can't reach the server, retrying...",
+    "newBooking": "New booking",
+    "demo": {
+      "eyebrow": "( Sample data )",
+      "load": "Load sample bookings",
+      "clear": "Clear sample bookings",
+      "guestHint": "Guest view: try {phone}",
+      "loaded": "{count} sample bookings added",
+      "cleared": "Sample bookings cleared"
+    },
+    "login": {
+      "eyebrow": "( Staff Only )",
+      "title": "Reservation Desk",
+      "intro": "Sign in to see every booking and check guests in as they arrive.",
+      "password": "Password",
+      "submit": "Sign In",
+      "submitting": "Signing in...",
+      "errors": {
+        "required": "( Required )",
+        "invalid": "( Wrong password )",
+        "notConfigured": "Sign-in is off: set ADMIN_PASSWORD on the server first.",
+        "rateLimited": "Too many tries. Please wait a few minutes.",
+        "server": "Something went wrong. Please try again."
+      }
+    },
+    "stats": {
+      "today": "Bookings today",
+      "guests": "Guests today",
+      "arrived": "Arrived today",
+      "freeNow": "Seats free now"
+    },
+    "day": "{bookings} · {guests}",
+    "booked": "Booked {date}",
+    "new": "New",
+    "walkIn": "Walk-in",
+    "table": "Table {name}",
+    "noTable": "No table",
+    "planned": "Planned table",
+    "seated": "Seated here",
+    "states": {
+      "booked": "Booked",
+      "late": "Late · {minutes} min",
+      "arrived": "Arrived {time}",
+      "noShow": "No-show",
+      "cancelled": "Cancelled"
+    },
+    "actions": {
+      "checkIn": "Check in",
+      "undo": "Undo",
+      "noShow": "No-show",
+      "cancel": "Cancel"
+    },
+    "hints": {
+      "opensAt": "Check-in from {time}",
+      "opensOn": "Check-in on {date}",
+      "closed": "Check-in closed"
+    },
+    "dialogs": {
+      "checkIn": {
+        "eyebrow": "( Check in )",
+        "title": "Mark as arrived?",
+        "table": "Seat at",
+        "confirm": "Mark Arrived"
+      },
+      "undo": {
+        "eyebrow": "( Undo )",
+        "title": "Take this back?",
+        "confirm": "Undo"
+      },
+      "noShow": {
+        "eyebrow": "( No-show )",
+        "title": "Mark as no-show?",
+        "note": "Their table is released for other guests.",
+        "confirm": "Mark No-show"
+      },
+      "cancel": {
+        "eyebrow": "( Cancel booking )",
+        "title": "Cancel this booking?",
+        "note": "The guest gets an email if they left one.",
+        "confirm": "Cancel Booking"
+      },
+      "details": "{name} · {guests} · {date}, {time}",
+      "back": "Back"
+    },
+    "create": {
+      "eyebrow": "( New booking )",
+      "title": "Add a Booking",
+      "kinds": {
+        "booking": "Phone booking",
+        "walkIn": "Walk-in now"
+      },
+      "walkInName": "Name (optional)",
+      "walkInTable": "Free now: Table {table}",
+      "walkInNone": "No table is free for {guests} right now.",
+      "save": "Save Booking",
+      "seat": "Seat Walk-in",
+      "saving": "Saving...",
+      "cancel": "Close",
+      "errors": {
+        "noTable": "( No table free now )"
+      }
+    },
+    "toasts": {
+      "newEyebrow": "( New reservation )",
+      "newMessage": "{date}, {time} · {guests}",
+      "arrivedEyebrow": "( Checked in )",
+      "arrivedTitle": "{name} has arrived",
+      "arrivedMessage": "Table {table}",
+      "undoEyebrow": "( Undone )",
+      "undoTitle": "{name} is back to booked",
+      "noShowEyebrow": "( No-show )",
+      "noShowTitle": "{name} marked as no-show",
+      "cancelledEyebrow": "( Cancelled )",
+      "cancelledTitle": "{name}'s booking is cancelled",
+      "createdEyebrow": "( Booking added )",
+      "walkInEyebrow": "( Walk-in seated )",
+      "errorEyebrow": "( Not saved )",
+      "errorTitle": "Couldn't update",
+      "errorMessage": "Please try again in a moment."
+    }
+  },
+  "emails": {
+    "ticket": {
+      "subject": "Your table at Pizza Piatto · {date}, {time}",
+      "preheader": "Table for {guests} on {date} at {time}. Booking code {code}.",
+      "eyebrow": "( Reservation ticket )",
+      "greeting": "Thank you, {name}. Your table is booked, and here is your ticket.",
+      "tableFor": "Table for {guests}",
+      "number": "No. {code}",
+      "date": "Date",
+      "time": "Time",
+      "guests": "Guests",
+      "notes": "Your notes",
+      "where": "Where",
+      "call": "Call us",
+      "showAtDoor": "Show this ticket when you arrive. If your plans change, please call or message us.",
+      "track": "View My Bookings",
+      "footer": "You are receiving this email because a table was booked at Pizza Piatto with this email address.",
+      "hold": "We hold your table for {minutes} minutes after your booking time; if you can't make it, please cancel from My Reservations or call us."
+    },
+    "receipt": {
+      "subject": "New reservation {code} · {date} {time} · {guests}",
+      "preheader": "{name} booked a table for {guests} on {date} at {time}.",
+      "title": "New reservation",
+      "number": "No. {code}",
+      "issued": "Issued",
+      "language": "Language",
+      "guest": "Guest",
+      "phone": "Phone",
+      "email": "Email",
+      "date": "Date",
+      "time": "Time",
+      "party": "Party",
+      "notes": "Notes",
+      "none": "—",
+      "total": "Total guests",
+      "thanks": "*** Thank you ***",
+      "dashboard": "Open the Reservation Desk",
+      "languages": {
+        "en": "English",
+        "vi": "Tiếng Việt"
+      },
+      "cancelledSubject": "Cancelled {code} · {date} {time} · {guests}",
+      "cancelledPreheader": "{name} cancelled their table for {guests} on {date} at {time}.",
+      "cancelledTitle": "Cancelled reservation",
+      "cancelledAt": "Cancelled",
+      "void": "Void"
+    },
+    "code": {
+      "subject": "{code} is your Pizza Piatto code",
+      "preheader": "Use it to see your reservations. It expires in 10 minutes.",
+      "eyebrow": "( Verification code )",
+      "message": "Enter this code to see your reservations at Pizza Piatto. It expires in 10 minutes.",
+      "ignore": "If you didn't ask for this code, you can safely ignore this email."
+    },
+    "cancelled": {
+      "subject": "Your Pizza Piatto booking is cancelled · {date}, {time}",
+      "eyebrow": "( Booking cancelled )",
+      "byGuest": "Your table for {guests} on {dateLong} at {time} is cancelled, as you asked. We hope to see you another time.",
+      "byStaff": "We have cancelled your table for {guests} on {dateLong} at {time}. If you weren't expecting this, please call us at {phone}.",
+      "stamp": "Cancelled",
+      "rebook": "Book Another Table"
+    },
+    "class": {
+      "seatOne": "seat",
+      "seatOther": "seats",
+      "ticketSubject": "Your class ticket · {title}",
+      "ticketPreheader": "{seats} · {date}. Paid, see you at the class.",
+      "ticketEyebrow": "( Class ticket )",
+      "ticketGreeting": "Thank you, {name}. Your payment came through and your place is confirmed. Here is your ticket.",
+      "paid": "Paid",
+      "seatsLabel": "Seats",
+      "whenLabel": "When",
+      "amountLabel": "Paid",
+      "codeLabel": "No. {code}",
+      "where": "Where",
+      "call": "Call us",
+      "bring": "Show this ticket when you arrive. If your plans change, open your ticket or call us.",
+      "viewTicket": "View My Ticket",
+      "receiptSubject": "Class paid {code} · {title} · {seats}",
+      "receiptTitle": "Class booking paid",
+      "receiptRows": {
+        "class": "Class",
+        "session": "Session",
+        "student": "Student",
+        "phone": "Phone",
+        "email": "Email",
+        "seats": "Seats",
+        "price": "Per seat",
+        "total": "Total paid",
+        "provider": "Paid via",
+        "reference": "Reference",
+        "reason": "Reason",
+        "refund": "To refund"
+      },
+      "alertSubject": "Refund needed {code} · {amount}",
+      "alertTitle": "Refund needed",
+      "alertIntro": "Send this money back to the student by bank transfer, then mark it refunded on the Class Desk.",
+      "openDesk": "Open the Class Desk",
+      "refundSubject": "Your refund · {title}",
+      "refundEyebrow": "( Refund )",
+      "refundPending": "We are sending {amount} back to you for {title}. {reason} We will let you know once it's done.",
+      "refundDone": "We have sent {amount} back to you for {title}. {reason}",
+      "refunded": "Refunded",
+      "refunding": "Refunding",
+      "reasons": {
+        "studentCancelled": "You cancelled your seats.",
+        "staffCancelled": "The shop cancelled your booking.",
+        "classCancelled": "The class has been cancelled.",
+        "noSeatLeft": "Your payment arrived after the hold on your seats ran out, and the class had filled up meanwhile.",
+        "duplicatePayment": "The same booking was paid twice; this is the extra payment. Your seats are still booked.",
+        "paidAfterCancel": "Your payment arrived after the booking was cancelled."
+      }
+    }
+  },
+  "preloader": {
+    "label": "Website preloader",
+    "loading": "Loading... {progress}%",
+    "enter": "Enter Website"
+  },
+  "home": {
+    "since": "Since 2022",
+    "location": "HCM, VN",
+    "about": "Four tables, an open kitchen and dough stretched by hand, so every pizza is made right in front of you.",
+    "aboutLeft": "Handmade Pizza",
+    "aboutRight": "Open Kitchen"
+  },
+  "about": {
+    "heroLines": [
+      "Pizza",
+      "Piatto",
+      "Story"
+    ],
+    "heroAlt": "The two founders of Pizza Piatto in front of the shop",
+    "eyebrow": "Small Shop, Handmade Pizza",
+    "paragraphs": [
+      "Pizza Piatto opened in 2022 as a tiny Italian-style pizza shop with just four tables, tucked inside Cư Xá Lý Thường Kiệt, opposite the Thống Nhất Sports Centre.",
+      "The kitchen is open, so you can watch every pizza being stretched, topped and baked. We blend two flours, give the dough time to rest and keep the menu short, so each pizza gets our full attention."
+    ]
+  },
+  "menuPage": {
+    "title": "Hand-Stretched Pizza, Baked to Order",
+    "left": "The Menu",
+    "right": "30 cm Pizza"
+  },
+  "reservationPage": {
+    "title": "Save One of Our Four Tables",
+    "intro": "The shop is small, so booking ahead is the surest way to find a table waiting and a pizza fresh from the open kitchen.",
+    "button": "Book a Table",
+    "cards": {
+      "menu": {
+        "title": "Menu",
+        "description": "Twelve 30 cm pizzas, four kinds of spaghetti and a burrata salad, with plenty of choice for vegetarians.",
+        "items": [
+          "Pizza 30 cm",
+          "Spaghetti",
+          "Burrata Salad",
+          "Vegetarian Options"
+        ]
+      },
+      "hours": {
+        "title": "Hours",
+        "description": "We open in the evening on weekdays and from late morning on Saturdays. On Sundays the oven rests.",
+        "items": [
+          "Mon – Fri: 17:30 – 19:45",
+          "Saturday: 11:00 – 19:45",
+          "Sunday: Closed",
+          "Dine In · Takeaway · Delivery"
+        ]
+      },
+      "contact": {
+        "title": "Contact",
+        "description": "Call or message us to book, order or ask about our pizza classes. You will find us opposite the Thống Nhất Sports Centre.",
+        "items": [
+          "034 662 7237",
+          "pizzapiattovn@gmail.com",
+          "@pizzapiattosg",
+          "91K Cư Xá Lý Thường Kiệt"
+        ]
+      }
+    },
+    "track": "Find your bookings"
+  },
+  "cta": {
+    "eyebrow": "Come say hello",
+    "heading": "Grab one of our four tables and watch your pizza come together in the open kitchen, or take it home still warm.",
+    "address": [
+      "91K Cư Xá Lý Thường Kiệt",
+      "Diên Hồng, Ho Chi Minh City"
+    ],
+    "hours": [
+      "Mon–Fri 17:30–19:45",
+      "Sat 11:00–19:45",
+      "Sun Closed"
+    ],
+    "button": "Book a Table",
+    "imageAlt": "A table set for dinner"
+  },
+  "imageBanner": {
+    "heading": [
+      "Made",
+      "By",
+      "Hand"
+    ],
+    "description": "At Pizza Piatto every pizza starts as a ball of rested dough and is stretched, topped and baked by hand, a few steps from your table."
+  },
+  "marquee": {
+    "year": "Since 2022",
+    "subtitle": "Small Shop, Big Heart",
+    "pill": "Fresh From The Oven"
+  },
+  "stickyCards": {
+    "dough": {
+      "title": "The Dough",
+      "description": "We blend two flours with the same protein but a different strength, then give the dough time to rest so it bakes up light, airy and full of flavour."
+    },
+    "beginning": {
+      "title": "The Beginning",
+      "description": "Pizza Piatto opened in 2022 as a small shop with four tables. It is still small, and it still means the world to us."
+    },
+    "kitchen": {
+      "title": "The Open Kitchen",
+      "description": "Nothing stands between your table and the counter. Watch the dough being stretched and topped, and catch the smell of the crust as it leaves the oven."
+    },
+    "toppings": {
+      "title": "The Toppings",
+      "description": "Fresh mozzarella, burrata and Grana Padano sit alongside local favourites like our Italian-style roast pork, with plenty of vegetarian choices too."
+    },
+    "classes": {
+      "title": "The Classes",
+      "description": "We also teach. Our pizza classes share what we have learned about dough, stretching and baking, from classic to contemporary Neapolitan."
+    },
+    "takeaway": {
+      "title": "Dine In or Take Away",
+      "description": "Eat at one of our four tables, take your pizza home in a box or have it delivered warm. However you eat it, it is made the same way."
+    }
+  },
+  "chefs": {
+    "title": "The Chef",
+    "left": "Phuong Huynh",
+    "right": "Chef & Owner",
+    "moments": {
+      "portrait": {
+        "label": "Phuong",
+        "alt": "Phuong Huynh, chef and owner of Pizza Piatto"
+      },
+      "owner": {
+        "label": "The Owner",
+        "alt": "Phuong Huynh finishing a pepperoni pizza"
+      },
+      "class": {
+        "label": "Pizza Class",
+        "alt": "Phuong Huynh teaching a Pizza Piatto pizza class"
+      },
+      "teacher": {
+        "label": "Teacher",
+        "alt": "Phuong Huynh teaching beside the pizza oven"
+      },
+      "sigep2025": {
+        "label": "Sigep 2025",
+        "alt": "Phuong Huynh slicing a pizza. Top 10 Pizza Napoletana Contemporanea at Pizza Senza Frontiere, Sigep 2025"
+      },
+      "sigep2026": {
+        "label": "Sigep 2026",
+        "alt": "Phuong Huynh with a fresh pizza. Top 5 Pizza Classica at Pizza Senza Frontiere, Sigep 2026"
+      },
+      "dough": {
+        "label": "Dough",
+        "alt": "Phuong Huynh showing the flour she uses for the dough"
+      },
+      "since": {
+        "label": "Since 2022",
+        "alt": "Phuong Huynh during a pizza class"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What our guests say",
+    "previous": "Previous review",
+    "next": "Next review",
+    "googleSummary": "{rating} ★ on Google · {count} reviews",
+    "facebookSummary": "100% recommend on Facebook",
+    "recommends": "Recommends",
+    "translated": "Translated",
+    "reviews": {
+      "tranVanTrang": "Delicious pizza with a true Italian taste and plenty of choice. I recommend the Fungus: rich, fragrant and unlike anything else. Thin, crispy crust.",
+      "tranQuynhDac": "Ridiculously good!!! Thin base, a crisp and airy crust and nothing but quality toppings. Lots of vegetarian options for the no-meat crowd, too.",
+      "violetParisi": "Nice Italian pizza, thin & crispy. Great taste. Kind owners.",
+      "minhThu": "The owner is lovely, the pizza is unbelievably good and the shop is easy to find.",
+      "linhChi": "The pizza and salad here are just to my taste. The space is quite small, so I usually take mine away.",
+      "senChanDoi": "I came with my mum, who says Western food gets heavy fast, but she loved the salad here. As for me, the seafood pizza was amazing.",
+      "nguyenNghia": "The Fungus pizza is out of this world. The shop is tiny though, so I mostly take away."
+    }
+  },
+  "diningMenu": {
+    "title": "Our Menu",
+    "previous": "Previous menu",
+    "next": "Next menu",
+    "tags": {
+      "veg": "Vegetarian",
+      "spicy": "Spicy"
+    },
+    "categories": {
+      "pizza": {
+        "name": "Pizza",
+        "tagline": "Hand-stretched 30 cm pizzas: the classics, the veggie favourites and one from the sea",
+        "items": {
+          "margherita": {
+            "name": "Margherita",
+            "description": "Tomato sauce, fresh mozzarella, Grana Padano & basil"
+          },
+          "veggieLover": {
+            "name": "Veggie Lover",
+            "description": "Tomato sauce, mozzarella, black olive, marinated artichokes, onion, sautéed mixed mushroom"
+          },
+          "fungus": {
+            "name": "Fungus",
+            "description": "Cream, sautéed mixed mushroom, mozzarella, emmental, onsen egg, truffle oil"
+          },
+          "fourCheese": {
+            "name": "Four Cheese",
+            "description": "Mozzarella, Grana Padano, provolone, brie, honey"
+          },
+          "burrata": {
+            "name": "Burrata",
+            "description": "Tomato sauce, mozzarella, burrata, balsamic reduction, basil, heirloom cherry tomato"
+          },
+          "seafoodLover": {
+            "name": "Seafood Lover",
+            "description": "Tomato sauce, mozzarella, prawn, scallop, chilli, basil"
+          }
+        }
+      },
+      "meatPizza": {
+        "name": "Meat Pizza",
+        "tagline": "Spicy salami, Italian-style roast pork and homemade meatballs",
+        "items": {
+          "spicySalami": {
+            "name": "Spicy Salami",
+            "description": "Tomato sauce, mozzarella, spicy salami, onion, oregano"
+          },
+          "capricciosa": {
+            "name": "Capricciosa",
+            "description": "Tomato sauce, mozzarella, black olive, mortadella, marinated artichokes, sautéed mixed mushroom"
+          },
+          "meatLover": {
+            "name": "Meat Lover",
+            "description": "Tomato sauce, mozzarella, mortadella, spicy salami, homemade meatball, onion"
+          },
+          "surfTurf": {
+            "name": "Surf & Turf",
+            "description": "Tomato sauce, mozzarella, homemade meatball, scallop, onion"
+          },
+          "heoQuay": {
+            "name": "Heo Quay",
+            "description": "BBQ sauce, Italian-style roast pork belly, onion, sautéed mushroom, capsicum, mozzarella"
+          },
+          "bolognese": {
+            "name": "Bolognese",
+            "description": "Traditional Bolognese sauce, Grana Padano, mozzarella"
+          }
+        }
+      },
+      "salad": {
+        "name": "Salad",
+        "tagline": "Something fresh to share between slices",
+        "items": {
+          "burrataSalad": {
+            "name": "Burrata Salad",
+            "description": "Burrata, heirloom cherry tomato, basil and balsamic reduction"
+          }
+        }
+      },
+      "pasta": {
+        "name": "Pasta",
+        "tagline": "Spaghetti cooked to order, with sauces made in our kitchen",
+        "items": {
+          "creamyMushroom": {
+            "name": "Creamy Mushroom Spaghetti",
+            "description": "Spaghetti, garlic cream sauce, mixed mushroom, Grana Padano, truffle oil"
+          },
+          "veggie": {
+            "name": "Veggie Spaghetti",
+            "description": "Spaghetti, tomato sauce, mushroom, olive, artichoke, bell pepper, onion"
+          },
+          "bolognese": {
+            "name": "Bolognese Spaghetti",
+            "description": "Spaghetti, traditional Bolognese sauce, Grana Padano"
+          },
+          "seafood": {
+            "name": "Seafood Spaghetti with Prawn Bisque",
+            "description": "Spaghetti, prawn, scallop, prawn bisque, cherry tomato, dill, chilli flakes"
+          }
+        }
+      },
+      "drinks": {
+        "name": "Drinks",
+        "tagline": "Cold drinks to go with your pizza",
+        "items": {
+          "dasani": {
+            "name": "Dasani",
+            "description": "Still water"
+          },
+          "sprite": {
+            "name": "Sprite",
+            "description": "Lemon-lime soda"
+          },
+          "pepsiLight": {
+            "name": "Pepsi Light",
+            "description": "Sugar-free cola"
+          },
+          "gingerAle": {
+            "name": "Ginger Ale",
+            "description": "Sparkling ginger soda"
+          }
+        }
+      }
+    }
+  },
+  "workshops": {
+    "eyebrow": "( Pizza Classes )",
+    "title": "Learn the Dough",
+    "intro": "Our classes are mostly about dough: flour, yeast, salt and water, and how a short rise differs from a long one. Get the dough right first; the toppings are the easy part.",
+    "upcoming": "Coming Up",
+    "past": "Past Classes",
+    "none": "No class is open for booking right now. Follow us on Facebook to hear about the next one.",
+    "facebook": "Pizza Piatto on Facebook",
+    "noPast": "Photos and notes from past classes will appear here.",
+    "perSeat": "{price} / seat",
+    "seatsLeftOne": "1 seat left",
+    "seatsLeftOther": "{count} seats left",
+    "seatsOf": "{left} of {capacity} seats left",
+    "full": "Fully booked",
+    "closed": "Booking closed",
+    "cancelled": "Cancelled",
+    "held": "Completed",
+    "ongoing": "Happening now",
+    "book": "Book a Seat",
+    "details": "View Class",
+    "recap": "See the Recap",
+    "sessionsOne": "1 session",
+    "sessionsOther": "{count} sessions",
+    "back": "All Classes",
+    "schedule": "Schedule",
+    "fee": "Fee",
+    "seats": "Seats",
+    "teacher": "Teacher",
+    "where": "Where",
+    "learn": "What You Will Learn",
+    "about": "About the Class",
+    "recapTitle": "From the Class",
+    "photo": "Photo {index} of {count}",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "cancelledNote": "This class has been cancelled. Everyone who paid gets their money back.",
+    "notFound": "This class isn't on our calendar.",
+    "form": {
+      "eyebrow": "( Book a Seat )",
+      "title": "Save Your Place",
+      "seats": "Seats",
+      "seatOne": "seat",
+      "seatOther": "seats",
+      "seatsHint": "( Up to {max} )",
+      "total": "Total",
+      "pay": "Continue to Payment",
+      "paying": "Holding your seats...",
+      "hold": "Your seats are held for {minutes} minutes while you pay; unpaid seats go back to the class.",
+      "refund": "Paid seats can be cancelled for a refund until {hours} hours before the class starts.",
+      "closes": "Online booking closes {hours} hours before the class.",
+      "testMode": "Test mode: payment happens on a test checkout and no real money moves.",
+      "paymentsOff": "Online payment isn't set up yet. Call us at {phone} to book a seat.",
+      "alreadyBooked": "This phone number already has a paid booking for this class.",
+      "bookMore": "Book More Seats Anyway",
+      "full": "Sorry, the last seats have just been taken.",
+      "notEnoughSeats": "Only {count} left now. Choose fewer seats.",
+      "closedError": "Booking for this class has closed.",
+      "failed": "We couldn't start the payment. Please try again, or call us at {phone}.",
+      "rateLimited": "Too many tries. Please wait a few minutes and try again.",
+      "invalidSeats": "( Choose 1 to {max} )"
+    },
+    "finished": "This class has finished.",
+    "questions": "Questions? Call us at {phone}."
+  },
+  "classTicket": {
+    "eyebrow": "( Your Class Ticket )",
+    "label": "Pizza Class",
+    "number": "No. {code}",
+    "seats": "Seats",
+    "total": "Total",
+    "when": "When",
+    "statuses": {
+      "awaitingPayment": "Awaiting payment",
+      "processing": "Payment processing",
+      "paymentFailed": "Payment not completed",
+      "expired": "Hold expired",
+      "paid": "Paid",
+      "attended": "Attended",
+      "cancelled": "Cancelled",
+      "refundPending": "Refund in progress",
+      "refunded": "Refunded"
+    },
+    "stamps": {
+      "awaitingPayment": "Unpaid",
+      "processing": "Pending",
+      "paymentFailed": "Unpaid",
+      "expired": "Expired",
+      "paid": "Paid",
+      "attended": "Used",
+      "cancelled": "Cancelled",
+      "refundPending": "Refunding",
+      "refunded": "Refunded"
+    },
+    "messages": {
+      "awaitingPayment": "Your seats are held until {time}. Pay before then to confirm them.",
+      "processing": "Your bank is confirming the payment. Your seats stay held meanwhile, and this page updates by itself.",
+      "paymentFailed": "The payment didn't go through. Your seats are still held until {time}, so you can try again.",
+      "expired": "The hold ran out before a payment reached us, so the seats went back to the class. If you did pay, we confirm your seats if any are left, or refund you.",
+      "paid": "You're booked. Show this ticket when you arrive.",
+      "attended": "Thanks for coming to the class. Keep practising at home!",
+      "cancelled": "This booking is cancelled and its seats went back to the class.",
+      "refundPending": "We are sending {amount} back to you.",
+      "refunded": "We have sent {amount} back to you."
+    },
+    "reasons": {
+      "studentCancelled": "You cancelled your seats.",
+      "staffCancelled": "The shop cancelled your booking.",
+      "classCancelled": "The class has been cancelled.",
+      "noSeatLeft": "Your payment arrived after the hold ran out, and the class had filled up meanwhile.",
+      "duplicatePayment": "The same booking was paid twice.",
+      "paidAfterCancel": "Your payment arrived after the booking was cancelled."
+    },
+    "holdLeft": "Held for another {time}",
+    "pay": "Pay {amount}",
+    "payAgain": "Try Paying Again",
+    "cancel": "Cancel Booking",
+    "refundUntil": "Cancel for a full refund until {date}.",
+    "noRefund": "Online cancellation for this class has closed. Call us at {phone} if your plans change.",
+    "checkoutCancelled": "The payment wasn't completed. Your seats are held until {time}.",
+    "extraPending": "We received an extra payment of {amount} for this booking. It is being refunded; your seats stay booked.",
+    "extraDone": "An extra payment of {amount} for this booking has been refunded.",
+    "keep": "Keep this page: it is your ticket.",
+    "emailNote": "Once it's paid, we email your ticket to {email} too.",
+    "checking": "Checking with the bank...",
+    "back": "All Classes",
+    "details": "Class Details",
+    "notFoundTitle": "Ticket Not Found",
+    "notFoundMessage": "This ticket link isn't valid. Use the link from your email, or call us at {phone}.",
+    "dialog": {
+      "eyebrow": "( Cancel booking )",
+      "unpaidTitle": "Give up these seats?",
+      "unpaidNote": "Your held seats go back to the class.",
+      "paidTitle": "Cancel and get a refund?",
+      "paidNote": "Your seats go back to the class and {amount} is refunded to you.",
+      "confirm": "Cancel Booking",
+      "back": "Keep My Seats"
+    },
+    "toasts": {
+      "paidEyebrow": "( Payment received )",
+      "paidTitle": "You're booked!",
+      "cancelledEyebrow": "( Booking cancelled )",
+      "cancelledTitle": "Your seats are released",
+      "refundTitle": "Your refund is on its way",
+      "errorEyebrow": "( Not done )",
+      "errorTitle": "Something went wrong",
+      "errorMessage": "Please try again in a moment.",
+      "tooLate": "It's too late to cancel online. Please call us at {phone}.",
+      "notPayable": "This booking can't be paid any more. Book again from the class page."
+    },
+    "allBookings": "All my bookings"
+  },
+  "mockPay": {
+    "eyebrow": "( Test checkout )",
+    "title": "Test Payment",
+    "notice": "A stand-in for the real payment page, for trying out bookings. No real money moves.",
+    "merchant": "Pay to",
+    "amount": "Amount",
+    "reference": "Transfer note",
+    "status": "Status",
+    "expires": "Link expires",
+    "pay": "Pay",
+    "paySlow": "Pay, bank confirms in 15 s",
+    "payTwice": "Pay, webhook sent twice",
+    "fail": "Decline",
+    "cancel": "Cancel and Go Back",
+    "late": "This link is closed. Paying now acts out a bank transfer that arrives after the shop closed it.",
+    "payLate": "Pay Anyway (late transfer)",
+    "done": "This link has already taken its payment.",
+    "back": "Back to the shop",
+    "working": "Processing...",
+    "notFound": "This test payment link doesn't exist.",
+    "statuses": {
+      "PENDING": "Waiting for payment",
+      "PROCESSING": "Processing",
+      "PAID": "Paid",
+      "FAILED": "Declined",
+      "CANCELLED": "Closed",
+      "EXPIRED": "Expired"
+    }
+  },
+  "classDesk": {
+    "eyebrow": "( Class Desk )",
+    "title": "Classes",
+    "tabs": {
+      "tables": "Tables",
+      "classes": "Classes",
+      "guests": "Guests"
+    },
+    "newClass": "New Class",
+    "provider": {
+      "label": "Payments",
+      "mock": "Test checkout, no real money",
+      "payos": "PayOS (VietQR bank transfer)",
+      "off": "Off: add the PayOS keys to take payments"
+    },
+    "empty": "No classes yet. Create one to start taking bookings.",
+    "phases": {
+      "upcoming": "Upcoming",
+      "ongoing": "On now",
+      "past": "Past"
+    },
+    "statuses": {
+      "draft": "Draft",
+      "published": "Published",
+      "cancelled": "Cancelled"
+    },
+    "seatsSold": "{taken} / {capacity} seats",
+    "revenue": "{amount} paid",
+    "noDate": "No date yet",
+    "view": "View page",
+    "sections": {
+      "bookings": "Bookings",
+      "details": "Class Details",
+      "recap": "Recap"
+    },
+    "bookingsEmpty": "No bookings yet.",
+    "enrollment": {
+      "pending_payment": "Awaiting payment",
+      "confirmed": "Paid",
+      "attended": "Attended",
+      "expired": "Hold expired",
+      "cancelled": "Cancelled",
+      "refund_pending": "Refund due",
+      "refunded": "Refunded"
+    },
+    "payment": {
+      "requires_payment": "Link open",
+      "processing": "Processing",
+      "succeeded": "Paid",
+      "failed": "Failed",
+      "canceled": "Link closed",
+      "expired": "Link expired",
+      "refund_pending": "Refund due",
+      "refunded": "Refunded"
+    },
+    "heldUntil": "Held until {time}",
+    "paidAt": "Paid {time}",
+    "checkedIn": "Checked in {time}",
+    "paidLate": "Paid after the hold ran out",
+    "extra": "Extra payment {amount}",
+    "reasons": {
+      "studentCancelled": "Cancelled by the student",
+      "staffCancelled": "Cancelled by the shop",
+      "classCancelled": "Class cancelled",
+      "noSeatLeft": "Paid late, no seat left",
+      "duplicatePayment": "Paid twice",
+      "superseded": "Replaced by a newer booking",
+      "holdLapsed": "Not paid in time",
+      "checkoutFailed": "Checkout failed",
+      "paidAfterCancel": "Paid after it was cancelled"
+    },
+    "actions": {
+      "checkIn": "Check in",
+      "undo": "Undo",
+      "cancel": "Cancel",
+      "refund": "Cancel & refund",
+      "markRefunded": "Mark refunded",
+      "check": "Check payment"
+    },
+    "hints": {
+      "opensAt": "Check-in from {time}",
+      "opensOn": "Check-in on {date}",
+      "closed": "Check-in closed"
+    },
+    "dialogs": {
+      "checkIn": {
+        "eyebrow": "( Check in )",
+        "title": "Mark as arrived?",
+        "confirm": "Check In"
+      },
+      "undo": {
+        "eyebrow": "( Undo )",
+        "title": "Take the check-in back?",
+        "confirm": "Undo"
+      },
+      "cancel": {
+        "eyebrow": "( Cancel booking )",
+        "title": "Release these held seats?",
+        "note": "The student hasn't paid; their payment link is closed.",
+        "confirm": "Release Seats"
+      },
+      "refund": {
+        "eyebrow": "( Cancel & refund )",
+        "title": "Cancel and refund {amount}?",
+        "note": "The seats go back on sale. With bank transfers you send the money back yourself, then mark it refunded.",
+        "confirm": "Cancel & Refund"
+      },
+      "markRefunded": {
+        "eyebrow": "( Refund sent )",
+        "title": "Mark {amount} as refunded?",
+        "note": "Only once the money has actually been sent back to the student.",
+        "confirm": "Mark Refunded"
+      },
+      "cancelClass": {
+        "eyebrow": "( Cancel class )",
+        "title": "Cancel the whole class?",
+        "note": "Unpaid seats are released and every paid booking is refunded. This can't be undone.",
+        "confirm": "Cancel Class"
+      },
+      "deleteClass": {
+        "eyebrow": "( Delete class )",
+        "title": "Delete this class?",
+        "note": "Only classes nobody has booked can be deleted.",
+        "confirm": "Delete"
+      },
+      "details": "{name} · {seats} · {amount}",
+      "back": "Back",
+      "removePhoto": {
+        "eyebrow": "( Remove photo )",
+        "title": "Remove this photo from the recap?",
+        "confirm": "Remove"
+      }
+    },
+    "refunds": {
+      "title": "Refunds to Send",
+      "intro": "Send these back to the students by bank transfer, then mark each one refunded."
+    },
+    "form": {
+      "createTitle": "New Class",
+      "editTitle": "Edit Class",
+      "langs": {
+        "vi": "Tiếng Việt",
+        "en": "English"
+      },
+      "title": "Title",
+      "summary": "Summary",
+      "description": "Description",
+      "learn": "What students learn (one per line)",
+      "location": "Location (blank: the shop)",
+      "recap": "Recap notes",
+      "sessions": "Sessions",
+      "addSession": "Add a session",
+      "removeSession": "Remove",
+      "date": "Date",
+      "start": "Start",
+      "end": "End",
+      "capacity": "Seats",
+      "price": "Fee per seat (VND)",
+      "instructor": "Teacher",
+      "cover": "Cover image (URL or /path)",
+      "bookingCloses": "Booking closes (hours before)",
+      "refundUntil": "Refunds until (hours before)",
+      "status": "Status",
+      "source": "Source (e.g. the Facebook post)",
+      "save": "Save Class",
+      "create": "Create Class",
+      "saving": "Saving...",
+      "cancel": "Close",
+      "delete": "Delete class",
+      "cancelClass": "Cancel class",
+      "publishNeeds": "To take bookings a class needs a date, seats and a fee, and has to be published.",
+      "policyNote": "The hold, refund and booking cut-offs are suggested defaults; confirm them before publishing.",
+      "errors": {
+        "required": "( Required )",
+        "invalid": "( Check this )"
+      }
+    },
+    "recap": {
+      "intro": "Photos and notes from the class, shown on its page once it has happened.",
+      "upload": "Add Photos",
+      "uploading": "Uploading {done} of {count}...",
+      "captionVi": "Caption (Tiếng Việt)",
+      "captionEn": "Caption (English)",
+      "saveCaption": "Save caption",
+      "moveUp": "Earlier",
+      "moveDown": "Later",
+      "remove": "Remove",
+      "empty": "No photos yet.",
+      "errors": {
+        "tooLarge": "That photo is too large.",
+        "notAnImage": "That file isn't a photo.",
+        "tooManyImages": "A class can have up to 40 photos.",
+        "noFile": "Choose a photo first.",
+        "failed": "Upload failed. Please try again."
+      },
+      "save": "Save Notes"
+    },
+    "toasts": {
+      "newEyebrow": "( New class booking )",
+      "newMessage": "{title} · {seats}",
+      "paidEyebrow": "( Class paid )",
+      "savedEyebrow": "( Saved )",
+      "createdEyebrow": "( Class created )",
+      "deletedEyebrow": "( Class deleted )",
+      "checkedInEyebrow": "( Checked in )",
+      "undoneEyebrow": "( Undone )",
+      "cancelledEyebrow": "( Booking cancelled )",
+      "refundEyebrow": "( Refund started )",
+      "refundedEyebrow": "( Refunded )",
+      "checkedEyebrow": "( Payment checked )",
+      "photoEyebrow": "( Photos )",
+      "photosAdded": "{count} added",
+      "photoRemoved": "Photo removed",
+      "errorEyebrow": "( Not saved )",
+      "errorTitle": "Couldn't update",
+      "errorMessage": "Please try again in a moment.",
+      "hasBookings": "This class has bookings, so it can only be cancelled."
+    },
+    "login": {
+      "title": "Class Desk",
+      "intro": "Sign in to run the pizza classes: bookings, payments, check-in and recaps."
+    },
+    "demo": {
+      "eyebrow": "( Sample data )",
+      "load": "Load sample classes",
+      "clear": "Clear sample classes",
+      "loaded": "{count} sample classes added",
+      "cleared": "Sample classes cleared"
+    },
+    "search": "Find a class",
+    "searchPlaceholder": "Class name",
+    "classOne": "1 class",
+    "classOther": "{count} classes",
+    "noMatch": "No classes match.",
+    "stats": {
+      "upcoming": "Classes coming up",
+      "seats": "Seats sold, coming up",
+      "awaiting": "Awaiting payment",
+      "refunds": "Refunds to send"
+    }
+  },
+  "guestDesk": {
+    "eyebrow": "( Guest Lookup )",
+    "title": "Guests",
+    "loginIntro": "Sign in to see a guest's table bookings and pizza classes in one place.",
+    "search": "Find a guest",
+    "placeholder": "Phone, name, email or booking code",
+    "start": "Look a guest up by phone number or name to see all their table bookings and pizza classes together.",
+    "empty": "No guest matches.",
+    "tableOne": "1 table booking",
+    "tableOther": "{count} table bookings",
+    "classOne": "1 class booking",
+    "classOther": "{count} class bookings",
+    "openTables": "Tables desk ↗",
+    "openClasses": "Class desk ↗",
+    "history": "All bookings ↗",
+    "kinds": {
+      "table": "Table",
+      "class": "Class"
+    }
+  },
+  "common": {
+    "backToTop": "Back to top"
+  }
+}

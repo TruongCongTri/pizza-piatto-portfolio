@@ -1,0 +1,139 @@
+.chefs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+  background-color: var(--base-600);
+}
+
+.chefs-avatars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: 100px;
+}
+
+.chefs-avatar {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  filter: saturate(0);
+  will-change: width, height;
+}
+
+.chefs-avatar:focus-visible {
+  outline: 1px dashed var(--base-200);
+  outline-offset: 2px;
+}
+
+.chefs-avatar img {
+  border-radius: 0.35rem;
+}
+
+.chefs-names {
+  position: relative;
+  width: 100%;
+  height: clamp(4rem, 11vw, 18rem);
+  overflow: hidden;
+}
+
+.chefs-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.chefs-name h1 {
+  white-space: nowrap;
+  text-align: center;
+  line-height: 0.9;
+  color: var(--base-100);
+}
+
+.chefs-name h1 .letter {
+  display: inline-block;
+  transform: translateY(110%);
+  will-change: transform;
+}
+
+.chefs-name--default h1 .letter {
+  transform: translateY(0%);
+}
+
+.chefs .section-footer p {
+  color: var(--base-300);
+}
+
+/* Vietnamese stacks tone marks above capitals (Ầ, Ế) and dots below (Ạ).
+   The name box clips its overflow, so it is sized in em of the heading: tall
+   enough for both, while letters parked at translateY(±110%) stay hidden */
+:lang(vi) .chefs-names {
+  font-size: clamp(4rem, 12vw, 20rem);
+  height: 1.5em;
+}
+
+:lang(vi) .chefs-name h1 {
+  padding-top: 0.15em;
+  line-height: 1.4;
+}
+
+@media (max-width: 999px) {
+  .chefs {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  /* four to a row, big enough to tap; the tapped one grows and takes its
+     colour back while its caption replaces the title */
+  .chefs-avatars {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.6rem;
+    width: min(92%, 26rem);
+    height: auto;
+  }
+
+  .chefs-avatar {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    aspect-ratio: 1;
+    transition:
+      transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1),
+      filter 0.45s;
+  }
+
+  .chefs-avatar.is-active {
+    z-index: 1;
+    filter: none;
+    transform: scale(1.15);
+  }
+
+  .chefs-names {
+    height: 4rem;
+  }
+
+  :lang(vi) .chefs-names {
+    font-size: 3rem;
+  }
+
+  .chefs-name h1 {
+    font-size: clamp(2.25rem, 11vw, 3rem);
+  }
+}

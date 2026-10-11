@@ -1,0 +1,26 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+
+# env files (secrets); the example stays in the repo
+.env*
+!.env.example
+
+# local reservation data (guests' names, phones, emails) and email previews
+/.data/
+
+# vercel
+.vercel

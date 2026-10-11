@@ -1,0 +1,312 @@
+/* ---------- a filter as a dropdown ---------- */
+
+.rs-dropdown {
+  position: relative;
+}
+
+.rs-select {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.65rem 0.8rem 0.65rem 0.95rem;
+  border: 1px solid var(--base-400);
+  border-radius: 0.35rem;
+  background: none;
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--base-200);
+  cursor: pointer;
+  transition:
+    border-color 0.3s,
+    color 0.3s;
+}
+
+.rs-select:hover,
+.rs-dropdown.is-open .rs-select {
+  border-color: var(--base-200);
+  color: var(--base-100);
+}
+
+.rs-select:focus-visible {
+  outline: 1px dashed var(--base-200);
+  outline-offset: 3px;
+}
+
+.rs-select-label {
+  color: var(--base-300);
+}
+
+.rs-select-value {
+  color: var(--base-100);
+}
+
+/* a filter that isn't on its default stands out */
+.rs-select.is-set {
+  border-color: var(--accent);
+}
+
+.rs-select.is-set .rs-select-value {
+  color: var(--accent);
+}
+
+.rs-select-chevron {
+  width: 0.75rem;
+  height: 0.75rem;
+  transition: transform 0.3s;
+}
+
+.rs-dropdown.is-open .rs-select-chevron {
+  transform: rotate(180deg);
+}
+
+.rs-options {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  padding: 0.35rem;
+  border: 1px solid var(--base-400);
+  border-radius: 0.35rem;
+  background-color: var(--base-500);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.35);
+  animation: rs-options-in 0.18s ease-out;
+}
+
+.rs-option {
+  padding: 0.65rem 0.75rem;
+  border: 0;
+  border-radius: 0.25rem;
+  background: none;
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--base-200);
+  cursor: pointer;
+}
+
+.rs-option:hover,
+.rs-option:focus-visible {
+  outline: none;
+  background-color: var(--base-400);
+  color: var(--base-100);
+}
+
+.rs-option.is-selected {
+  color: var(--accent);
+}
+
+.rs-option.is-selected::before {
+  content: "• ";
+}
+
+@keyframes rs-options-in {
+  from {
+    opacity: 0;
+    transform: translateY(-0.3rem);
+  }
+}
+
+/* ---------- the filter button ---------- */
+
+.rs-filter-button {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 1px solid var(--base-400);
+  border-radius: 0.35rem;
+  background: none;
+  color: var(--base-100);
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.rs-filter-button:hover,
+.rs-filter-button.is-set {
+  border-color: var(--base-200);
+}
+
+.rs-filter-button:focus-visible {
+  outline: 1px dashed var(--base-200);
+  outline-offset: 3px;
+}
+
+.rs-filter-button svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.rs-filter-badge {
+  position: absolute;
+  top: -0.45rem;
+  right: -0.45rem;
+  display: grid;
+  place-items: center;
+  min-width: 1.15rem;
+  height: 1.15rem;
+  padding: 0 0.25rem;
+  border-radius: 999px;
+  background-color: var(--accent);
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.65rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--base-600);
+}
+
+/* ---------- the drawer ---------- */
+
+.rs-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 250;
+  pointer-events: none;
+}
+
+.rs-drawer.is-open {
+  pointer-events: auto;
+}
+
+.rs-drawer-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: color-mix(in srgb, var(--base-600) 70%, transparent);
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+
+.rs-drawer.is-open .rs-drawer-backdrop {
+  opacity: 1;
+}
+
+/* in from the right on a larger screen */
+.rs-drawer-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: min(28rem, 100%);
+  border-left: 1px solid var(--base-400);
+  background-color: var(--base-600);
+  box-shadow: -1.5rem 0 3rem rgba(0, 0, 0, 0.35);
+  outline: none;
+  visibility: hidden;
+  transform: translateX(105%);
+  /* hidden once it has slid away, so its shadow never shows at the edge */
+  transition:
+    transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1),
+    visibility 0s linear 0.45s;
+}
+
+.rs-drawer.is-open .rs-drawer-panel {
+  visibility: visible;
+  transform: none;
+  transition:
+    transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1),
+    visibility 0s;
+}
+
+.rs-drawer-head,
+.rs-drawer-foot {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 1.75rem;
+}
+
+.rs-drawer-head {
+  justify-content: space-between;
+  border-bottom: 1px solid var(--base-400);
+}
+
+.rs-drawer-head .mono {
+  line-height: 1.2;
+  color: var(--base-200);
+}
+
+.rs-drawer-close,
+.rs-drawer-reset {
+  --hover-line-color: var(--base-200);
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.rs-drawer-body {
+  flex: 1;
+  min-height: 0;
+  padding: 1.75rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.rs-drawer-foot {
+  flex-wrap: wrap;
+  border-top: 1px solid var(--base-400);
+}
+
+.rs-drawer .rs-drawer-summary {
+  margin-right: auto;
+  line-height: 1.2;
+  color: var(--base-200);
+}
+
+.rs-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.rs-panel-search .reserve-input input {
+  font-size: 1.15rem;
+}
+
+/* up from the bottom on a phone */
+@media (max-width: 700px) {
+  .rs-drawer-panel {
+    top: auto;
+    left: 0;
+    width: 100%;
+    max-height: 85svh;
+    border-top: 1px solid var(--base-400);
+    border-left: 0;
+    border-radius: 0.75rem 0.75rem 0 0;
+    box-shadow: 0 -1.5rem 3rem rgba(0, 0, 0, 0.35);
+    transform: translateY(105%);
+  }
+
+  .rs-drawer-head,
+  .rs-drawer-foot {
+    padding: 1.15rem 1.5rem;
+  }
+
+  .rs-drawer-body {
+    padding: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rs-drawer-panel,
+  .rs-drawer-backdrop,
+  .rs-options {
+    transition: none;
+    animation: none;
+  }
+}

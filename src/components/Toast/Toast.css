@@ -1,0 +1,141 @@
+/* notices in the corner, above every overlay: cream cards like the info
+   cards, with the mono eyebrow and display-face title of the rest of the site */
+.toaster {
+  position: fixed;
+  right: 2.5rem;
+  bottom: 2.5rem;
+  z-index: 400;
+  display: flex;
+  flex-direction: column;
+  width: min(24rem, calc(100vw - 3rem));
+  pointer-events: none;
+}
+
+.toast {
+  --toast-warn: #d0896b;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 0.75rem;
+  padding: 1.25rem 1.25rem 1.75rem;
+  overflow: hidden;
+  border-radius: 0.35rem;
+  background-color: var(--base-100);
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.35);
+  pointer-events: auto;
+  will-change: transform, clip-path;
+}
+
+.toast-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* masked slide-up reveal, padded so tone marks are never clipped */
+.toast-mask {
+  padding-block: 0.15em;
+  margin-block: -0.15em;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.toast-reveal {
+  will-change: transform;
+}
+
+.toast .toast-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  color: var(--base-300);
+}
+
+.toast-dot {
+  flex-shrink: 0;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background-color: var(--base-500);
+  animation: toast-pulse 1.6s ease-in-out infinite;
+}
+
+.toast.is-error .toast-dot {
+  background-color: var(--toast-warn);
+}
+
+.toast.is-error .toast-eyebrow {
+  color: var(--toast-warn);
+}
+
+.toast-close {
+  --hover-line-color: var(--base-300);
+  --hover-line-color-active: var(--base-500);
+  flex-shrink: 0;
+  font-family: var(--font-host-grotesk), sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.toast .toast-title {
+  font-family: var(--font-display), serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: var(--heading-leading);
+  text-transform: uppercase;
+  color: var(--base-500);
+}
+
+.toast .toast-message {
+  line-height: 1.3;
+  color: var(--base-400);
+}
+
+/* time left, as a hairline inside the card (at the very edge it read as a
+   notch against the dark page) */
+.toast-progress {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 0.8rem;
+  left: 1.25rem;
+  height: 1.5px;
+  background-color: color-mix(in srgb, var(--base-500) 45%, transparent);
+  transform-origin: left;
+}
+
+.toast.is-error .toast-progress {
+  background-color: color-mix(in srgb, var(--toast-warn) 70%, transparent);
+}
+
+@keyframes toast-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@media (max-width: 900px) {
+  .toaster {
+    right: 1rem;
+    bottom: 1rem;
+    width: calc(100vw - 2rem);
+  }
+
+  /* a phone screen has room for the two newest */
+  .toast:nth-last-child(n + 3) {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toast-dot {
+    animation: none;
+  }
+}
